@@ -23,7 +23,8 @@
     "grunt-shell": "1.1.2",
     "grunt-contrib-sass": "0.9.2",
     "grunt-contrib-clean": "0.6.0",
-    "grunt-contrib-watch": "0.6.1"
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-jade":"0.15.0"
   },
   "homepage": "https://github.com/emily123/smaless#readme"
 }

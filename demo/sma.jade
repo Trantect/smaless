@@ -1,7 +1,88 @@
 doctype html
-html(lang='en')
-	head
-		title=pageTitle
-		link(rel="stylesheet",href="../build/sma.css")
-	body
-		p.box hi
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name="description", content="")
+    meta(name="author", content="")
+    //- link(rel="icon", href="../../favicon.ico")
+    title Navbar Template for Bootstrap
+    // Bootstrap core CSS
+    //- link(href="../../dist/css/bootstrap.min.css", rel="stylesheet")
+    //- Custom styles for this template
+    link(href="../build/sma.css", rel="stylesheet")
+    // Just for debugging purposes. Don't actually copy these 2 lines!
+    //if lt IE 9
+      script(src="../../assets/js/ie8-responsive-file-warning.js")
+    //- script(src="../../assets/js/ie-emulation-modes-warning.js")
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+      script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+        
+  body
+    .container
+      // Static navbar
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="#") Project name
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href="#") Home
+              li
+                a(href="#") About
+              li
+                a(href="#") Contact
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+                  | Dropdown
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href="#") Action
+                  li
+                    a(href="#") Another action
+                  li
+                    a(href="#") Something else here
+                  li.divider(role="separator")
+                  li.dropdown-header Nav header
+                  li
+                    a(href="#") Separated link
+                  li
+                    a(href="#") One more separated link
+            ul.nav.navbar-nav.navbar-right
+              li.active
+                a(href="./")
+                  | Default
+                  span.sr-only (current)
+              li
+                a(href="../navbar-static-top/") Static top
+              li
+                a(href="../navbar-fixed-top/") Fixed top
+          // /.nav-collapse
+        // /.container-fluid
+      // Main component for a primary marketing message or call to action
+      .jumbotron
+        h1 Navbar example
+        p
+          | This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+        p
+          a.btn.btn-lg.btn-primary(href="../../components/#navbar", role="button") View navbar docs &#187;
+    // /container
+    //
+       Bootstrap core JavaScript
+          ================================================== 
+    // Placed at the end of the document so the pages load faster
+    //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    //- script(src="../../dist/js/bootstrap.min.js")
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    //- script(src="../../assets/js/ie10-viewport-bug-workaround.js")

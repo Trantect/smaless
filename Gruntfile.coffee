@@ -16,8 +16,8 @@ module.exports = (grunt)->
           {
             expand: true,
             cwd: 'src',
-            src: ['*.sass'],
-            dest: './build',
+            src: ['*.sass']
+            dest: 'build',
             ext: '.css'
           }
         ]

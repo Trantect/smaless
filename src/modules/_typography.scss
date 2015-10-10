@@ -1,8 +1,15 @@
 //
 // Typography
 // --------------------------------------------------
+html {
+  font-family: sans-serif; // 1
+  -ms-text-size-adjust: 100%; // 2
+  -webkit-text-size-adjust: 100%; // 2
+}
+
 body{
     color: $gray-dark;
+    margin: 0;
     font-family: $font-family-sans-serif;
     font-size: 14px;
     font-weight: normal;

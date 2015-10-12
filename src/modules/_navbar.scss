@@ -2,7 +2,6 @@
 // Navbars
 // --------------------------------------------------
 
-
 // Wrapper and base class
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
@@ -283,57 +282,62 @@
 // Extension of the `.form-inline` with some extra flavor for optimum display in
 // our navbars.
 
-.navbar-form {
-  margin-left: -$navbar-padding-horizontal;
-  margin-right: -$navbar-padding-horizontal;
-  padding: 10px $navbar-padding-horizontal;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  $shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
-  @include box-shadow($shadow);
+// .navbar-form {
+//   margin-left: -$navbar-padding-horizontal;
+//   margin-right: -$navbar-padding-horizontal;
+//   padding: 10px $navbar-padding-horizontal;
+//   border-top: 1px solid transparent;
+//   border-bottom: 1px solid transparent;
+//   $shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+//   @include box-shadow($shadow);
 
-  // Mixin behavior for optimum display
-  @include form-inline;
+//   // Mixin behavior for optimum display
+//   // @include form-inline;
 
-  .form-group {
-    @media (max-width: $grid-float-breakpoint-max) {
-      margin-bottom: 5px;
+//   .form-group {
+//     @media (max-width: $grid-float-breakpoint-max) {
+//       margin-bottom: 5px;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
 
   // Vertically center in expanded, horizontal navbar
-  @include navbar-vertical-align($input-height-base);
+
+  // @include navbar-vertical-align($input-height-base);
 
   // Undo 100% width for pull classes
-  @media (min-width: $grid-float-breakpoint) {
-    width: auto;
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    @include box-shadow(none);
-  }
-}
+
+//   @media (min-width: $grid-float-breakpoint) {
+//     width: auto;
+//     border: 0;
+//     margin-left: 0;
+//     margin-right: 0;
+//     padding-top: 0;
+//     padding-bottom: 0;
+//     @include box-shadow(none);
+//   }
+// }
 
 
 // Dropdown menus
 
 // Menu position and menu carets
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 0;
-  @include border-top-radius(0);
-}
+
+// .navbar-nav > li > .dropdown-menu {
+//   margin-top: 0;
+//   @include border-top-radius(0);
+// }
+
 // Menu position and menu caret support for dropups via extra dropup class
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
-  margin-bottom: 0;
-  @include border-top-radius($navbar-border-radius);
-  @include border-bottom-radius(0);
-}
+
+// .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+//   margin-bottom: 0;
+//   @include border-top-radius($navbar-border-radius);
+//   @include border-bottom-radius(0);
+// }
 
 
 // Buttons in navbars

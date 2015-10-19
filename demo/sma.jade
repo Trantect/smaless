@@ -2,87 +2,75 @@ doctype html
 html(lang="en")
   head
     meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-    meta(name="description", content="")
-    meta(name="author", content="")
-    //- link(rel="icon", href="../../favicon.ico")
-    title Navbar Template for Bootstrap
+    link(rel="icon", type="image/png", href="assets/img/favicon.ico")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title Light Bootstrap Dashboard by Creative Tim
+    meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name="viewport")
+    meta(name="viewport", content="width=device-width")
     // Bootstrap core CSS
-    //- link(href="../../dist/css/bootstrap.min.css", rel="stylesheet")
-    //- Custom styles for this template
-    link(href="../build/sma.css", rel="stylesheet")
-    // Just for debugging purposes. Don't actually copy these 2 lines!
-    //if lt IE 9
-      script(src="../../assets/js/ie8-responsive-file-warning.js")
-    //- script(src="../../assets/js/ie-emulation-modes-warning.js")
-    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-    //if lt IE 9
-      script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
-      script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
-        
+    //- link(href="assets/css/bootstrap.min.css", rel="stylesheet")
+    // Animation library for notifications
+    //- link(href="assets/css/animate.min.css", rel="stylesheet")
+    // Light Bootstrap Table core CSS
+    //- link(href="assets/css/light-bootstrap-dashboard.css", rel="stylesheet")
+    // CSS for Demo Purpose, don't include it in your project
+    link(href="../build/main.css", rel="stylesheet")
+    // Fonts and icons
+    //- link(href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", rel="stylesheet")
+    //- link(href="http://fonts.googleapis.com/css?family=Roboto:400,700,300", rel="stylesheet", type="text/css")
+    //- link(href="assets/css/pe-icon-7-stroke.css", rel="stylesheet")
   body
-    .container
-      // Static navbar
-      nav.navbar.navbar-default
-        .container-fluid
-          .navbar-header
-            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href="#") Project name
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav
-              li.active
-                a(href="#") Home
-              li
-                a(href="#") About
-              li
-                a(href="#") Contact
-              li.dropdown
-                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
-                  | Dropdown
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href="#") Action
-                  li
-                    a(href="#") Another action
-                  li
-                    a(href="#") Something else here
-                  li.divider(role="separator")
-                  li.dropdown-header Nav header
-                  li
-                    a(href="#") Separated link
-                  li
-                    a(href="#") One more separated link
-            ul.nav.navbar-nav.navbar-right
-              li.active
-                a(href="./")
-                  | Default
-                  span.sr-only (current)
-              li
-                a(href="../navbar-static-top/") Static top
-              li
-                a(href="../navbar-fixed-top/") Fixed top
-          // /.nav-collapse
-        // /.container-fluid
-      // Main component for a primary marketing message or call to action
-      .jumbotron
-        h1 Navbar example
-        p
-          | This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
-        p
-          a.btn.btn-lg.btn-primary(href="../../components/#navbar", role="button") View navbar docs &#187;
-    // /container
-    //
-       Bootstrap core JavaScript
-          ================================================== 
-    // Placed at the end of the document so the pages load faster
-    //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-    //- script(src="../../dist/js/bootstrap.min.js")
-    // IE10 viewport hack for Surface/desktop Windows 8 bug
-    //- script(src="../../assets/js/ie10-viewport-bug-workaround.js")
+    header.navbar.navbar-static-top
+      button.navbar-toggle.collapsed
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.logo(href="/")
+        | LOGO
+      //- .navbar-right.navbar-custom-menu
+      //-   ul.nav.navbar-nav
+      //-     li.notifications-menu 
+      //-       a(href="/") 任务管理器
+      //-     li.notifications-menu 
+      //-       a(href="/") 漏洞
+      //-     li.notifications-menu 
+      //-       a(href="/") 病毒木马
+      //-     li.notifications-menu 
+      //-       a(href="/") 查防异常
+      //-     li.notifications-menu 
+      //-       a(href="/") Admin 
+      //-     li.notifications-menu 
+      //-       a(href="/") 退出
+    nav.main-sidebar
+      ul.sidebar-menu
+        li.active.treeview
+          a(href="overview")
+            | Overview
+        li.treeview
+          a(href="gird")
+            | Gird
+        li.treeview
+          a(href="typography")
+            | Typography
+        li.treeview
+          a(href="#tables")
+            | Tables
+        li.treeview
+          a(href="forms")
+            | Forms
+        li.treeview
+          a(href="buttons")
+            | Buttons
+        li.treeview
+          a(href="responsive")
+            | Responsive utilities
+    //- Begin include files
+    .content-wrapper
+      .content
+        include table.jade
+      footer.footer
+        p.copyright.pull-right
+          | &#169; 2015
+          a(href="http://www.creative-tim.com") Creative Tim
+          | , made with love for a better web

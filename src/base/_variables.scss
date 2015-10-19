@@ -22,16 +22,16 @@ $color-black: #000 !default;
 
 $brand-success: #00c644 !default;
 $brand-complete : #2979fb !default;
-$brand-primary: #0c8512 !default;
+$brand-primary: #1F8FE4 !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #ff6c60 !default;
 $brand-info: #33c5df !default;
 
 //Mixing Color varriable for creating both light and dark colors
-$mix-percentage-dark: 88% !default;
+$mix-percentage-dark: 92% !default;
 $mix-percentage-darker: 75% !default;
-$mix-percentage-light: 75% !default;
-$mix-percentage-lighter: 46% !default;
+$mix-percentage-light: 80% !default;
+$mix-percentage-lighter: 60% !default;
 
 //Lighter colors
 $color-success-light: mix($brand-success, $color-white, $mix-percentage-light) !default;
@@ -348,13 +348,13 @@ $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
 
 
-// sidebar
+// Layout (sidebar & navbar)
 // --------------------------------------------------
 $layout-header-height:60px;
 $layout-mobile-header-height:48px;
 $layout-mobile-logo-scale:0.8;
 $layout-sidepanel-width-collapsed : 70px;
-$sidebar-width:280px;
+$sidebar-width:200px;
 $layout-sidepanel-pin-width:250px;
 $layout-right-quickview-width: 285px;
 $layout-user-profile-margin:25px;

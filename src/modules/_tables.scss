@@ -163,7 +163,6 @@ table {
 @include table-row-variant('warning', $state-warning-bg);
 @include table-row-variant('danger', $state-danger-bg);
 
-
 // Responsive tables
 //
 // Wrap your tables in `.table-responsive` and we'll make them mobile friendly

@@ -3,27 +3,6 @@
  * ------------------
  */
 
-.main-sidebar,
-.left-side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 50px;
-  min-height: 100%;
-  width: $sidebar-width;
-  z-index: 810;
-}
-
-.sidebar {
-  padding-bottom: 10px;
-}
-// remove border from form
-.sidebar-form {
-  input:focus {
-    border-color: transparent;
-  }
-}
-
 //Sidebar user panel
 .user-panel {
   position: relative;
@@ -136,7 +115,17 @@
 }
 
 
-
+.main-sidebar{
+  background: #F8F8F8;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+  overflow-y: auto;
+  position: fixed;
+  top: 58px;
+  z-index: 10;
+  border-right: 1px solid #E0E0E0;
+}
 
 //A fix for text overflow while transitioning from sidebar mini to full sidebar
 .sidebar-menu,

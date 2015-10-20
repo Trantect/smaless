@@ -6,6 +6,10 @@
 html {
     height: 100%;
 }
+
+a{
+    text-decoration: none;
+}
 /* Body Triggers for layout options 
 ------------------------------------------------------------------
 */
@@ -90,10 +94,10 @@ body {
 .content-wrapper{
     min-height: 100%;
     position: relative;
-    background-color: $color-master-lightest;
+    background-color: $brand-master;
     .content {
         /* Content holder */
-        margin-left: 200px;
+        margin-left: 220px;
         display: block;
         height: 100%;
         padding: 80px 40px 40px 40px;
@@ -121,7 +125,7 @@ body {
     } 
     .footer{
         /* Footer */
-        margin-left: 200px;
+        margin-left: 220px;
         position: absolute;
         left: 0;
         right: 0;

@@ -2,7 +2,7 @@
 // --------------------------------------------------
 
 //Base Grey Color
-$brand-master: #526069 !default;
+$brand-master: #f1f4f5 !default;
 
 // Lighter Grey colors
 $color-master-light:mix($brand-master, #fff, 80%)!default;
@@ -10,8 +10,8 @@ $color-master-lighter:mix($brand-master, #fff, 38%)!default;
 $color-master-lightest:mix($brand-master, #fff, 13%)!default;
 
 // Darker Grey colors
-$color-master-dark:mix($brand-master, #000, 70%)!default;
-$color-master-darker:mix($brand-master, #000, 40%)!default;
+$color-master-dark:mix($brand-master, #000, 25%)!default;
+$color-master-darker:mix($brand-master, #000, 30%)!default;
 // $color-master-darkest:mix($brand-master, #000, 18%)!default;
 
 //Dashboard
@@ -26,14 +26,19 @@ $brand-primary: #1F8FE4 !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #ff6c60 !default;
 $brand-info: #33c5df !default;
+$brand-menu: #263238 !default;
 
 //Mixing Color varriable for creating both light and dark colors
 $mix-percentage-dark: 92% !default;
 $mix-percentage-darker: 75% !default;
 $mix-percentage-light: 80% !default;
 $mix-percentage-lighter: 60% !default;
+$mix-percentage-lightest: 50% !default;
 
 //Lighter colors
+$color-menu-light: mix($brand-menu, $color-white, $mix-percentage-light) !default;
+$color-menu-lightest: mix($brand-menu, $color-white, $mix-percentage-lightest) !default;
+
 $color-success-light: mix($brand-success, $color-white, $mix-percentage-light) !default;
 $color-success-lighter: mix($brand-success, $color-white, $mix-percentage-lighter) !default;
 
@@ -354,13 +359,12 @@ $layout-header-height:60px;
 $layout-mobile-header-height:48px;
 $layout-mobile-logo-scale:0.8;
 $layout-sidepanel-width-collapsed : 70px;
-$sidebar-width:200px;
-$layout-sidepanel-pin-width:250px;
+$layout-sidepanel-pin-width:220px;
 $layout-right-quickview-width: 285px;
 $layout-user-profile-margin:25px;
 $layout-gutter-sm : 5px;
 // siderbar background
-$siderbar-color-bg: ($brand-master, 60%) !default;
+$siderbar-color-bg: $color-primary-light !default;
 
 
 //== Media queries breakpoints
@@ -950,3 +954,7 @@ $page-header-border-color:    ($color-black, 93.5%) !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   ($color-black, 93.5%) !default;
+
+//Transition global options
+$transition-speed: .3s;
+$transition-fn:    ease-in-out;//cubic-bezier(0.32,1.25,0.375,1.15);

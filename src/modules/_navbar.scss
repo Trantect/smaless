@@ -6,37 +6,12 @@
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
-header {
-  background: $brand-primary;
-  float: left;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  > .logo {
-      -webkit-transition: width .3s ease-in-out;
-      -o-transition: width .3s ease-in-out;
-      transition: width .3s ease-in-out;
-      display: block;
-      float: left;
-      height: 50px;
-      line-height: 50px;
-      font-size: 18px;
-      text-align: center;
-      width: $sidebar-width;
-      font-weight: 300;
-      overflow: hidden;
-      float: left;
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-      color: $color-white;
-    }
-}
 
 .navbar {
-  position: fixed;
+  position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
-  border: 1px solid transparent;
+  // border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -260,6 +235,7 @@ header {
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: $line-height-computed;
+    color: $text-color;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -331,9 +307,9 @@ header {
 
   // Vertically center in expanded, horizontal navbar
 
-  // @include navbar-vertical-align($input-height-base);
+//   @include navbar-vertical-align($input-height-base);
 
-  // Undo 100% width for pull classes
+//   Undo 100% width for pull classes
 
 //   @media (min-width: $grid-float-breakpoint) {
 //     width: auto;
@@ -410,7 +386,7 @@ header {
   }
   .navbar-right {
     float: right !important;
-  margin-right: -$navbar-padding-horizontal;
+    margin-right: -$navbar-padding-horizontal;
 
     ~ .navbar-right {
       margin-right: 0;

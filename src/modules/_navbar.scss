@@ -689,3 +689,19 @@ header {
     }
   }
 }
+
+// sass documents
+.activeScroll {
+  font-weight: bold;
+  color:$brand-primary;
+  display:block;
+  > ul{
+    display: block;
+  }
+}
+
+.childHide {
+  color: $brand-primary;
+  display:none;
+  list-style-type:none;
+}

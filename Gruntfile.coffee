@@ -21,6 +21,17 @@ module.exports = (grunt)->
             ext: '.css'
           }
         ]
+    coffee:
+      dev:
+        options:
+          sourceMap:false
+        files:[
+          expand:true
+          cwd:"demo/js/"
+          src:["*.coffee"]
+          dest:"demo/js/"
+          ext:".js"
+        ]
     jade: 
       debug:
         options: 
@@ -28,7 +39,7 @@ module.exports = (grunt)->
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
         files:
-          "demo/sma.html": "demo/sma.jade"
+          "demo/sass.html": "demo/sass.jade"
 
     shell:
       installSASS:
@@ -39,11 +50,12 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
   grunt.loadNpmTasks 'grunt-contrib-sass'
+  grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "default", ["clean:dev","sass:dev","jade:debug"]
+  grunt.registerTask "default", ["clean:dev","sass:dev","coffee:dev","jade:debug"]
   grunt.registerTask "cleanBuild", ["clean:dev"]
   grunt.registerTask "buildDemo", ["jade:debug"]
 

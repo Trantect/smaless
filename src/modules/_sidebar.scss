@@ -15,7 +15,7 @@
     padding: 0;
     > a {
       padding: 12px 5px 12px 15px;
-      color: $color-menu-lightest;
+      color: $color-menu-light;
       display: block;
       > .fa,
       > .glyphicon,
@@ -109,7 +109,7 @@
 }
 
 .main-sidebar{
-  background: $brand-menu;
+  background: $color-menu;
   bottom: 0;
   left: 0;
   overflow: visible;

@@ -3,3 +3,4 @@ build
 .sass-cache
 demo/*.html
 .idea
+bower_components

@@ -1,6 +1,7 @@
+path = require 'path'
+
 module.exports = (grunt)->
   grunt.initConfig
-
     watch:
       scripts:
         files: ['src/*.sass']
@@ -21,9 +22,9 @@ module.exports = (grunt)->
             ext: '.css'
           }
         ]
-    jade: 
+    jade:
       debug:
-        options: 
+        options:
           data:
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
@@ -46,5 +47,10 @@ module.exports = (grunt)->
   grunt.registerTask "default", ["clean:dev","sass:dev","jade:debug"]
   grunt.registerTask "cleanBuild", ["clean:dev"]
   grunt.registerTask "buildDemo", ["jade:debug"]
+
+
+
+
+
 
   

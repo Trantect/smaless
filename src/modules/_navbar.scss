@@ -346,10 +346,10 @@
 // Vertically center a button within a navbar (when *not* in a form).
 
 .navbar-btn {
-  @include navbar-vertical-align($input-height-base);
+//  @include navbar-vertical-align($input-height-base);
 
   &.btn-sm {
-    @include navbar-vertical-align($input-height-small);
+//    @include navbar-vertical-align($input-height-small);
   }
   &.btn-xs {
     @include navbar-vertical-align(22);

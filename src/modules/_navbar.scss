@@ -665,3 +665,61 @@
     }
   }
 }
+
+// sass documents
+  li.active {
+    > a{
+      color: $brand-primary !important;
+      padding-left: 13px;
+    }
+  }
+
+  li.active > ul {
+    display: block;
+  }
+
+  .childHide {
+    display: none;
+    list-style-type: none;
+    padding-left: 0px;
+    > li {
+      padding-bottom: 5px;
+      > a{
+        padding-left: 28px;
+        color: $navbar-default-color;
+      }
+      &.active >a {
+        border-left: 2px solid $brand-primary;
+        padding-left: 26px;
+      }
+    }
+  }
+
+
+.pills {
+  > li {
+    float: left;
+    margin-left: 10px;
+    > a {
+      color: $navbar-default-color;
+    }
+
+    &.active >a {
+     border-left: 2px solid $brand-primary;
+     font-weight: bold;
+    }
+  }
+}
+
+
+.stacked {
+  > li {
+    a {
+      &:hover, &:focus {
+        color: $brand-primary;
+        border-left: 1px solid $brand-primary;
+        }
+      }
+    float: none;
+  }
+}

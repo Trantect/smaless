@@ -39,7 +39,7 @@ module.exports = (grunt)->
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
         files:
-          "demo/sass.html": "demo/sass.jade"
+          "demo/doc.html": "demo/doc.jade"
 
     shell:
       installSASS:

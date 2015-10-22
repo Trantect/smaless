@@ -3,7 +3,7 @@ module.exports = (grunt)->
 
     watch:
       scripts:
-        files: ['src/*.sass']
+        files: ['src/**/*.scss','demo/**/*.jade']
         tasks: ['default']
       options:
         spawn: false
@@ -16,7 +16,7 @@ module.exports = (grunt)->
           {
             expand: true,
             cwd: 'src',
-            src: ['*.sass']
+            src: ['*.scss']
             dest: 'build',
             ext: '.css'
           }
@@ -46,5 +46,6 @@ module.exports = (grunt)->
   grunt.registerTask "default", ["clean:dev","sass:dev","jade:debug"]
   grunt.registerTask "cleanBuild", ["clean:dev"]
   grunt.registerTask "buildDemo", ["jade:debug"]
+
 
   

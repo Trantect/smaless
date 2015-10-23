@@ -49,7 +49,7 @@ body {
       overflow: visible !important;
       -webkit-overflow-scrolling: touch !important;
     }
-    .page-sidebar .sidebar-menu .menu-items {
+    .sidebar-menu .menu-items {
       li {
         &:hover {
           a {
@@ -102,45 +102,20 @@ body {
 
 .content-wrapper {
   min-height: 100%;
+  padding-top: $navbar-height;
+  margin-left: $layout-sidepanel-pin-width;
   position: relative;
   background-color: $body-bg;
   .content-header {
     position: relative;
     padding: 15px 15px 0 15px;
-    // Header Text
-    > h1 {
-      margin: 0;
-      font-size: 24px;
-      > small {
-        font-size: 15px;
-        display: inline-block;
-        padding-left: 4px;
-        font-weight: 300;
-      }
-    }
-    @media (max-width: $screen-sm-max) {
-      > .breadcrumb {
-        position: relative;
-        margin-top: 5px;
-        top: 0;
-        right: 0;
-        float: none;
-        // background: $gray;
-        padding-left: 10px;
-        // li:before {
-        //     color: darken($gray, 20%);
-        // }
-      }
-    }
   }
   .content {
     /* Content holder */
-    margin-left: 220px;
     display: block;
     height: 100%;
     z-index: 10;
-    padding-top: $layout-header-height;
-    padding-bottom: 72px;
+    padding: 15px;
     min-height: 100%;
     transform: transition(all 0.3s ease);
     &.full-width {
@@ -160,20 +135,15 @@ body {
       padding-bottom: 0px;
     }
   }
-  .footer {
+  .main-footer {
     /* Footer */
-    margin-left: 220px;
+    padding: 15px;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     transform: transition(left 0.3s ease);
   }
-}
-
-.content-wrapper, .right-side, .main-footer {
-  margin-left: 220px;
-  z-index: 820;
 }
 
 .layout-top-nav {
@@ -202,11 +172,4 @@ body {
       transform: translate(220px, 0);
     }
   }
-}
-
-.main-footer {
-  background: #fff;
-  padding: 15px;
-  color: #444;
-  border-top: 1px solid #ccc;
 }

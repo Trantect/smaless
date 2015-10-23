@@ -7,7 +7,7 @@ module.exports = (grunt)->
         tasks: ['default']
       options:
         spawn: false
-        debounceDelay: 550
+        debounceDelay: 300
     clean:
       dev: ['build']
     sass:

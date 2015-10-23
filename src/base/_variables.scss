@@ -1,14 +1,14 @@
 // Variables
 // --------------------------------------------------
 
-//== Base Grey Color
+//== Base Gray Color
 // --------------------------------------------------
-$gray-base:              #263238 !default;
+$gray-base:              #2b303b !default;
 $gray-darker:            lighten($gray-base, 10%) !default;
 $gray-dark:              lighten($gray-base, 30%) !default;
-$gray:                   lighten($gray-base, 0%) !default;
+$gray:                   lighten($gray-base, 0%)  !default;
 $gray-light:             lighten($gray-base, 50%) !default;
-$gray-lighter:           lighten($gray-base, 78%) !default;
+$gray-lighter:           lighten($gray-base, 76%) !default;
 
 $color-white: #fff !default;
 $color-black: #000 !default;
@@ -19,13 +19,13 @@ $brand-primary:     #1F8FE4 !default;
 $brand-warning:     #f0ad4e !default;
 $brand-danger:      #ff6c60 !default;
 $brand-info:        #33c5df !default;
+$brand-menu:        $gray-base !default;
 
 //- Mixing Color varriable for creating both light and dark colors
 $mix-percentage-dark:      92% !default;
 $mix-percentage-darker:    75% !default;
 $mix-percentage-light:     80% !default;
 $mix-percentage-lighter:   60% !default;
-$mix-percentage-lightest:  50% !default;
 
 //- Lighter colors
 $color-success-light:      mix($brand-success, $color-white, $mix-percentage-light) !default;
@@ -70,25 +70,24 @@ $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker
 //Menu Animation Curve
 $menu-bezier:.05, .74, .27, .99;
 $menu-icon-size:40px;
-$color-menu :#2b303b;
-$color-menu-dark :mix($color-menu, #000, 77%);
-$color-menu-darker :mix($color-menu, #000, 90%);
+$color-menu-dark :mix($brand-menu, #000, 77%);
+$color-menu-darker :mix($brand-menu, #000, 90%);
 
 //Generating Menu font color
-$color-menu-light :mix($color-menu, #fff, 52%);
+$color-menu-light :mix($brand-menu, #fff, 52%);
 //Menu Font Color
 $color-menu-link-hover:#fff;
 
 //== Layout (sidebar & navbar)
 // --------------------------------------------------
-$layout-header-height:60px;
-$layout-mobile-header-height:48px;
-$layout-mobile-logo-scale:0.8;
+$layout-header-height:              60px;
+$layout-mobile-header-height:       48px;
+$layout-mobile-logo-scale:          0.8;
 $layout-sidepanel-width-collapsed : 70px;
-$layout-sidepanel-pin-width:220px;
-$layout-right-quickview-width: 285px;
-$layout-user-profile-margin:25px;
-$layout-gutter-sm : 5px;
+$layout-sidepanel-pin-width:        220px;
+$layout-right-quickview-width:      285px;
+$layout-user-profile-margin:        25px;
+$layout-gutter-sm :                 5px;
 
 
 //== Scaffolding
@@ -124,7 +123,7 @@ $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
 $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h4:            ceil(($font-size-base * 1.4)) !default; // ~20px (* for content-header *)
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -138,22 +137,6 @@ $headings-font-family:    $font-family-sans-serif !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
-
-
-//== Iconography
-// --------------------------------------------------
-//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
-
-//** Load fonts from this directory.
-
-// [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
-// [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-//$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
-
-//** File name for all font files.
-//$icon-font-name:          "glyphicons-halflings-regular" !default;
-//** Element ID within SVG icon file.
-//$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 
 //== Components

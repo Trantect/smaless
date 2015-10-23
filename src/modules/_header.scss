@@ -6,74 +6,8 @@
   max-height: 100px;
   z-index: 1000;
   width: 100%;
-  > .navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,.08);
-    background: $color-white;
-    height: 50px;
-    transform: transition($transition-speed $transition-fn);
-    margin-bottom: 0;
-    margin-left: $layout-sidepanel-pin-width;
-    border: none;
-    min-height: $navbar-height;
-    border-radius: 0;
-  }
-}
-
-.layout-top-nav .main-header > .navbar {
-  margin-left: 0;
-}
-
-.main-header {
-  #navbar-search-input.form-control {
-    background: $brand-primary;
-    &:focus, &:active {
-      background: $brand-primary;
-    }
-    &:-moz-placeholder {
-      color: #ccc;
-      opacity: 1;
-    }
-    &:-ms-input-placeholder, &::-webkit-input-placeholder {
-      color: #ccc;
-    }
-  }
   .navbar-custom-menu, .navbar-right {
     float: right;
-  }
-  .sidebar-toggle {
-    float: left;
-    background-color: transparent;
-    background-image: none;
-    font-family: fontAwesome;
-    padding: $navbar-padding-vertical $navbar-padding-horizontal;
-    &:before {
-      content: "\f0c9";
-    }
-    &:hover {
-      color: #fff;
-    }
-    &:focus, &:active {
-      background: transparent;
-    }
-    .icon-bar {
-      display: none;
-    }
-  }
-  .navbar .nav > li {
-    &.user > a > {
-      .fa, .glyphicon, .ion {
-        margin-right: 5px;
-      }
-    }
-    > a > .label {
-      position: absolute;
-      top: 9px;
-      right: 7px;
-      text-align: center;
-      font-size: 9px;
-      padding: 2px 3px;
-      line-height: .9;
-    }
   }
   .logo {
     background: $brand-primary;
@@ -98,12 +32,75 @@
   .navbar-brand {
     color: #fff;
   }
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    background: $color-white;
+    height: 50px;
+    transform: transition($transition-speed $transition-fn);
+    margin-bottom: 0;
+    margin-left: $layout-sidepanel-pin-width;
+    border: none;
+    min-height: $navbar-height;
+    border-radius: 0;
+  }
+
+    .sidebar-toggle{
+//      color: $color-white;
+      float: left;
+      background-color: transparent;
+      background-image: none;
+      font-family: fontAwesome;
+      padding: $navbar-padding-vertical $navbar-padding-horizontal;
+      &:before {
+        content: "\f0c9";
+      }
+      &:hover {
+        color: #fff;
+      }
+      &:focus, &:active {
+        background: transparent;
+      }
+      .icon-bar {
+        display: none;
+      }
+    }
 }
+
+.navbar-nav {
+  > li > a {
+    &:hover,
+    &:focus {
+      color: $navbar-default-link-hover-color;
+      background-color: $navbar-default-link-hover-bg;
+    }
+  }
+  > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: $navbar-default-link-active-color;
+      background-color: $navbar-default-link-active-bg;
+    }
+  }
+  > .disabled > a {
+    &,
+    &:hover,
+    &:focus {
+      color: $navbar-default-link-disabled-color;
+      background-color: $navbar-default-link-disabled-bg;
+    }
+  }
+}
+
+.layout-top-nav .main-header > .navbar {
+  margin-left: 0;
+}
+
 
 @media (max-width: $screen-sm-max) {
   .main-header {
     .navbar-custom-menu a, .navbar-right a {
-      color: inherit;
+      color: $color-white;
       background: transparent;
     }
   }

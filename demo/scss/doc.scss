@@ -1,0 +1,154 @@
+.modal-footer {
+  padding-left: 25px;
+  padding-top: 30px;
+  >a{
+    color: #777;
+  }
+}
+
+.line {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 10px;
+}
+
+
+@mixin colorModel($topPx,$topColor,$borderColor) {
+  border-top: $topPx solid $topColor;
+  height: $topPx + -10px;
+  border-left: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+}
+
+.colorModel-master {@include colorModel(40px,#526069,#e8e8e8)}
+.colorModel-primary {@include colorModel(40px,#1f8fe4,#e8e8e8)}
+.colorModel-success {@include colorModel(40px,#00c644,#e8e8e8)}
+.colorModel-danger {@include colorModel(40px,#ff6c60,#e8e8e8)}
+.colorModel-warning {@include colorModel(40px,#f0ad4e,#e8e8e8)}
+.colorModel-menu {@include colorModel(40px,#e9eff8,#e8e8e8)}
+.colorModel-info {@include colorModel(40px,#33c5df,#e8e8e8)}
+.colorModel-bg-dacker {@include colorModel(40px,#21262a,#e8e8e8)}
+.colorModel-bg-dack {@include colorModel(40px,#394349,#e8e8e8)}
+.colorModel-bg-master {@include colorModel(40px,#526069,#e8e8e8)}
+.colorModel-bg-light {@include colorModel(40px,#758087,#e8e8e8)}
+.colorModel-bg-lighter {@include colorModel(40px,#a5acb1,#e8e8e8)}
+.colorModel-bg-lightest {@include colorModel(40px,#f6f7f7,#e8e8e8)}
+
+.content {
+  padding: 5px;
+  color:#777;
+}
+
+.row {
+  padding-bottom: 30px;
+}
+
+
+@mixin disable($leftPx,$leftcolor,$bordercolor){
+  border-left: $leftPx solid $leftcolor;
+  border-top: 1px solid $bordercolor;
+  border-right: 1px solid $bordercolor;
+  margin-top: $leftPx+ -10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: $leftPx+30px;
+
+}
+.bg-primary-lighter{@include disable(30px, #549ccc,#e8e8e8)}
+.bg-success-lighter{@include disable(30px,#00CC99,#e8e8e8)}
+.bg-danger-lighter {@include disable(30px,#cc6b80,#e8e8e8)}
+.bg-warning-lighter{@include disable(30px,#ccc0aa,#e8e8e8)}
+.bg-info-lighter{@include disable(30px,#ddf4fc,#e8e8e8)}
+.bg-default-lighter{@include disable(30px,#fff,#e8e8e8)}
+
+@mixin normal($leftPx,$leftcolor,$bordercolor){
+  border-left: $leftPx solid $leftcolor;
+  border-right: 1px solid $bordercolor;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: $leftPx+30px;
+}
+.bg-primary-light{@include normal(30px,#3399FF,#e8e8e8)}
+.bg-success-light{@include normal(30px,#00CC66,#e8e8e8)}
+.bg-danger-light {@include normal(30px,#cc6e7a,#e8e8e8)}
+.bg-warning-light {@include normal(30px,#cca280,#e8e8e8)}
+.bg-info-light {@include normal(30px,#76b5cc,#e8e8e8)}
+.bg-default-light {@include normal(30px,#fafafa,#e8e8e8)}
+
+@mixin hover($leftPx,$leftcolor,$bordercolor){
+  border-left: $leftPx solid $leftcolor;
+  border-right: 1px solid $bordercolor;
+  border-bottom: 1px solid $bordercolor;
+  margin-bottom: $leftPx+ -10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: $leftPx+30px;
+}
+.bg-primary-dark{@include hover(30px,#3366FF,#e8e8e8)}
+.bg-success-dark {@include hover(30px,#00CC33,#e8e8e8)}
+.bg-danger-dark {@include hover(30px,#cc424c,#e8e8e8)}
+.bg-warning-dark {@include hover(30px,#cc7532,#e8e8e8)}
+.bg-info-dark {@include hover(30px,#62afcc,#e8e8e8)}
+.bg-default-dark {@include hover(30px,#f4f4f4,#e8e8e8)}
+
+
+@mixin button($heightPx,$background-color,$color) {
+  border: none;
+  border-radius: 5px;
+  width: $heightPx+80px;
+  height: $heightPx;
+  font-size: large;
+  color: $color;
+  background-color: $background-color;
+}
+.btn-primary {@include button(40px,#3399FF,white)}
+.btn-success {@include button(40px,#00CC66,white)}
+.btn-danger {@include button(40px,#cc6e7a,white)}
+.btn-warning {@include button(40px,#cc7b64,white)}
+.btn-info {@include button(40px,#42ccc9,white)}
+.btn-default {@include button(40px,#fafafa,black)}
+
+p.content-bg {
+  color: #777;
+  font-size: 13px;
+}
+.content-btn {
+  color: #777;
+}
+.content-div {
+  color: #777;
+  > .btn-color {
+    color: #fa515b;
+    background-color: #fafafa;
+    padding-left: 2px;
+  }
+}
+
+
+// For documents
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 19px;
+  padding-left: 16px;
+}
+
+
+
+@media (min-width: $screen-md-min) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-3 {
+    width: 10%;
+    position:fixed;
+  }
+  .col-md-9 {
+    width: 79%;
+    float: right;
+  }
+  .col-md-4{
+    width: 29.5%;
+  }
+}
+

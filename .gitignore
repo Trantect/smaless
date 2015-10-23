@@ -4,3 +4,5 @@ build
 demo/*.html
 .idea
 bower_components
+demo/scss/*.css
+demo/scss/*.map

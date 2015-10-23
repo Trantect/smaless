@@ -3,7 +3,7 @@ module.exports = (grunt)->
 
     watch:
       scripts:
-        files: ['src/**/*.scss','demo/**/*.jade']
+        files: ['src/**/*.scss','demo/**/*.jade','demo/scss/*.scss']
         tasks: ['default']
       options:
         spawn: false
@@ -18,6 +18,13 @@ module.exports = (grunt)->
             cwd: 'src',
             src: ['*.scss']
             dest: 'build',
+            ext: '.css'
+          },
+          {
+            expand: true,
+            cwd: 'demo',
+            src: ['scss/*.scss']
+            dest: 'demo',
             ext: '.css'
           }
         ]

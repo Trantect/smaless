@@ -1,14 +1,24 @@
+@import "../../src/main";
+
+.top {
+  margin-top:23px;
+}
 .modal-footer {
-  padding-left: 25px;
+  padding-left: 16px;
   padding-top: 30px;
   >a{
-    color: #777;
+    color: $text-color;
   }
 }
 
 .line {
   border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+h4.Second {
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 
@@ -20,19 +30,46 @@
   border-bottom: 1px solid $borderColor;
 }
 
-.colorModel-master {@include colorModel(40px,#526069,#e8e8e8)}
+.colorModel-base {@include colorModel(40px,#263238,#e8e8e8)}
 .colorModel-primary {@include colorModel(40px,#1f8fe4,#e8e8e8)}
 .colorModel-success {@include colorModel(40px,#00c644,#e8e8e8)}
 .colorModel-danger {@include colorModel(40px,#ff6c60,#e8e8e8)}
 .colorModel-warning {@include colorModel(40px,#f0ad4e,#e8e8e8)}
-.colorModel-menu {@include colorModel(40px,#e9eff8,#e8e8e8)}
+.colorModel-menu {@include colorModel(40px,#2b303b,#e8e8e8)}
 .colorModel-info {@include colorModel(40px,#33c5df,#e8e8e8)}
-.colorModel-bg-dacker {@include colorModel(40px,#21262a,#e8e8e8)}
-.colorModel-bg-dack {@include colorModel(40px,#394349,#e8e8e8)}
-.colorModel-bg-master {@include colorModel(40px,#526069,#e8e8e8)}
-.colorModel-bg-light {@include colorModel(40px,#758087,#e8e8e8)}
-.colorModel-bg-lighter {@include colorModel(40px,#a5acb1,#e8e8e8)}
-.colorModel-bg-lightest {@include colorModel(40px,#f6f7f7,#e8e8e8)}
+.colorModel-gray-dacker {@include colorModel(40px,#3b464c,#e8e8e8)}
+.colorModel-gray-dack {@include colorModel(40px,#7D8488,#e8e8e8)}
+.colorModel-gray {@include colorModel(40px,#263238,#e8e8e8)}
+.colorModel-gray-light {@include colorModel(40px,#92989b,#e8e8e8)}
+.colorModel-gray-lighter {@include colorModel(40px,#2a363a,#e8e8e8)}
+.colorModel-primary-dacker {@include  colorModel(40px,#166bab,#e8e8e8)}
+.colorModel-primary-dack {@include  colorModel(40px,#1d84d2,#e8e8e8)}
+.colorModel-primary {@include  colorModel(40px,#1f8fe4,#e8e8e8)}
+.colorModel-primary-light {@include  colorModel(40px,#4ca5e9,#e8e8e8)}
+.colorModel-primary-lighter {@include  colorModel(40px,#79bcef,#e8e8e8)}
+.colorModel-success-dacker {@include  colorModel(40px,#009633,#e8e8e8)}
+.colorModel-success-dack {@include  colorModel(40px,#01b73f,#e8e8e8)}
+.colorModel-success {@include  colorModel(40px,#00c644,#e8e8e8)}
+.colorModel-success-light {@include  colorModel(40px,#32d068,#e8e8e8)}
+.colorModel-success-lighter {@include  colorModel(40px,#66dd8f,#e8e8e8)}
+.colorModel-danger-dacker {@include  colorModel(40px,#bf5142,#e8e8e8)}
+.colorModel-danger-dack {@include  colorModel(40px,#eb6450,#e8e8e8)}
+.colorModel-danger {@include  colorModel(40px,#ff6c58,#e8e8e8)}
+.colorModel-danger-light {@include  colorModel(40px,#ff8879,#e8e8e8)}
+.colorModel-danger-lighter {@include  colorModel(40px,#ffa79b,#e8e8e8)}
+.colorModel-warning-dacker {@include  colorModel(40px,#b4823b,#e8e8e8)}
+.colorModel-warning-dack {@include  colorModel(40px,#dda048,#e8e8e8)}
+.colorModel-warning {@include  colorModel(40px,#f0ad4e,#e8e8e8)}
+.colorModel-warning-light {@include  colorModel(40px,#f3bd71,#e8e8e8)}
+.colorModel-warning-lighter {@include  colorModel(40px,#f6ce95,#e8e8e8)}
+.colorModel-info-dacker {@include  colorModel(40px,#2694a7,#e8e8e8)}
+.colorModel-info-dack {@include  colorModel(40px,#2fb6ce,#e8e8e8)}
+.colorModel-info {@include  colorModel(40px,#33c5df,#e8e8e8)}
+.colorModel-info-light {@include  colorModel(40px,#5cd1e5,#e8e8e8)}
+.colorModel-info-lighter {@include  colorModel(40px,#85dcec,#e8e8e8)}
+.colorModel-menu-dacker {@include  colorModel(40px,#e9eff8,#e8e8e8)}
+.colorModel-menu {@include  colorModel(40px,#2b303b,#e8e8e8)}
+.colorModel-menu-light {@include  colorModel(40px,#e9eff8,#e8e8e8)}
 
 .content {
   padding: 5px;
@@ -54,11 +91,11 @@
   height: $leftPx+30px;
 
 }
-.bg-primary-lighter{@include disable(30px, #549ccc,#e8e8e8)}
-.bg-success-lighter{@include disable(30px,#00CC99,#e8e8e8)}
-.bg-danger-lighter {@include disable(30px,#cc6b80,#e8e8e8)}
-.bg-warning-lighter{@include disable(30px,#ccc0aa,#e8e8e8)}
-.bg-info-lighter{@include disable(30px,#ddf4fc,#e8e8e8)}
+.bg-primary-lighter{@include disable(30px,#79bcef,#e8e8e8)}
+.bg-success-lighter{@include disable(30px,#66dd8f,#e8e8e8)}
+.bg-danger-lighter {@include disable(30px,#ffa79b,#e8e8e8)}
+.bg-warning-lighter{@include disable(30px,#f6ce95,#e8e8e8)}
+.bg-info-lighter{@include disable(30px,#85dcec,#e8e8e8)}
 .bg-default-lighter{@include disable(30px,#fff,#e8e8e8)}
 
 @mixin normal($leftPx,$leftcolor,$bordercolor){
@@ -68,11 +105,11 @@
   padding-left: 10px;
   height: $leftPx+30px;
 }
-.bg-primary-light{@include normal(30px,#3399FF,#e8e8e8)}
-.bg-success-light{@include normal(30px,#00CC66,#e8e8e8)}
-.bg-danger-light {@include normal(30px,#cc6e7a,#e8e8e8)}
-.bg-warning-light {@include normal(30px,#cca280,#e8e8e8)}
-.bg-info-light {@include normal(30px,#76b5cc,#e8e8e8)}
+.bg-primary-light{@include normal(30px,#4ca5e9,#e8e8e8)}
+.bg-success-light{@include normal(30px,#32d068,#e8e8e8)}
+.bg-danger-light {@include normal(30px,#ff8879,#e8e8e8)}
+.bg-warning-light {@include normal(30px,#f3bd71,#e8e8e8)}
+.bg-info-light {@include normal(30px,#5cd1e5,#e8e8e8)}
 .bg-default-light {@include normal(30px,#fafafa,#e8e8e8)}
 
 @mixin hover($leftPx,$leftcolor,$bordercolor){
@@ -84,29 +121,14 @@
   padding-left: 10px;
   height: $leftPx+30px;
 }
-.bg-primary-dark{@include hover(30px,#3366FF,#e8e8e8)}
-.bg-success-dark {@include hover(30px,#00CC33,#e8e8e8)}
+.bg-primary-dark{@include hover(30px,#1d84d2,#e8e8e8)}
+.bg-success-dark {@include hover(30px,#01b73f,#e8e8e8)}
 .bg-danger-dark {@include hover(30px,#cc424c,#e8e8e8)}
-.bg-warning-dark {@include hover(30px,#cc7532,#e8e8e8)}
-.bg-info-dark {@include hover(30px,#62afcc,#e8e8e8)}
+.bg-warning-dark {@include hover(30px,#dda048,#e8e8e8)}
+.bg-info-dark {@include hover(30px,#2fb6ce,#e8e8e8)}
 .bg-default-dark {@include hover(30px,#f4f4f4,#e8e8e8)}
 
 
-@mixin button($heightPx,$background-color,$color) {
-  border: none;
-  border-radius: 5px;
-  width: $heightPx+80px;
-  height: $heightPx;
-  font-size: large;
-  color: $color;
-  background-color: $background-color;
-}
-.btn-primary {@include button(40px,#3399FF,white)}
-.btn-success {@include button(40px,#00CC66,white)}
-.btn-danger {@include button(40px,#cc6e7a,white)}
-.btn-warning {@include button(40px,#cc7b64,white)}
-.btn-info {@include button(40px,#42ccc9,white)}
-.btn-default {@include button(40px,#fafafa,black)}
 
 p.content-bg {
   color: #777;
@@ -116,7 +138,7 @@ p.content-bg {
   color: #777;
 }
 .content-div {
-  color: #777;
+ color: #777;
   > .btn-color {
     color: #fa515b;
     background-color: #fafafa;
@@ -149,6 +171,34 @@ p.content-bg {
   }
   .col-md-4{
     width: 29.5%;
+  }
+}
+
+.nav {
+  > .active >a {
+    border-left: 2px solid $brand-primary;
+    font-weight: bold;
+    color: $brand-primary !important;
+    padding-left: 13px;
+
+    &:hover,&:focus {
+      border-left: 2px solid $brand-primary;
+      padding-left: 13px;
+    }
+  }
+}
+.pills {
+  >li >a {
+    color: $text-color;
+    margin-bottom: 3px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    &:hover,&:focus {
+      border-left: 1px solid $brand-primary;
+      color: $brand-primary !important;
+      padding-left: 14px;
+    }
   }
 }
 

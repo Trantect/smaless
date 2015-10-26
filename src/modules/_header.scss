@@ -10,7 +10,8 @@
     float: right;
   }
   .logo {
-    background: $brand-primary;
+    background: $color-menu-dark;
+    border-bottom: 1px solid $color-menu-darker;
     transform: transition($transition-speed $transition-fn);
     display: block;
     float: left;
@@ -43,25 +44,33 @@
     min-height: $navbar-height;
     border-radius: 0;
   }
-
     .sidebar-toggle{
-//      color: $color-white;
+      color: $gray-dark;
       float: left;
       background-color: transparent;
       background-image: none;
       font-family: fontAwesome;
       padding: $navbar-padding-vertical $navbar-padding-horizontal;
       &:before {
-        content: "\f0c9";
+        content: "\f03b";
       }
       &:hover {
-        color: #fff;
+        color: $gray-darker;
       }
       &:focus, &:active {
         background: transparent;
       }
       .icon-bar {
         display: none;
+      }
+    }
+    .navbar-custom-menu{
+      color: $gray-dark;
+      &:hover {
+        color: $gray-darker;
+      }
+      &:focus, &:active {
+        background: transparent;
       }
     }
 }
@@ -100,7 +109,7 @@
 @media (max-width: $screen-sm-max) {
   .main-header {
     .navbar-custom-menu a, .navbar-right a {
-      color: $color-white;
+      color: $gray-dark;
       background: transparent;
     }
   }

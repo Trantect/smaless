@@ -23,6 +23,15 @@
         width: 20px;
       }
     }
+    &:hover, &.open {
+      background: $color-menu-darkest;
+    }
+    &.active {
+      background: $brand-primary;
+      & > a {
+        color: #fff;
+      }
+    }
     .label,
     .badge {
       margin-top: 3px;
@@ -56,19 +65,28 @@
     padding:0;
     margin:0;
     padding-left: 5px;
-    .treeview-menu {
-      padding-left: 20px;
-    }
+    padding-left: 20px;
     > li {
       margin: 0;
       > a {
         padding: 5px 5px 5px 15px;
         display: block;
+        color: $color-menu-light;
+        background: $color-menu-darker;
         font-size: 14px;
         > .fa,
         > .glyphicon,
         > .ion {
           width: 20px;
+        }
+        &:hover, &.open {
+          background: $color-menu-darkest;
+        }
+        &.active {
+          background: $brand-primary;
+          & > a {
+            color: #fff;
+          }
         }
         > .fa-angle-left,
         > .fa-angle-down {

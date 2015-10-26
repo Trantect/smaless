@@ -1,28 +1,37 @@
 @import "../../src/main";
 
 .top {
-  margin-top:23px;
+  margin-top:20px;
 }
 .modal-footer {
-  padding-left: 16px;
-  padding-top: 30px;
-  >a{
+  padding-top: 25px;
+  > a {
     color: $text-color;
+    padding-left: 13px;
+    &:hover , &:focus {
+      color: $brand-primary;
+      border-left: 1px solid $brand-primary;
+      padding-left: 12px;
+    }
   }
 }
 
 .line {
   border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 h4.Second {
   margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
+.btn {
+  margin-top: 15px;
+}
 
-//For Buttons
+//For Color
 @mixin colorModel($topPx,$topColor,$borderColor) {
   border-top: $topPx solid $topColor;
   height: $topPx + -10px;
@@ -68,22 +77,18 @@ h4.Second {
 .colorModel-info {@include  colorModel(40px,$brand-info,#e8e8e8)}
 .colorModel-info-light {@include  colorModel(40px,$color-info-light,#e8e8e8)}
 .colorModel-info-lighter {@include  colorModel(40px,$color-info-lighter,#e8e8e8)}
-.colorModel-menu-dark {@include  colorModel(40px,$color-menu-darker,#e8e8e8)}
-.colorModel-menu-darker {@include  colorModel(40px,$color-menu-dark,#e8e8e8)}
+.colorModel-menu-darker {@include  colorModel(40px,$color-menu-darker,#e8e8e8)}
+.colorModel-menu {@include  colorModel(40px,$color-menu-dark,#e8e8e8)}
 .colorModel-menu-light {@include  colorModel(40px,$color-menu-light,#e8e8e8)}
 
 .content {
   padding: 5px;
   color:#777;
-  font-size: $font-size-small;
-}
-
-.row {
-  padding-bottom: 30px;
+  font-size: 13px;
 }
 
 
-//For color
+//For buttons
 @mixin disable($leftPx,$leftcolor,$bordercolor){
   border-left: $leftPx solid $leftcolor;
   border-top: 1px solid $bordercolor;
@@ -94,37 +99,37 @@ h4.Second {
   height: $leftPx+30px;
 
 }
-.bg-primary-lighter{@include disable(30px,$color-primary-lighter,#e8e8e8)}
-.bg-success-lighter{@include disable(30px,$color-success-lighter,#e8e8e8)}
+.bg-primary-lighter {@include disable(30px,$color-primary-lighter,#e8e8e8)}
+.bg-success-lighter {@include disable(30px,$color-success-lighter,#e8e8e8)}
 .bg-danger-lighter {@include disable(30px,$color-danger-lighter,#e8e8e8)}
-.bg-warning-lighter{@include disable(30px,$color-warning-lighter,#e8e8e8)}
-.bg-info-lighter{@include disable(30px,$color-info-lighter,#e8e8e8)}
-.bg-default-lighter{@include disable(30px,#fff,#e8e8e8)}
+.bg-warning-lighter {@include disable(30px,$color-warning-lighter,#e8e8e8)}
+.bg-info-lighter {@include disable(30px,$color-info-lighter,#e8e8e8)}
+.bg-default-lighter {@include disable(30px,#fff,#e8e8e8)}
 
 @mixin normal($leftPx,$leftcolor,$bordercolor){
   border-left: $leftPx solid $leftcolor;
   border-right: 1px solid $bordercolor;
   padding-top: 5px;
   padding-left: 10px;
-  height: $leftPx+30px;
+  height: $leftPx + 30px;
 }
-.bg-primary-light{@include normal(30px,$color-primary-light,#e8e8e8)}
-.bg-success-light{@include normal(30px,$color-success-light,#e8e8e8)}
+.bg-primary-light {@include normal(30px,$color-primary-light,#e8e8e8)}
+.bg-success-light {@include normal(30px,$color-success-light,#e8e8e8)}
 .bg-danger-light {@include normal(30px,$color-danger-light,#e8e8e8)}
 .bg-warning-light {@include normal(30px,$color-warning-light,#e8e8e8)}
 .bg-info-light {@include normal(30px,$color-info-light,#e8e8e8)}
 .bg-default-light {@include normal(30px,#fafafa,#e8e8e8)}
 
-@mixin hover($leftPx,$leftcolor,$bordercolor){
+@mixin hover($leftPx,$leftcolor,$bordercolor) {
   border-left: $leftPx solid $leftcolor;
   border-right: 1px solid $bordercolor;
   border-bottom: 1px solid $bordercolor;
   margin-bottom: $leftPx+ -10px;
   padding-top: 5px;
   padding-left: 10px;
-  height: $leftPx+30px;
+  height: $leftPx + 30px;
 }
-.bg-primary-dark{@include hover(30px,$color-primary-dark,#e8e8e8)}
+.bg-primary-dark {@include hover(30px,$color-primary-dark,#e8e8e8)}
 .bg-success-dark {@include hover(30px,$color-success-dark,#e8e8e8)}
 .bg-danger-dark {@include hover(30px,$color-danger-dark,#e8e8e8)}
 .bg-warning-dark {@include hover(30px,$color-warning-dark,#e8e8e8)}
@@ -135,7 +140,7 @@ h4.Second {
 
 p.content-bg {
   color: #777;
-  font-size: $font-size-small;
+  font-size: 13px;
 }
 .content-div {
  color: #777;
@@ -179,25 +184,23 @@ p.content-bg {
     border-left: 2px solid $brand-primary;
     font-weight: bold;
     color: $brand-primary !important;
-    padding-left: 13px;
+    padding-left: 12px;
 
-    &:hover,&:focus {
+    &:hover , &:focus {
       border-left: 2px solid $brand-primary;
-      padding-left: 13px;
+      padding-left: 12px;
     }
   }
 }
 .pills {
-  >li >a {
+  > li > a {
     color: $text-color;
     margin-bottom: 3px;
-    padding-right: 1px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    &:hover,&:focus {
+    padding: 2px 2px 2px 14px;
+    &:hover , &:focus {
       border-left: 1px solid $brand-primary;
       color: $brand-primary !important;
-      padding-left: 14px;
+      padding-left: 13px;
     }
   }
 }

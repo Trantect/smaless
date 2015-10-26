@@ -8,12 +8,14 @@ html(lang="en")
     meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name="viewport")
     meta(name="viewport", content="width=device-width")
     link(href="../build/main.css", rel="stylesheet")
-  body.sidebar-mini
+    script(src="js/sidebar.js")
+
+  body
     header.main-header
       a.logo(href="/")
         | LOGO
       nav.navbar.navbar-static-top
-        a.sidebar-toggle(href="#", data-toggle="offcanvas", role="button")
+        a.sidebar-toggle(href="/", data-toggle="offcanvas", role="button")
           span.sr-only
           span.icon-bar
           span.icon-bar
@@ -34,42 +36,63 @@ html(lang="en")
               a(href="/") F
     nav.main-sidebar
       ul.sidebar-menu
-        li.active
+        li
           a(href="/")
             i.fa.fa-home
             | 首页
-        li
-          a(href="gird")
+        li.treeview
+          a(href="#",data-toggle="dropdown",aria-haspopup="true", aria-expanded="false")
+            i.fa.fa-bank
             | 终端升级
-        li
-          a(href="typography")
+            i.fa.fa-angle-down.pull-right
+          ul.treeview-menu.menu-open
+            li
+              a(href="#")
+                i.fa.fa-bank
+                | 终端升级
+            li
+              a(href="#")
+                i.fa.fa-bank
+                | 终端升级
+        li.active
+          a(href="/")
+            i.fa.fa-edit
             | 软件管理
         li
           a(href="#tables")
+            i.fa.fa-beer
             | 统计报表
         li
           a(href="forms")
+            i.fa.fa-bell
             | 安全日志
         li
           a(href="buttons")
+            i.fa.fa-cab
             | 服务日志
         li
           a(href="responsive")
+            i.fa.fa-calendar
             | 当前任务
         li
           a(href="responsive")
+            i.fa.fa-coffee
             | 历史任务
         li
           a(href="responsive")
+            i.fa.fa-futbol-o
             | 帐号管理
         li
           a(href="responsive")
+            i.fa.fa-heartbeat
             | 分组管理
         li
           a(href="responsive")
+            i.fa.fa-phone
             | 定时体检
         li
           a(href="responsive")
+            i.fa.fa-pie-chart
             | 设置中心
     //- Begin include files
     .content-wrapper
@@ -77,13 +100,15 @@ html(lang="en")
         h4 首页
       .content
         button.btn.btn-primary(type="button") Left
-        h1 hi
-        h1 hi
+        button.btn.btn-success(type="button") Left
+        button.btn.btn-danger(type="button") Left
+        button.btn.btn-warning(type="button") Left
+        button.btn.btn-default(type="button") Left
+        button.btn.btn-info(type="button") Left
       footer.main-footer
         .pull-right
           b Version
           | 2.0
-        p.copyright
+        span.copyright
           | &#169; 2015
-          a(href="http://www.creative-tim.com") Creative Tim
-          | , made with love for a better web
+          | 启明星辰

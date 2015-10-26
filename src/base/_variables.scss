@@ -7,7 +7,7 @@ $gray-base:              #2b303b !default;
 $gray-darker:            lighten($gray-base, 10%) !default;
 $gray-dark:              lighten($gray-base, 30%) !default;
 $gray:                   lighten($gray-base, 0%)  !default;
-$gray-light:             lighten($gray-base, 50%) !default;
+$gray-light:             lighten($gray-base, 70%) !default;
 $gray-lighter:           lighten($gray-base, 76%) !default;
 
 $color-white: #fff !default;
@@ -15,9 +15,9 @@ $color-black: #000 !default;
 
 $brand-success:     #00c644 !default;
 $brand-complete:    #2979fb !default;
-$brand-primary:     #1F8FE4 !default;
+$brand-primary:     #039BE5 !default;
 $brand-warning:     #f0ad4e !default;
-$brand-danger:      #ff6c60 !default;
+$brand-danger:      #f55753 !default;
 $brand-info:        #33c5df !default;
 $brand-menu:        $gray-base !default;
 
@@ -70,8 +70,9 @@ $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker
 //Menu Animation Curve
 $menu-bezier:.05, .74, .27, .99;
 $menu-icon-size:40px;
-$color-menu-dark :mix($brand-menu, #000, 77%);
-$color-menu-darker :mix($brand-menu, #000, 90%);
+$color-menu-dark :mix($brand-menu, #000, 90%);
+$color-menu-darker :mix($brand-menu, #000, 80%);
+$color-menu-darkest: mix($brand-menu, #000, 75%);
 
 //Generating Menu font color
 $color-menu-light :mix($brand-menu, #fff, 52%);
@@ -183,29 +184,29 @@ $caret-width-large:         5px !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              $gray-darker !default;
+$btn-default-bg:                 #e4eaec !default;
+$btn-default-border:             #e4eaec !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             $btn-primary-bg !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-border:             $btn-success-bg !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-border:                $btn-info-bg !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-border:             $btn-warning-bg !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-border:              $btn-danger-bg !default;
 
 $btn-link-disabled-color:        ($color-black, 46.7%) !default; // #777
 
@@ -346,7 +347,7 @@ $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 $container-lg:                 $container-large-desktop !default;
 
 
-//== Navbar
+//== Navbar (header)
 // --------------------------------------------------
 //##
 
@@ -358,8 +359,8 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-color:             $gray-dark !default;
+$navbar-default-bg:                $color-white !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links

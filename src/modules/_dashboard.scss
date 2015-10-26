@@ -101,8 +101,8 @@ body {
 }
 
 .content-wrapper {
+  top: $navbar-height;
   min-height: 100%;
-  padding-top: $navbar-height;
   margin-left: $layout-sidepanel-pin-width;
   position: relative;
   background-color: $body-bg;
@@ -112,6 +112,7 @@ body {
   }
   .content {
     /* Content holder */
+    padding-top: $navbar-height;
     display: block;
     height: 100%;
     z-index: 10;
@@ -137,6 +138,8 @@ body {
   }
   .main-footer {
     /* Footer */
+    color: $gray-dark;
+    border-top: 1px solid $gray-light;
     padding: 15px;
     position: absolute;
     left: 0;

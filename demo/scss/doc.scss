@@ -22,6 +22,7 @@ h4.Second {
 }
 
 
+//For Buttons
 @mixin colorModel($topPx,$topColor,$borderColor) {
   border-top: $topPx solid $topColor;
   height: $topPx + -10px;
@@ -30,50 +31,51 @@ h4.Second {
   border-bottom: 1px solid $borderColor;
 }
 
-.colorModel-base {@include colorModel(40px,#263238,#e8e8e8)}
-.colorModel-primary {@include colorModel(40px,#1f8fe4,#e8e8e8)}
-.colorModel-success {@include colorModel(40px,#00c644,#e8e8e8)}
-.colorModel-danger {@include colorModel(40px,#ff6c60,#e8e8e8)}
-.colorModel-warning {@include colorModel(40px,#f0ad4e,#e8e8e8)}
-.colorModel-menu {@include colorModel(40px,#2b303b,#e8e8e8)}
-.colorModel-info {@include colorModel(40px,#33c5df,#e8e8e8)}
-.colorModel-gray-dacker {@include colorModel(40px,#3b464c,#e8e8e8)}
-.colorModel-gray-dack {@include colorModel(40px,#7D8488,#e8e8e8)}
-.colorModel-gray {@include colorModel(40px,#263238,#e8e8e8)}
-.colorModel-gray-light {@include colorModel(40px,#92989b,#e8e8e8)}
-.colorModel-gray-lighter {@include colorModel(40px,#2a363a,#e8e8e8)}
-.colorModel-primary-dacker {@include  colorModel(40px,#166bab,#e8e8e8)}
-.colorModel-primary-dack {@include  colorModel(40px,#1d84d2,#e8e8e8)}
-.colorModel-primary {@include  colorModel(40px,#1f8fe4,#e8e8e8)}
-.colorModel-primary-light {@include  colorModel(40px,#4ca5e9,#e8e8e8)}
-.colorModel-primary-lighter {@include  colorModel(40px,#79bcef,#e8e8e8)}
-.colorModel-success-dacker {@include  colorModel(40px,#009633,#e8e8e8)}
-.colorModel-success-dack {@include  colorModel(40px,#01b73f,#e8e8e8)}
-.colorModel-success {@include  colorModel(40px,#00c644,#e8e8e8)}
-.colorModel-success-light {@include  colorModel(40px,#32d068,#e8e8e8)}
-.colorModel-success-lighter {@include  colorModel(40px,#66dd8f,#e8e8e8)}
-.colorModel-danger-dacker {@include  colorModel(40px,#bf5142,#e8e8e8)}
-.colorModel-danger-dack {@include  colorModel(40px,#eb6450,#e8e8e8)}
-.colorModel-danger {@include  colorModel(40px,#ff6c58,#e8e8e8)}
-.colorModel-danger-light {@include  colorModel(40px,#ff8879,#e8e8e8)}
-.colorModel-danger-lighter {@include  colorModel(40px,#ffa79b,#e8e8e8)}
-.colorModel-warning-dacker {@include  colorModel(40px,#b4823b,#e8e8e8)}
-.colorModel-warning-dack {@include  colorModel(40px,#dda048,#e8e8e8)}
-.colorModel-warning {@include  colorModel(40px,#f0ad4e,#e8e8e8)}
-.colorModel-warning-light {@include  colorModel(40px,#f3bd71,#e8e8e8)}
-.colorModel-warning-lighter {@include  colorModel(40px,#f6ce95,#e8e8e8)}
-.colorModel-info-dacker {@include  colorModel(40px,#2694a7,#e8e8e8)}
-.colorModel-info-dack {@include  colorModel(40px,#2fb6ce,#e8e8e8)}
-.colorModel-info {@include  colorModel(40px,#33c5df,#e8e8e8)}
-.colorModel-info-light {@include  colorModel(40px,#5cd1e5,#e8e8e8)}
-.colorModel-info-lighter {@include  colorModel(40px,#85dcec,#e8e8e8)}
-.colorModel-menu-dacker {@include  colorModel(40px,#e9eff8,#e8e8e8)}
-.colorModel-menu {@include  colorModel(40px,#2b303b,#e8e8e8)}
-.colorModel-menu-light {@include  colorModel(40px,#e9eff8,#e8e8e8)}
+.colorModel-base {@include colorModel(40px,$gray-base,#e8e8e8)}
+.colorModel-primary {@include colorModel(40px,$brand-primary,#e8e8e8)}
+.colorModel-success {@include colorModel(40px,$brand-success,#e8e8e8)}
+.colorModel-danger {@include colorModel(40px,$brand-danger,#e8e8e8)}
+.colorModel-warning {@include colorModel(40px,$brand-warning,#e8e8e8)}
+.colorModel-menu {@include colorModel(40px,$brand-menu,#e8e8e8)}
+.colorModel-info {@include colorModel(40px,$brand-info,#e8e8e8)}
+.colorModel-gray-darker {@include colorModel(40px,$gray-darker,#e8e8e8)}
+.colorModel-gray-dark {@include colorModel(40px,$gray-dark,#e8e8e8)}
+.colorModel-gray {@include colorModel(40px,$gray,#e8e8e8)}
+.colorModel-gray-light {@include colorModel(40px,$gray-light,#e8e8e8)}
+.colorModel-gray-lighter {@include colorModel(40px,$gray-lighter,#e8e8e8)}
+.colorModel-primary-darker {@include  colorModel(40px,$color-primary-darker,#e8e8e8)}
+.colorModel-primary-dark {@include  colorModel(40px,$color-primary-dark,#e8e8e8)}
+.colorModel-primary {@include  colorModel(40px,$brand-primary,#e8e8e8)}
+.colorModel-primary-light {@include  colorModel(40px,$color-primary-light,#e8e8e8)}
+.colorModel-primary-lighter {@include  colorModel(40px,$color-primary-lighter,#e8e8e8)}
+.colorModel-success-darker {@include  colorModel(40px,$color-success-darker,#e8e8e8)}
+.colorModel-success-dark {@include  colorModel(40px,$color-success-dark,#e8e8e8)}
+.colorModel-success {@include  colorModel(40px,$brand-success,#e8e8e8)}
+.colorModel-success-light {@include  colorModel(40px,$color-success-light,#e8e8e8)}
+.colorModel-success-lighter {@include  colorModel(40px,$color-success-lighter,#e8e8e8)}
+.colorModel-danger-darker {@include  colorModel(40px,$color-danger-darker,#e8e8e8)}
+.colorModel-danger-dark {@include  colorModel(40px,$color-danger-dark,#e8e8e8)}
+.colorModel-danger {@include  colorModel(40px,$brand-danger,#e8e8e8)}
+.colorModel-danger-light {@include  colorModel(40px,$color-danger-light,#e8e8e8)}
+.colorModel-danger-lighter {@include  colorModel(40px,$color-danger-lighter,#e8e8e8)}
+.colorModel-warning-darker {@include  colorModel(40px,$color-warning-darker,#e8e8e8)}
+.colorModel-warning-dark {@include  colorModel(40px,$color-warning-dark,#e8e8e8)}
+.colorModel-warning {@include  colorModel(40px,$brand-warning,#e8e8e8)}
+.colorModel-warning-light {@include  colorModel(40px,$color-warning-light,#e8e8e8)}
+.colorModel-warning-lighter {@include  colorModel(40px,$color-warning-lighter,#e8e8e8)}
+.colorModel-info-darker {@include  colorModel(40px,$color-info-darker,#e8e8e8)}
+.colorModel-info-dark {@include  colorModel(40px,$color-info-dark,#e8e8e8)}
+.colorModel-info {@include  colorModel(40px,$brand-info,#e8e8e8)}
+.colorModel-info-light {@include  colorModel(40px,$color-info-light,#e8e8e8)}
+.colorModel-info-lighter {@include  colorModel(40px,$color-info-lighter,#e8e8e8)}
+.colorModel-menu-dark {@include  colorModel(40px,$color-menu-darker,#e8e8e8)}
+.colorModel-menu-darker {@include  colorModel(40px,$color-menu-dark,#e8e8e8)}
+.colorModel-menu-light {@include  colorModel(40px,$color-menu-light,#e8e8e8)}
 
 .content {
   padding: 5px;
   color:#777;
+  font-size: $font-size-small;
 }
 
 .row {
@@ -81,6 +83,7 @@ h4.Second {
 }
 
 
+//For color
 @mixin disable($leftPx,$leftcolor,$bordercolor){
   border-left: $leftPx solid $leftcolor;
   border-top: 1px solid $bordercolor;
@@ -91,11 +94,11 @@ h4.Second {
   height: $leftPx+30px;
 
 }
-.bg-primary-lighter{@include disable(30px,#79bcef,#e8e8e8)}
-.bg-success-lighter{@include disable(30px,#66dd8f,#e8e8e8)}
-.bg-danger-lighter {@include disable(30px,#ffa79b,#e8e8e8)}
-.bg-warning-lighter{@include disable(30px,#f6ce95,#e8e8e8)}
-.bg-info-lighter{@include disable(30px,#85dcec,#e8e8e8)}
+.bg-primary-lighter{@include disable(30px,$color-primary-lighter,#e8e8e8)}
+.bg-success-lighter{@include disable(30px,$color-success-lighter,#e8e8e8)}
+.bg-danger-lighter {@include disable(30px,$color-danger-lighter,#e8e8e8)}
+.bg-warning-lighter{@include disable(30px,$color-warning-lighter,#e8e8e8)}
+.bg-info-lighter{@include disable(30px,$color-info-lighter,#e8e8e8)}
 .bg-default-lighter{@include disable(30px,#fff,#e8e8e8)}
 
 @mixin normal($leftPx,$leftcolor,$bordercolor){
@@ -105,11 +108,11 @@ h4.Second {
   padding-left: 10px;
   height: $leftPx+30px;
 }
-.bg-primary-light{@include normal(30px,#4ca5e9,#e8e8e8)}
-.bg-success-light{@include normal(30px,#32d068,#e8e8e8)}
-.bg-danger-light {@include normal(30px,#ff8879,#e8e8e8)}
-.bg-warning-light {@include normal(30px,#f3bd71,#e8e8e8)}
-.bg-info-light {@include normal(30px,#5cd1e5,#e8e8e8)}
+.bg-primary-light{@include normal(30px,$color-primary-light,#e8e8e8)}
+.bg-success-light{@include normal(30px,$color-success-light,#e8e8e8)}
+.bg-danger-light {@include normal(30px,$color-danger-light,#e8e8e8)}
+.bg-warning-light {@include normal(30px,$color-warning-light,#e8e8e8)}
+.bg-info-light {@include normal(30px,$color-info-light,#e8e8e8)}
 .bg-default-light {@include normal(30px,#fafafa,#e8e8e8)}
 
 @mixin hover($leftPx,$leftcolor,$bordercolor){
@@ -121,21 +124,18 @@ h4.Second {
   padding-left: 10px;
   height: $leftPx+30px;
 }
-.bg-primary-dark{@include hover(30px,#1d84d2,#e8e8e8)}
-.bg-success-dark {@include hover(30px,#01b73f,#e8e8e8)}
-.bg-danger-dark {@include hover(30px,#cc424c,#e8e8e8)}
-.bg-warning-dark {@include hover(30px,#dda048,#e8e8e8)}
-.bg-info-dark {@include hover(30px,#2fb6ce,#e8e8e8)}
+.bg-primary-dark{@include hover(30px,$color-primary-dark,#e8e8e8)}
+.bg-success-dark {@include hover(30px,$color-success-dark,#e8e8e8)}
+.bg-danger-dark {@include hover(30px,$color-danger-dark,#e8e8e8)}
+.bg-warning-dark {@include hover(30px,$color-warning-dark,#e8e8e8)}
+.bg-info-dark {@include hover(30px,$color-info-dark,#e8e8e8)}
 .bg-default-dark {@include hover(30px,#f4f4f4,#e8e8e8)}
 
 
 
 p.content-bg {
   color: #777;
-  font-size: 13px;
-}
-.content-btn {
-  color: #777;
+  font-size: $font-size-small;
 }
 .content-div {
  color: #777;

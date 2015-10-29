@@ -12,10 +12,12 @@
   "dependencies": {
   },
   "ignore": [
-     "**/.*",
-     "node_modules",
-     "bower_components",
-     "Gruntfile.coffee",
-     "package.json"
+    "fonts",
+    "src",
+    "demo",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.coffee",
+    "package.json"
   ]
 }

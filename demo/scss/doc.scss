@@ -79,9 +79,9 @@ h4.Second {
 .colorModel-info {@include  colorModel($brand-info)}
 .colorModel-info-light {@include  colorModel($color-info-light)}
 .colorModel-info-lighter {@include  colorModel($color-info-lighter)}
-.colorModel-menu-darker {@include  colorModel($color-menu-darker)}
-.colorModel-menu {@include  colorModel($color-menu-dark)}
-.colorModel-menu-light {@include  colorModel($color-menu-light)}
+//.colorModel-menu-darker {@include  colorModel($color-menu-darker)}
+//.colorModel-menu {@include  colorModel($color-menu-dark)}
+//.colorModel-menu-light {@include  colorModel($color-menu-light)}
 
 .content {
   padding: 5px;

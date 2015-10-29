@@ -9,9 +9,9 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
     clean:
-      dev: ['build']
+      lib: ['build']
     sass:
-      dev:
+      lib:
         files: [
           {
             expand: true,
@@ -19,7 +19,10 @@ module.exports = (grunt)->
             src: ['*.scss']
             dest: 'build',
             ext: '.css'
-          },
+          }
+        ]
+      demo:
+        files: [
           {
             expand: true,
             cwd: 'demo',
@@ -37,9 +40,9 @@ module.exports = (grunt)->
         dest: 'demo/js',
         ext: '.js'
 
-    jade: 
-      debug:
-        options: 
+    jade:
+      demo:
+        options:
           data:
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
@@ -61,9 +64,10 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "default", ["clean:dev","sass:dev","jade:debug","coffee:demo"]
-  grunt.registerTask "cleanBuild", ["clean:dev"]
-  grunt.registerTask "buildDemo", ["jade:debug"]
+  grunt.registerTask "cleanLib", ["clean:lib"]
+  grunt.registerTask "buildLib", ["cleanLib", "sass:lib"]
+  grunt.registerTask "buildDemo", ["sass:demo", "coffee:demo", "jade:demo"]
+  grunt.registerTask "default", ["buildLib", "buildDemo"]
 
 
   

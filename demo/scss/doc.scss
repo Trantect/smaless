@@ -1,124 +1,151 @@
 @import "../../src/main";
+$border-line-color:#e8e8e8;
+$border-top: 40px;
+$border-left: 30px;
 
+.top {
+  margin-top:20px;
+}
 .modal-footer {
-  padding-left: 25px;
-  padding-top: 30px;
-  >a{
-    color: #777;
+  padding-top: 25px;
+  > a {
+    color: $text-color;
+    padding-left: 13px;
+    &:hover , &:focus {
+      color: $brand-primary;
+      padding-left: 13px;
+    }
   }
 }
 
 .line {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid $border-line-color;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+h4.Second {
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
-
-@mixin colorModel($topPx,$topColor,$borderColor) {
-  border-top: $topPx solid $topColor;
-  height: $topPx + -10px;
-  border-left: 1px solid $borderColor;
-  border-right: 1px solid $borderColor;
-  border-bottom: 1px solid $borderColor;
+.btn {
+  margin-top: 15px;
 }
 
-.colorModel-master {@include colorModel(40px,#526069,#e8e8e8)}
-.colorModel-primary {@include colorModel(40px,#1f8fe4,#e8e8e8)}
-.colorModel-success {@include colorModel(40px,#00c644,#e8e8e8)}
-.colorModel-danger {@include colorModel(40px,#ff6c60,#e8e8e8)}
-.colorModel-warning {@include colorModel(40px,#f0ad4e,#e8e8e8)}
-.colorModel-menu {@include colorModel(40px,#e9eff8,#e8e8e8)}
-.colorModel-info {@include colorModel(40px,#33c5df,#e8e8e8)}
-.colorModel-bg-dacker {@include colorModel(40px,#21262a,#e8e8e8)}
-.colorModel-bg-dack {@include colorModel(40px,#394349,#e8e8e8)}
-.colorModel-bg-master {@include colorModel(40px,#526069,#e8e8e8)}
-.colorModel-bg-light {@include colorModel(40px,#758087,#e8e8e8)}
-.colorModel-bg-lighter {@include colorModel(40px,#a5acb1,#e8e8e8)}
-.colorModel-bg-lightest {@include colorModel(40px,#f6f7f7,#e8e8e8)}
+//For Color
+@mixin colorModel($topColor) {
+  border-top: $border-top solid $topColor;
+  height: $border-top + -10px;
+  border-left: 1px solid $border-line-color;
+  border-right: 1px solid $border-line-color;
+  border-bottom: 1px solid $border-line-color;
+  margin-bottom: 15px;
+}
+.colorModel-base {@include colorModel($gray-base)}
+.colorModel-primary {@include colorModel($brand-primary)}
+.colorModel-success {@include colorModel($brand-success)}
+.colorModel-danger {@include colorModel($brand-danger)}
+.colorModel-warning {@include colorModel($brand-warning)}
+.colorModel-menu {@include colorModel($brand-menu)}
+.colorModel-info {@include colorModel($brand-info)}
+.colorModel-gray-darker {@include colorModel($gray-darker)}
+.colorModel-gray-dark {@include colorModel($gray-dark)}
+.colorModel-gray {@include colorModel($gray)}
+.colorModel-gray-light {@include colorModel($gray-light)}
+.colorModel-gray-lighter {@include colorModel($gray-lighter)}
+.colorModel-primary-darker {@include  colorModel($color-primary-darker)}
+.colorModel-primary-dark {@include  colorModel($color-primary-dark)}
+.colorModel-primary {@include  colorModel($brand-primary)}
+.colorModel-primary-light {@include  colorModel($color-primary-light)}
+.colorModel-primary-lighter {@include  colorModel($color-primary-lighter)}
+.colorModel-success-darker {@include  colorModel($color-success-darker)}
+.colorModel-success-dark {@include  colorModel($color-success-dark)}
+.colorModel-success {@include  colorModel($brand-success)}
+.colorModel-success-light {@include  colorModel($color-success-light)}
+.colorModel-success-lighter {@include  colorModel($color-success-lighter)}
+.colorModel-danger-darker {@include  colorModel($color-danger-darker)}
+.colorModel-danger-dark {@include  colorModel($color-danger-dark)}
+.colorModel-danger {@include  colorModel($brand-danger)}
+.colorModel-danger-light {@include  colorModel($color-danger-light)}
+.colorModel-danger-lighter {@include  colorModel($color-danger-lighter)}
+.colorModel-warning-darker {@include  colorModel($color-warning-darker)}
+.colorModel-warning-dark {@include  colorModel($color-warning-dark)}
+.colorModel-warning {@include  colorModel($brand-warning)}
+.colorModel-warning-light {@include  colorModel($color-warning-light)}
+.colorModel-warning-lighter {@include  colorModel($color-warning-lighter)}
+.colorModel-info-darker {@include  colorModel($color-info-darker)}
+.colorModel-info-dark {@include  colorModel($color-info-dark)}
+.colorModel-info {@include  colorModel($brand-info)}
+.colorModel-info-light {@include  colorModel($color-info-light)}
+.colorModel-info-lighter {@include  colorModel($color-info-lighter)}
+.colorModel-menu-darker {@include  colorModel($color-menu-darker)}
+.colorModel-menu {@include  colorModel($color-menu-dark)}
+.colorModel-menu-light {@include  colorModel($color-menu-light)}
 
 .content {
   padding: 5px;
   color:#777;
-}
-
-.row {
-  padding-bottom: 30px;
+  font-size: 13px;
 }
 
 
-@mixin disable($leftPx,$leftcolor,$bordercolor){
-  border-left: $leftPx solid $leftcolor;
-  border-top: 1px solid $bordercolor;
-  border-right: 1px solid $bordercolor;
-  margin-top: $leftPx+ -10px;
+//For buttons
+@mixin disable($leftcolor){
+  border-left: $border-left solid $leftcolor;
+  border-top: 1px solid $border-line-color;
+  border-right: 1px solid $border-line-color;
+  margin-top: $border-left + -10px;
   padding-top: 5px;
   padding-left: 10px;
-  height: $leftPx+30px;
+  height: $border-left + 30px;
 
 }
-.bg-primary-lighter{@include disable(30px, #549ccc,#e8e8e8)}
-.bg-success-lighter{@include disable(30px,#00CC99,#e8e8e8)}
-.bg-danger-lighter {@include disable(30px,#cc6b80,#e8e8e8)}
-.bg-warning-lighter{@include disable(30px,#ccc0aa,#e8e8e8)}
-.bg-info-lighter{@include disable(30px,#ddf4fc,#e8e8e8)}
-.bg-default-lighter{@include disable(30px,#fff,#e8e8e8)}
+.bg-primary-lighter {@include disable($color-primary-lighter)}
+.bg-success-lighter {@include disable($color-success-lighter)}
+.bg-danger-lighter {@include disable($color-danger-lighter)}
+.bg-warning-lighter {@include disable($color-warning-lighter)}
+.bg-info-lighter {@include disable($color-info-lighter)}
+.bg-default-lighter {@include disable(#fff)}
 
-@mixin normal($leftPx,$leftcolor,$bordercolor){
-  border-left: $leftPx solid $leftcolor;
-  border-right: 1px solid $bordercolor;
+@mixin normal($leftcolor){
+  border-left: $border-left solid $leftcolor;
+  border-right: 1px solid $border-line-color;
   padding-top: 5px;
   padding-left: 10px;
-  height: $leftPx+30px;
+  height: $border-left + 30px;
 }
-.bg-primary-light{@include normal(30px,#3399FF,#e8e8e8)}
-.bg-success-light{@include normal(30px,#00CC66,#e8e8e8)}
-.bg-danger-light {@include normal(30px,#cc6e7a,#e8e8e8)}
-.bg-warning-light {@include normal(30px,#cca280,#e8e8e8)}
-.bg-info-light {@include normal(30px,#76b5cc,#e8e8e8)}
-.bg-default-light {@include normal(30px,#fafafa,#e8e8e8)}
+.bg-primary-light {@include normal($color-primary-light)}
+.bg-success-light {@include normal($color-success-light)}
+.bg-danger-light {@include normal($color-danger-light)}
+.bg-warning-light {@include normal($color-warning-light)}
+.bg-info-light {@include normal($color-info-light)}
+.bg-default-light {@include normal(#fafafa)}
 
-@mixin hover($leftPx,$leftcolor,$bordercolor){
-  border-left: $leftPx solid $leftcolor;
-  border-right: 1px solid $bordercolor;
-  border-bottom: 1px solid $bordercolor;
-  margin-bottom: $leftPx+ -10px;
+@mixin hover($leftcolor) {
+  border-left: $border-left solid $leftcolor;
+  border-right: 1px solid $border-line-color;
+  border-bottom: 1px solid $border-line-color;
+  margin-bottom: $border-left + -10px;
   padding-top: 5px;
   padding-left: 10px;
-  height: $leftPx+30px;
+  height: $border-left + 30px;
 }
-.bg-primary-dark{@include hover(30px,#3366FF,#e8e8e8)}
-.bg-success-dark {@include hover(30px,#00CC33,#e8e8e8)}
-.bg-danger-dark {@include hover(30px,#cc424c,#e8e8e8)}
-.bg-warning-dark {@include hover(30px,#cc7532,#e8e8e8)}
-.bg-info-dark {@include hover(30px,#62afcc,#e8e8e8)}
-.bg-default-dark {@include hover(30px,#f4f4f4,#e8e8e8)}
+.bg-primary-dark {@include hover($color-primary-dark)}
+.bg-success-dark {@include hover($color-success-dark)}
+.bg-danger-dark {@include hover($color-danger-dark)}
+.bg-warning-dark {@include hover($color-warning-dark)}
+.bg-info-dark {@include hover($color-info-dark)}
+.bg-default-dark {@include hover(#f4f4f4)}
 
 
-@mixin button($heightPx,$background-color,$color) {
-  border: none;
-  border-radius: 5px;
-  width: $heightPx+80px;
-  height: $heightPx;
-  font-size: large;
-  color: $color;
-  background-color: $background-color;
-}
-.btn-primary {@include button(40px,#3399FF,white)}
-.btn-success {@include button(40px,#00CC66,white)}
-.btn-danger {@include button(40px,#cc6e7a,white)}
-.btn-warning {@include button(40px,#cc7b64,white)}
-.btn-info {@include button(40px,#42ccc9,white)}
-.btn-default {@include button(40px,#fafafa,black)}
 
 p.content-bg {
   color: #777;
   font-size: 13px;
 }
-.content-btn {
-  color: #777;
-}
 .content-div {
-  color: #777;
+ color: #777;
   > .btn-color {
     color: #fa515b;
     background-color: #fafafa;
@@ -151,6 +178,32 @@ p.content-bg {
   }
   .col-md-4{
     width: 29.5%;
+  }
+}
+
+.nav {
+  > .active >a {
+    border-left: 2px solid $brand-primary;
+    font-weight: bold;
+    color: $brand-primary;
+    padding-left: 12px;
+
+    &:hover , &:focus {
+      border-left: 2px solid $brand-primary;
+      padding-left: 12px;
+    }
+  }
+}
+.pills {
+  > li > a {
+    color: $text-color;
+    margin-bottom: 3px;
+    padding: 2px 2px 2px 14px;
+    &:hover , &:focus {
+      border-left: 1px solid $brand-primary;
+      color: $brand-primary;
+      padding-left: 13px;
+    }
   }
 }
 

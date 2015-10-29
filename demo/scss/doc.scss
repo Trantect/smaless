@@ -79,9 +79,9 @@ h4.Second {
 .colorModel-info {@include  colorModel($brand-info)}
 .colorModel-info-light {@include  colorModel($color-info-light)}
 .colorModel-info-lighter {@include  colorModel($color-info-lighter)}
-//.colorModel-menu-darker {@include  colorModel($color-menu-darker)}
-//.colorModel-menu {@include  colorModel($color-menu-dark)}
-//.colorModel-menu-light {@include  colorModel($color-menu-light)}
+.colorModel-menu-darker {@include  colorModel($sidebar-menu-bg)}
+.colorModel-menu {@include  colorModel($sidebar-menu-hover)}
+.colorModel-menu-light {@include  colorModel($sidebar-memu-color)}
 
 .content {
   padding: 5px;
@@ -165,7 +165,7 @@ p.content-bg {
 
 
 @media (min-width: $screen-md-min) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10, .col-md-11, .col-md-12 {
+ .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10,.col-md-12 {
     float: left;
   }
   .col-md-3 {
@@ -179,6 +179,18 @@ p.content-bg {
   .col-md-4{
     width: 29.5%;
   }
+}
+.col-md-1{
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 5.6%;
+}
+.col-md-11{
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 94%;
 }
 
 .nav {

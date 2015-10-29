@@ -24,7 +24,10 @@
     "grunt-contrib-sass": "0.9.2",
     "grunt-contrib-clean": "0.6.0",
     "grunt-contrib-watch": "0.6.1",
-    "grunt-contrib-jade":"0.15.0"
+    "grunt-contrib-jade": "0.15.0"
   },
-  "homepage": "https://github.com/emily123/smaless#readme"
+  "homepage": "https://github.com/emily123/smaless#readme",
+  "devDependencies": {
+    "grunt-contrib-coffee": "^0.13.0"
+  }
 }

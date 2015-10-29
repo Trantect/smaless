@@ -53,10 +53,10 @@ body {
       li {
         &:hover {
           a {
-            color: $color-menu-light;
+            color: $sidebar-memu-color;
           }
           .icon-thumbnail {
-            color: $color-menu-light !important;
+            color: $sidebar-memu-color !important;
           }
         }
         &.active, &.open {
@@ -101,7 +101,7 @@ body {
 }
 
 .content-wrapper {
-  top: $navbar-height;
+  padding-top: $navbar-height;
   min-height: 100%;
   margin-left: $layout-sidepanel-pin-width;
   position: relative;
@@ -112,7 +112,6 @@ body {
   }
   .content {
     /* Content holder */
-    padding-top: $navbar-height;
     display: block;
     height: 100%;
     z-index: 10;

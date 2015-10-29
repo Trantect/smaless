@@ -15,7 +15,7 @@
     padding: 0;
     > a {
       padding: 12px 5px 12px 15px;
-      color: $color-menu-light;
+      color: $sidebar-memu-color;
       display: block;
       > .fa,
       > .glyphicon,
@@ -24,7 +24,7 @@
       }
     }
     &:hover, &.open {
-      background: $color-menu-darkest;
+      background: $sidebar-menu-hover;
     }
     &.active {
       background: $brand-primary;
@@ -71,8 +71,8 @@
       > a {
         padding: 5px 5px 5px 15px;
         display: block;
-        color: $color-menu-light;
-        background: $color-menu-darker;
+        color: $sidebar-memu-color;
+        background: $sidebar-menu-bg;
         font-size: 14px;
         > .fa,
         > .glyphicon,
@@ -80,7 +80,7 @@
           width: 20px;
         }
         &:hover, &.open {
-          background: $color-menu-darkest;
+          background: $sidebar-menu-hover;
         }
         &.active {
           background: $brand-primary;
@@ -103,7 +103,7 @@
   left: 0;
   min-height: 100%;
   width: $layout-sidepanel-pin-width;
-  z-index: 810;
+  z-index: 1000;
   //Using disposable variable to join statements with a comma
   // @transition-rule: $transition-speed $transition-fn,
   //   width $transition-speed $transition-fn;

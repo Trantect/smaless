@@ -10,8 +10,8 @@
     float: right;
   }
   .logo {
-    background: $color-menu-dark;
-    border-bottom: 1px solid $color-menu-darker;
+    background: $sidebar-menu-bg;
+    border-bottom: 1px solid $sidebar-menu-hover;
     transform: transition($transition-speed $transition-fn);
     display: block;
     float: left;

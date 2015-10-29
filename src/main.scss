@@ -2,16 +2,16 @@
 //Theme : Default
 //Generated From Sass
 
+// Core variables and base
+@import "base";
+
+// icon
+@import "icon";
 
 // Includes of Modules
 @import "module";
 
-// Core variables and base
-@import "base";
 // @import base/variables
 
 // Core layout
 @import "layout";
-
-// icon
-@import "icon";

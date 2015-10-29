@@ -6,3 +6,4 @@ demo/*.html
 bower_components
 demo/scss/*.css
 demo/scss/*.map
+demo/js

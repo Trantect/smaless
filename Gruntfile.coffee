@@ -17,7 +17,7 @@ module.exports = (grunt)->
             expand: true,
             cwd: 'src',
             src: ['*.scss']
-            dest: 'build',
+            dest: 'build/css/',
             ext: '.css'
           }
         ]
@@ -55,6 +55,8 @@ module.exports = (grunt)->
         command: 'sudo gem install sass'
       installJADE:
         command: 'sudo npm install jade -g'
+      moveFontLib:
+        command: 'cp -r src/lib/* build/'
   
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -65,7 +67,7 @@ module.exports = (grunt)->
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib", "sass:lib"]
+  grunt.registerTask "buildLib", ["cleanLib", "sass:lib", "shell:moveFontLib"]
   grunt.registerTask "buildDemo", ["sass:demo", "coffee:demo", "jade:demo"]
   grunt.registerTask "default", ["buildLib", "buildDemo"]
 

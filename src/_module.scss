@@ -1,3 +1,9 @@
+/// Modules are the minor components of a page, you can set their basic styles like:
+/// Module grid
+/// .grid{}
+/// Sub Module grid-callout
+/// .grid.grid-callout{}
+/// You can set styles of modules in perticular layouts or states in state.scss
 
 // modules v3.3.5 (http://getmodules.com)
 // Copyright 2011-2015 Twitter, Inc.

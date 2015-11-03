@@ -1,40 +1,14 @@
-//base
-@import "base/variables";
-
-// Utilities
-// @import base/hide-text
-// @import base/opacity
-// @import base/image
-// @import base/labels
-// @import base/reset-filter
-// @import base/resize
-@import "base/responsive-visibility";
-// @import base/size
-// @import base/tab-focus
-// @import base/reset-text
-// @import base/text-emphasis
-// @import base/text-overflow
-// @import base/vendor-prefixes
-
-// Components
-// @import base/alerts
-@import "base/buttons";
-// @import base/panels
-// @import base/pagination
-// @import base/list-group
-@import "base/nav-divider";
-// @import base/forms
-// @import base/progress-bar
-//@import "base/table-row";
-
-// Skins
-// @import base/background-variant
-// @import base/border-radius
-// @import base/gradients
-
-// Layout
-@import "base/clearfix";
-// @import base/center-block
-@import "base/nav-vertical-align";
-@import "base/grid-framework";
-@import "base/grid";
+/// You can set basic styles like:
+/// body{font-size: 14px}
+table {
+  background-color: $table-bg;
+}
+caption {
+  padding-top: $table-cell-padding;
+  padding-bottom: $table-cell-padding;
+  color: $text-muted;
+  text-align: left;
+}
+th {
+  text-align: left;
+}

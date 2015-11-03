@@ -555,3 +555,18 @@ $pre-scrollable-max-height:   340px !default;
 //== Transition global options
 $transition-speed: .3s;
 $transition-fn:    ease-in-out;//cubic-bezier(0.32,1.25,0.375,1.15);
+
+//** Text muted color
+$text-muted:                  $gray-light !default;
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+//** Default background color used for all tables.
+$table-bg:                      transparent !default;
+//** Padding for `<th>`s and `<td>`s.
+$table-cell-padding:            8px !default;
+//** Border color for table and cell borders.
+$table-border-color:            #ddd !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #f9f9f9 !default;

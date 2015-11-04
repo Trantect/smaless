@@ -74,6 +74,9 @@ $color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark) 
 $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker) !default;
 
 
+//** Padding.
+$padding-default:            8px !default;
+
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
 /* Menu Animation Curve */
@@ -137,6 +140,8 @@ $font-size-h3:            ceil(($font-size-base * 1.7)) !default;    // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.4)) !default;    // ~20px (* for content-header *)
 $font-size-h5:            $font-size-base !default;                  // ~14px
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default;   // ~12px
+
+$font-weight-default:     600 !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -564,9 +569,17 @@ $text-muted:                  $gray-light !default;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 //** Default background color used for all tables.
 $table-bg:                      transparent !default;
-//** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            8px !default;
 //** Border color for table and cell borders.
-$table-border-color:            #ddd !default;
+$table-border-color:            #eee !default;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               #f9f9f9 !default;
+$table-bg-accent:               #fafbfc !default;
+//** table spacing for base `table`.
+$table-spacing:                 0 !default;
+//** table detail background color.
+$table-detail-color:            #fcfcfc !default;
+
+//== dl, dt, dd
+//
+$dl-margin-default:             0 !default;
+$dt-width-default:              100px !default;
+$dt-margin-default:             8px !default;

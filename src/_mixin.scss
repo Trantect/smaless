@@ -25,7 +25,6 @@
 @import "mixins/nav-divider";
 // @import base/forms
 // @import base/progress-bar
-//@import "base/table-row";
 
 // Skins
 // @import base/background-variant
@@ -44,3 +43,7 @@
 @import "mixins/variables-icon";
 @import "mixins/icon";
 @import "mixins/icon-styles";
+
+
+// table
+@import "mixins/table-row";

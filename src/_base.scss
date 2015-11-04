@@ -2,13 +2,44 @@
 /// body{font-size: 14px}
 table {
   background-color: $table-bg;
+  border-spacing: $table-spacing;
+  border-collapse: collapse;
+  td,
+  th {
+    &[class*="col-"] {
+      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+      float: none;
+      display: table-cell;
+    }
+  }
 }
+
+// Table cell sizing
+//
+// Reset default table behavior
+table col[class*="col-"] {
+  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+  float: none;
+  display: table-column;
+}
+
 caption {
-  padding-top: $table-cell-padding;
-  padding-bottom: $table-cell-padding;
+  padding-top: $padding-default;
+  padding-bottom: $padding-default;
   color: $text-muted;
   text-align: left;
 }
+
 th {
   text-align: left;
+}
+dl{
+  margin:$dl-margin-default;
+  padding: $padding-default;
+}
+dt{
+  float: left;
+  text-align: right;
+  margin-right: $dt-margin-default;
+  width: $dt-width-default;
 }

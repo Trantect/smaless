@@ -52,14 +52,33 @@
 // Default table detail
 //
 // for text detail
-.table-detail-default {
-    padding: $padding-default;
-    background-color: $table-detail-color;
-    .detail-title{
-      font-weight: $font-weight-default;
-    }
+.table-detail-default{
+  > tbody{
+    cursor: $cursor-clickable;
+  }
+  .detail-default {
+      padding: $padding-default;
+      background-color: $table-detail-color;
+      .detail-title{
+        font-weight: $font-weight-default;
+      }
+  }
 }
 
+.table-sort{
+  > thead{
+    cursor: $cursor-clickable;
+    .fa-sort-asc, .fa-sort-desc{
+      opacity: $table-sort-opacity;
+    }
+    .fa-sort{
+      opacity: $table-unsort-opacity;
+      &:hover {
+        opacity: $table-sort-opacity;
+      }
+    }
+  }
+}
 
 // Responsive tables
 //

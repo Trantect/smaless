@@ -577,9 +577,36 @@ $table-bg-accent:               #fafbfc !default;
 $table-spacing:                 0 !default;
 //** table detail background color.
 $table-detail-color:            #fcfcfc !default;
+$table-sort-opacity:            0.7 !default;
+$table-unsort-opacity:          0.3 !default;
 
 //== dl, dt, dd
 //
 $dl-margin-default:             0 !default;
 $dt-width-default:              100px !default;
 $dt-margin-default:             8px !default;
+
+
+//== Pagination
+//
+//##
+
+$pagination-color:                     #428bca !default;
+$pagination-bg:                        #fff !default;
+$pagination-border:                    #ddd !default;
+
+$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              #ddd !default;
+
+$pagination-active-color:              #fff !default;
+$pagination-active-bg:                 #009fe4 !default;
+$pagination-active-border:             #009fe4 !default;
+
+$pagination-disabled-color:            #777 !default;
+$pagination-disabled-bg:               #fff !default;
+$pagination-disabled-border:           #ddd !default;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
+$cursor-clickable:               pointer !default;

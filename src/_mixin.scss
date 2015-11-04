@@ -44,6 +44,11 @@
 @import "mixins/icon";
 @import "mixins/icon-styles";
 
+// Border
+@import "mixins/border-radius";
 
-// table
+// Table
 @import "mixins/table-row";
+
+// Pagination
+@import "mixins/pagination";

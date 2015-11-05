@@ -75,32 +75,20 @@
 // --------------------------------------------------
 
 // Icon table
-.table .td-img{
+.table .td-icon{
   margin: 8px;
   padding: 2px 5px;
   border-radius: 3px;
   border: 1px solid #dfe5e8;
   background: #eceff1;
   display: inline-block;
-  > img {
-    width: 12px;
-    height: 12px;
+  > .fa-desktop{
+    font-size: 10px;
+  }
+  > .fa-client-group{
     margin-bottom: -2px;
   }
-  // > thead{
-  //   cursor: $cursor-clickable;
-  //   .fa-sort-asc, .fa-sort-desc{
-  //     opacity: $table-sort-opacity;
-  //   }
-  //   .fa-sort{
-  //     opacity: $table-unsort-opacity;
-  //     &:hover {
-  //       opacity: $table-sort-opacity;
-  //     }
-  //   }
-  // }
 }
-
 
 // Default table detail
 //

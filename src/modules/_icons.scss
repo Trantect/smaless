@@ -676,3 +676,10 @@
 .#{$fa-css-prefix}-sort-desc:after { content: $fa-var-sort-desc; }
 .#{$fa-css-prefix}-sort-up:after,
 .#{$fa-css-prefix}-sort-asc:after { content: $fa-var-sort-asc; }
+// client group icon
+.#{$fa-css-prefix}-client-group {
+  background: url("../images/clientGroup.png");
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px;
+}

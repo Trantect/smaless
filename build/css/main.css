@@ -3894,6 +3894,12 @@ input[type="button"].btn-block {
 .fa-sort-asc:after {
   content: ""; }
 
+.fa-client-group {
+  background: url("../images/clientGroup.png");
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px; }
+
 .table {
   width: 100%;
   max-width: 100%;
@@ -3936,16 +3942,16 @@ input[type="button"].btn-block {
     .table-sort > thead .fa-sort:hover {
       opacity: 0.7; }
 
-.table .td-img {
+.table .td-icon {
   margin: 8px;
   padding: 2px 5px;
   border-radius: 3px;
   border: 1px solid #dfe5e8;
   background: #eceff1;
   display: inline-block; }
-  .table .td-img > img {
-    width: 12px;
-    height: 12px;
+  .table .td-icon > .fa-desktop {
+    font-size: 10px; }
+  .table .td-icon > .fa-client-group {
     margin-bottom: -2px; }
 
 .table-detail-default > tbody {

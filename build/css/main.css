@@ -3900,17 +3900,21 @@ input[type="button"].btn-block {
   margin-bottom: 20px; }
   .table > tbody > tr:nth-of-type(odd) {
     background-color: #fafbfc; }
-  .table > thead > tr > th,
-  .table > thead > tr > td,
-  .table > tbody > tr > th,
-  .table > tbody > tr > td,
-  .table > tfoot > tr > th,
-  .table > tfoot > tr > td {
+  .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .table > thead th,
+  .table > thead td,
+  .table > tbody th,
+  .table > tbody td,
+  .table > tfoot th,
+  .table > tfoot td {
     padding: 8px;
     line-height: 1.42857;
-    vertical-align: top;
+    vertical-align: middle;
     border-top: 1px solid #eee; }
-  .table > thead > tr > th {
+  .table > thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #eee; }
   .table > caption + thead > tr:first-child > th,
@@ -3923,14 +3927,6 @@ input[type="button"].btn-block {
   .table > tbody + tbody {
     border-top: 2px solid #eee; }
 
-.table-detail-default > tbody {
-  cursor: pointer; }
-.table-detail-default .detail-default {
-  padding: 8px;
-  background-color: #fcfcfc; }
-  .table-detail-default .detail-default .detail-title {
-    font-weight: 600; }
-
 .table-sort > thead {
   cursor: pointer; }
   .table-sort > thead .fa-sort-asc, .table-sort > thead .fa-sort-desc {
@@ -3939,6 +3935,26 @@ input[type="button"].btn-block {
     opacity: 0.3; }
     .table-sort > thead .fa-sort:hover {
       opacity: 0.7; }
+
+.table .td-img {
+  margin: 8px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #dfe5e8;
+  background: #eceff1;
+  display: inline-block; }
+  .table .td-img > img {
+    width: 12px;
+    height: 12px;
+    margin-bottom: -2px; }
+
+.table-detail-default > tbody {
+  cursor: pointer; }
+.table-detail-default .detail-default {
+  padding: 8px;
+  background-color: #fcfcfc; }
+  .table-detail-default .detail-default .detail-title {
+    font-weight: 600; }
 
 .pagination {
   display: inline-block;

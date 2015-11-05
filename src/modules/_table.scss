@@ -3,8 +3,7 @@
 // Tables
 // --------------------------------------------------
 
-// Baseline styles
-
+// Base table
 .table {
   width: 100%;
   max-width: 100%;
@@ -13,22 +12,25 @@
   > tbody > tr:nth-of-type(odd) {
     background-color: $table-bg-accent;
   }
+  td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   // Cells
   > thead,
   > tbody,
   > tfoot {
-    > tr {
-      > th,
-      > td {
+      th,
+      td {
         padding: $padding-default;
         line-height: $line-height-base;
-        vertical-align: top;
+        vertical-align: middle;
         border-top: 1px solid $table-border-color;
       }
-    }
   }
   // Bottom align for column headings
-  > thead > tr > th {
+  > thead th {
     vertical-align: bottom;
     border-bottom: 2px solid $table-border-color;
   }
@@ -49,22 +51,9 @@
   }
 
 }
-// Default table detail
-//
-// for text detail
-.table-detail-default{
-  > tbody{
-    cursor: $cursor-clickable;
-  }
-  .detail-default {
-      padding: $padding-default;
-      background-color: $table-detail-color;
-      .detail-title{
-        font-weight: $font-weight-default;
-      }
-  }
-}
 
+///Module table-sort
+// Sortable table
 .table-sort{
   > thead{
     cursor: $cursor-clickable;
@@ -80,72 +69,51 @@
   }
 }
 
-// Responsive tables
+///Module td-icon
 //
-// Wrap your tables in `.table-responsive` and we'll make them mobile friendly
-// by enabling horizontal scrolling. Only applies <768px. Everything above that
-// will display normally.
+// Td
+// --------------------------------------------------
 
-// .table-responsive {
-//   overflow-x: auto;
-//   min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+// Icon table
+.table .td-img{
+  margin: 8px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #dfe5e8;
+  background: #eceff1;
+  display: inline-block;
+  > img {
+    width: 12px;
+    height: 12px;
+    margin-bottom: -2px;
+  }
+  // > thead{
+  //   cursor: $cursor-clickable;
+  //   .fa-sort-asc, .fa-sort-desc{
+  //     opacity: $table-sort-opacity;
+  //   }
+  //   .fa-sort{
+  //     opacity: $table-unsort-opacity;
+  //     &:hover {
+  //       opacity: $table-sort-opacity;
+  //     }
+  //   }
+  // }
+}
+
+
+// Default table detail
 //
-//   @media screen and (max-width: $screen-xs-max) {
-//     width: 100%;
-//     margin-bottom: ($line-height-computed * 0.75);
-//     overflow-y: hidden;
-//     -ms-overflow-style: -ms-autohiding-scrollbar;
-//     border: 1px solid $table-border-color;
-//
-//     // Tighten up spacing
-//     > .table {
-//       margin-bottom: 0;
-//
-//       // Ensure the content doesn't wrap
-//       > thead,
-//       > tbody,
-//       > tfoot {
-//         > tr {
-//           > th,
-//           > td {
-//             white-space: nowrap;
-//           }
-//         }
-//       }
-//     }
-//
-//     // Special overrides for the bordered tables
-//     > .table-bordered {
-//       border: 0;
-//
-//       // Nuke the appropriate borders so that the parent can handle them
-//       > thead,
-//       > tbody,
-//       > tfoot {
-//         > tr {
-//           > th:first-child,
-//           > td:first-child {
-//             border-left: 0;
-//           }
-//           > th:last-child,
-//           > td:last-child {
-//             border-right: 0;
-//           }
-//         }
-//       }
-//
-//       // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
-//       // chances are there will be only one `tr` in a `thead` and that would
-//       // remove the border altogether.
-//       > tbody,
-//       > tfoot {
-//         > tr:last-child {
-//           > th,
-//           > td {
-//             border-bottom: 0;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+// for text detail
+.table-detail-default{
+  > tbody{
+    cursor: $cursor-clickable;
+  }
+  .detail-default {
+      padding: $padding-default;
+      background-color: $table-detail-color;
+      .detail-title{
+        font-weight: $font-weight-default;
+      }
+  }
+}

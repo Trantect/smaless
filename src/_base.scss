@@ -1,40 +1,45 @@
-//base
-@import "base/variables";
+/// You can set basic styles like:
+/// body{font-size: 14px}
+table {
+  background-color: $table-bg;
+  border-spacing: $table-spacing;
+  border-collapse: collapse;
+  td,
+  th {
+    &[class*="col-"] {
+      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+      float: none;
+      display: table-cell;
+    }
+  }
+}
 
-// Utilities
-// @import base/hide-text
-// @import base/opacity
-// @import base/image
-// @import base/labels
-// @import base/reset-filter
-// @import base/resize
-@import "base/responsive-visibility";
-// @import base/size
-// @import base/tab-focus
-// @import base/reset-text
-// @import base/text-emphasis
-// @import base/text-overflow
-// @import base/vendor-prefixes
+// Table cell sizing
+//
+// Reset default table behavior
+table col[class*="col-"] {
+  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+  float: none;
+  display: table-column;
+}
 
-// Components
-// @import base/alerts
-@import "base/buttons";
-// @import base/panels
-// @import base/pagination
-// @import base/list-group
-@import "base/nav-divider";
-// @import base/forms
-// @import base/progress-bar
-//@import "base/table-row";
+caption {
+  padding-top: $padding-default;
+  padding-bottom: $padding-default;
+  color: $text-muted;
+  text-align: left;
+}
 
-// Skins
-// @import base/background-variant
-// @import base/border-radius
-// @import base/gradients
-
-// Layout
-@import "base/clearfix";
-// @import base/center-block
-@import "base/nav-vertical-align";
-@import "base/grid-framework";
-@import "base/grid";
+th {
+  text-align: left;
+}
+dl{
+  margin:$dl-margin-default;
+  padding: $padding-default;
+}
+dt{
+  float: left;
+  text-align: right;
+  margin-right: $dt-margin-default;
+  width: $dt-width-default;
+}

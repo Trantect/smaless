@@ -74,6 +74,9 @@ $color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark) 
 $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker) !default;
 
 
+//** Padding.
+$padding-default:            8px !default;
+
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
 /* Menu Animation Curve */
@@ -137,6 +140,8 @@ $font-size-h3:            ceil(($font-size-base * 1.7)) !default;    // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.4)) !default;    // ~20px (* for content-header *)
 $font-size-h5:            $font-size-base !default;                  // ~14px
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default;   // ~12px
+
+$font-weight-default:     600 !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -555,3 +560,53 @@ $pre-scrollable-max-height:   340px !default;
 //== Transition global options
 $transition-speed: .3s;
 $transition-fn:    ease-in-out;//cubic-bezier(0.32,1.25,0.375,1.15);
+
+//** Text muted color
+$text-muted:                  $gray-light !default;
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+//** Default background color used for all tables.
+$table-bg:                      transparent !default;
+//** Border color for table and cell borders.
+$table-border-color:            #eee !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #fafbfc !default;
+//** table spacing for base `table`.
+$table-spacing:                 0 !default;
+//** table detail background color.
+$table-detail-color:            #fcfcfc !default;
+$table-sort-opacity:            0.7 !default;
+$table-unsort-opacity:          0.3 !default;
+
+//== dl, dt, dd
+//
+$dl-margin-default:             0 !default;
+$dt-width-default:              100px !default;
+$dt-margin-default:             8px !default;
+
+
+//== Pagination
+//
+//##
+
+$pagination-color:                     #428bca !default;
+$pagination-bg:                        #fff !default;
+$pagination-border:                    #ddd !default;
+
+$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              #ddd !default;
+
+$pagination-active-color:              #fff !default;
+$pagination-active-bg:                 #009fe4 !default;
+$pagination-active-border:             #009fe4 !default;
+
+$pagination-disabled-color:            #777 !default;
+$pagination-disabled-bg:               #fff !default;
+$pagination-disabled-border:           #ddd !default;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
+$cursor-clickable:               pointer !default;

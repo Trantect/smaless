@@ -182,16 +182,16 @@ ol {
 
 // Description Lists
 dl {
-  margin-top: 0; // Remove browser default
-  margin-bottom: $line-height-computed;
+  // margin-top: 0; // Remove browser default
+  // margin-bottom: $line-height-computed;
 }
 dt,
 dd {
   line-height: $line-height-base;
 }
-dt {
-  font-weight: bold;
-}
+// dt {
+//   font-weight: bold;
+// }
 dd {
   margin-left: 0; // Undo browser default
 }
@@ -219,5 +219,3 @@ dd {
     }
   }
 }
-
-

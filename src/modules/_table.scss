@@ -1,0 +1,107 @@
+///Module table
+//
+// Tables
+// --------------------------------------------------
+
+// Base table
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $line-height-computed;
+  // change tr background color when odd
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-bg-accent;
+  }
+  td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+      th,
+      td {
+        padding: $padding-default;
+        line-height: $line-height-base;
+        vertical-align: middle;
+        border-top: 1px solid $table-border-color;
+      }
+  }
+  // Bottom align for column headings
+  > thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $table-border-color;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid $table-border-color;
+  }
+
+}
+
+///Module table-sort
+// Sortable table
+.table-sort{
+  > thead{
+    cursor: $cursor-clickable;
+    .fa-sort-asc, .fa-sort-desc{
+      opacity: $table-sort-opacity;
+    }
+    .fa-sort{
+      opacity: $table-unsort-opacity;
+      &:hover {
+        opacity: $table-sort-opacity;
+      }
+    }
+  }
+}
+
+///Module td-icon
+//
+// Td
+// --------------------------------------------------
+
+// Icon table
+.table .td-icon{
+  margin: 8px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #dfe5e8;
+  background: #eceff1;
+  display: inline-block;
+  > .fa-desktop{
+    font-size: 10px;
+  }
+  > .fa-client-group{
+    margin-bottom: -2px;
+  }
+}
+
+// Default table detail
+//
+// for text detail
+.table-detail-default{
+  > tbody{
+    cursor: $cursor-clickable;
+  }
+  .detail-default {
+      padding: $padding-default;
+      background-color: $table-detail-color;
+      .detail-title{
+        font-weight: $font-weight-default;
+      }
+  }
+}

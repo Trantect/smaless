@@ -2,11 +2,11 @@
 //Theme : Default
 //Generated From Sass
 
-// Core variables and base
-@import "base";
+// Core variables and mixins
+@import "mixin";
 
-// icon
-@import "icon";
+// Base web style
+@import "base";
 
 // Includes of Modules
 @import "module";
@@ -15,3 +15,6 @@
 
 // Core layout
 @import "layout";
+
+// Core state
+@import "state";

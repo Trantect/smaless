@@ -49,9 +49,13 @@
 
 > ### Step 3
 ```
-    make build
+    make clean
 ```
 
+> ### Step 4
+```
+    make build
+```
 <a id="demo"></a>
 ## Demo
 

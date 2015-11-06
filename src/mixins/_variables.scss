@@ -88,6 +88,9 @@ $padding-default:            8px;
 // ** Margin
 $margin-default:            8px;
 
+// ** Border
+$border-color-default:      #eee;
+
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
 /* Menu Animation Curve */
@@ -581,7 +584,7 @@ $text-muted:                  $gray-light !default;
 //** Default background color used for all tables.
 $table-bg:                      transparent;
 //** Border color for table and cell borders.
-$table-border-color:            #eee;
+$table-border-color:            $border-color-default;
 //** Background color used for `.table-striped`.
 $table-bg-accent:               #fafbfc;
 //** table spacing for base `table`.
@@ -634,3 +637,7 @@ $cursor-clickable:               pointer;
 // Layout footer
 $footer-color:                    #777;
 $footer-a-hover-color:            #2a6496;
+
+// Panel
+$panel-heading-bdcolor:           $border-color-default;
+$panel-radius:                    3px;

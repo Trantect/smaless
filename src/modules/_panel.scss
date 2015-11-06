@@ -1,0 +1,34 @@
+/// Module panel
+.panel {
+  padding: $padding-default 0;
+  border-radius: $panel-radius;
+}
+
+/// Module panel-header
+.panel-header {
+  border-bottom: 1px solid $panel-heading-bdcolor;
+  width: 100%;
+  display: table;
+  border-radius: $panel-radius $panel-radius 0 0;
+  * > {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+/// Module panel-body
+.panel-body {
+  border-radius: 0;
+  padding: $padding-default;
+}
+/// Module panel-footer
+.panel-footer {
+  display: table;
+  width: 100%;
+  border-radius: 0 0 $panel-radius $panel-radius;
+  > :first-child {
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: $padding-default;
+  }
+}

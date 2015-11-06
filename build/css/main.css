@@ -3967,7 +3967,7 @@ input[type="button"].btn-block {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 20px 0;
+  margin: 0 16px 0 0;
   border-radius: 4px;
   float: right; }
   .pagination > li {
@@ -4018,6 +4018,32 @@ input[type="button"].btn-block {
     background-color: #fff;
     border-color: #ddd;
     cursor: not-allowed; }
+
+.panel {
+  padding: 8px 0;
+  border-radius: 3px; }
+
+.panel-header {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  display: table;
+  border-radius: 3px 3px 0 0; }
+  .panel-header * > {
+    display: table-cell;
+    vertical-align: middle; }
+
+.panel-body {
+  border-radius: 0;
+  padding: 8px; }
+
+.panel-footer {
+  display: table;
+  width: 100%;
+  border-radius: 0 0 3px 3px; }
+  .panel-footer > :first-child {
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 8px; }
 
 table {
   background-color: transparent;
@@ -4354,6 +4380,10 @@ footer, #footer {
     color: #777; }
   footer a:hover, footer a:focus, #footer a:hover, #footer a:focus {
     color: #2a6496; }
+
+content, #content {
+  display: block;
+  padding: 8px; }
 
 .is-nopadding {
   padding: 0 !important; }

@@ -1,0 +1,12 @@
+/// Layout footer
+footer, #footer{
+  font-size: $font-size-base;
+  text-align: center !important;
+  color: $footer-color;
+  a{
+    color: $footer-color;
+  }
+  a:hover, a:focus {
+    color: $footer-a-hover-color;
+  }
+}

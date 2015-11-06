@@ -1,5 +1,7 @@
 /// Layout content
 content, #content {
   display: block;
+  min-height: 669px;
   padding: $padding-default;
+  background-color: rgb(238, 243, 250);
 }

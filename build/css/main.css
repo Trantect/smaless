@@ -265,8 +265,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin: 10px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -280,8 +279,7 @@ h3, .h3 {
 
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin: 10px; }
   h5 small,
   h5 .small, .h5 small,
   .h5 .small,
@@ -291,8 +289,7 @@ h6, .h6 {
     font-size: 75%; }
 
 h4, .h4 {
-  margin-top: 4px;
-  margin-bottom: 4px; }
+  margin: 10px; }
 
 h1, .h1 {
   font-size: 36px; }
@@ -4021,7 +4018,8 @@ input[type="button"].btn-block {
 
 .panel {
   padding: 8px 0;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background-color: #fff; }
 
 .panel-header {
   border-bottom: 1px solid #eee;
@@ -4037,6 +4035,7 @@ input[type="button"].btn-block {
   padding: 8px; }
 
 .panel-footer {
+  padding: 20px 0;
   display: table;
   width: 100%;
   border-radius: 0 0 3px 3px; }
@@ -4045,6 +4044,25 @@ input[type="button"].btn-block {
     display: table-cell;
     padding-left: 8px; }
 
+@media screen and (max-width: 767px) {
+  .panel-body {
+    overflow: auto;
+    margin: 30px 8px 0 8px;
+    border-radius: 3px 3px 0 0;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee; }
+    .panel-body .table {
+      white-space: nowrap; }
+
+  .panel-footer {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    width: -moz-calc(100% - 17px);
+    width: -webkit-calc(100% - 17px);
+    width: calc(100% - 17px);
+    margin-left: 8px; } }
 table {
   background-color: transparent;
   border-spacing: 0;
@@ -4373,9 +4391,11 @@ body {
   .sidebar-open .content-wrapper, .sidebar-open .right-side, .sidebar-open .main-footer {
     transform: translate(220px, 0); } }
 footer, #footer {
+  padding: 8px;
   font-size: 14px;
   text-align: center !important;
-  color: #777; }
+  color: #777;
+  background-color: #eef3fa; }
   footer a, #footer a {
     color: #777; }
   footer a:hover, footer a:focus, #footer a:hover, #footer a:focus {
@@ -4383,7 +4403,9 @@ footer, #footer {
 
 content, #content {
   display: block;
-  padding: 8px; }
+  min-height: 669px;
+  padding: 8px;
+  background-color: #eef3fa; }
 
 .is-nopadding {
   padding: 0 !important; }

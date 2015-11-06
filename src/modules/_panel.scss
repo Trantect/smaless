@@ -2,6 +2,7 @@
 .panel {
   padding: $padding-default 0;
   border-radius: $panel-radius;
+  background-color: #fff;
 }
 
 /// Module panel-header
@@ -23,6 +24,7 @@
 }
 /// Module panel-footer
 .panel-footer {
+  padding: 20px 0;
   display: table;
   width: 100%;
   border-radius: 0 0 $panel-radius $panel-radius;
@@ -30,5 +32,29 @@
     vertical-align: middle;
     display: table-cell;
     padding-left: $padding-default;
+  }
+}
+
+// table responsive
+@media screen and (max-width: $screen-xs-max) {
+  .panel-body {
+    overflow: auto;
+    margin: 30px $margin-default 0 $margin-default;
+    border-radius: $panel-radius $panel-radius 0 0;
+    border-top: 1px solid $table-border-color;
+    border-left: 1px solid $table-border-color;
+    border-right: 1px solid $table-border-color;
+    .table {
+      white-space: nowrap;
+    }
+  }
+  .panel-footer {
+    border-bottom: 1px solid $table-border-color;
+    border-left: 1px solid $table-border-color;
+    border-right: 1px solid $table-border-color;
+    width: -moz-calc(100% - 17px);
+    width: -webkit-calc(100% - 17px);
+    width: calc(100% - 17px);
+    margin-left: $margin-default;
   }
 }

@@ -1,8 +1,10 @@
 /// Layout footer
 footer, #footer {
+  padding: $padding-default;
   font-size: $font-size-base;
   text-align: center !important;
   color: $footer-color;
+  background-color: rgb(238, 243, 250);
   a{
     color: $footer-color;
   }

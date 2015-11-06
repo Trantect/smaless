@@ -2,6 +2,14 @@
 //Variables
 /*----------------------------*/
 
+// if you want to override variables , consider use `default`
+// for example:
+// $color: red;
+// $color: blue !default;
+// then the real value of $color will be red.
+
+
+
 //== Base Color
 // --------------------------------------------------
 $gray-base:              #282C34 !default;
@@ -75,7 +83,10 @@ $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker
 
 
 //** Padding.
-$padding-default:            8px !default;
+$padding-default:            8px;
+
+// ** Margin
+$margin-default:            8px;
 
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
@@ -568,49 +579,58 @@ $text-muted:                  $gray-light !default;
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
 //** Default background color used for all tables.
-$table-bg:                      transparent !default;
+$table-bg:                      transparent;
 //** Border color for table and cell borders.
-$table-border-color:            #eee !default;
+$table-border-color:            #eee;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               #fafbfc !default;
+$table-bg-accent:               #fafbfc;
 //** table spacing for base `table`.
-$table-spacing:                 0 !default;
+$table-spacing:                 0;
 //** table detail background color.
-$table-detail-color:            #fcfcfc !default;
-$table-sort-opacity:            0.7 !default;
-$table-unsort-opacity:          0.3 !default;
+$table-detail-color:            #fcfcfc;
+$table-sort-opacity:            0.7;
+$table-unsort-opacity:          0.3;
+$table-sort-icon-margin:        5px;
+
+//td use module td-icon
+$table-td-bordercolor:               #dfe5e8;
+$table-td-bgcolor:                  #eceff1;
+$table-td-margin:                   $margin-default;
+$table-icon-fontsize:               10px;
+$table-td-radius:                   3px;
+
 
 //== dl, dt, dd
 //
-$dl-margin-default:             0 !default;
-$dt-width-default:              100px !default;
-$dt-margin-default:             8px !default;
+$dl-margin-default:             0;
+$dt-width-default:              100px;
+$dt-margin-default:             $margin-default;
 
 
 //== Pagination
 //
 //##
 
-$pagination-color:                     #428bca !default;
-$pagination-bg:                        #fff !default;
-$pagination-border:                    #ddd !default;
+$pagination-color:                     #428bca;
+$pagination-bg:                        #fff;
+$pagination-border:                    #ddd;
 
-$pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
-$pagination-hover-border:              #ddd !default;
+$pagination-hover-color:               $link-hover-color;
+$pagination-hover-bg:                  $gray-lighter;
+$pagination-hover-border:              #ddd;
 
-$pagination-active-color:              #fff !default;
-$pagination-active-bg:                 #009fe4 !default;
-$pagination-active-border:             #009fe4 !default;
+$pagination-active-color:              #fff;
+$pagination-active-bg:                 #009fe4;
+$pagination-active-border:             #009fe4;
 
-$pagination-disabled-color:            #777 !default;
-$pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           #ddd !default;
+$pagination-disabled-color:            #777;
+$pagination-disabled-bg:               #fff;
+$pagination-disabled-border:           #ddd;
 
 //** Disabled cursor for form controls and buttons.
-$cursor-disabled:                not-allowed !default;
-$cursor-clickable:               pointer !default;
+$cursor-disabled:                not-allowed;
+$cursor-clickable:               pointer;
 
 // Layout footer
-$footer-color:                    #777 !default;
-$footer-a-hover-color:            #2a6496 !default;
+$footer-color:                    #777;
+$footer-a-hover-color:            #2a6496;

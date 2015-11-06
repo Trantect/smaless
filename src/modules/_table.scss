@@ -58,11 +58,11 @@
   > thead{
     cursor: $cursor-clickable;
     .fa-sort-asc, .fa-sort-desc{
-      margin-left: 5px;
+      margin-left: $table-sort-icon-margin;
       opacity: $table-sort-opacity;
     }
     .fa-sort{
-      margin-left: 5px;
+      margin-left: $table-sort-icon-margin;
       opacity: $table-unsort-opacity;
       &:hover {
         opacity: $table-sort-opacity;
@@ -78,14 +78,14 @@
 
 // Icon table
 .table .td-icon{
-  margin: 8px;
+  margin: $table-td-margin;
   padding: 2px 5px;
-  border-radius: 3px;
-  border: 1px solid #dfe5e8;
-  background: #eceff1;
+  border-radius: $table-td-radius;
+  border: 1px solid $table-td-bordercolor;
+  background: $table-td-bgcolor;
   display: inline-block;
   > .fa-desktop{
-    font-size: 10px;
+    font-size: $table-icon-fontsize;
   }
   > .fa-client-group{
     margin-bottom: -2px;

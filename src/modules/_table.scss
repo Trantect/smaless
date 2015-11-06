@@ -58,9 +58,11 @@
   > thead{
     cursor: $cursor-clickable;
     .fa-sort-asc, .fa-sort-desc{
+      margin-left: 5px;
       opacity: $table-sort-opacity;
     }
     .fa-sort{
+      margin-left: 5px;
       opacity: $table-unsort-opacity;
       &:hover {
         opacity: $table-sort-opacity;

@@ -7,7 +7,6 @@
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: $line-height-computed;
   // change tr background color when odd
   > tbody > tr:nth-of-type(odd) {
     background-color: $table-bg-accent;
@@ -54,14 +53,14 @@
 
 ///Module table-sort
 // Sortable table
-.table-sort{
-  > thead{
+.table-sort {
+  > thead {
     cursor: $cursor-clickable;
-    .fa-sort-asc, .fa-sort-desc{
+    .fa-sort-asc, .fa-sort-desc {
       margin-left: $table-sort-icon-margin;
       opacity: $table-sort-opacity;
     }
-    .fa-sort{
+    .fa-sort {
       margin-left: $table-sort-icon-margin;
       opacity: $table-unsort-opacity;
       &:hover {
@@ -71,23 +70,36 @@
   }
 }
 
+///Module table-footer
+// Table contains a footer
+.table-footer > :last-child {
+  padding: 20px 0;
+  display: table;
+  width: 100%;
+  border-radius: 0 0 $panel-radius $panel-radius;
+  > :first-child {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
 ///Module td-icon
 //
 // Td
 // --------------------------------------------------
 
 // Icon table
-.table .td-icon{
+.table .td-icon {
   margin: $table-td-margin;
   padding: 2px 5px;
   border-radius: $table-td-radius;
   border: 1px solid $table-td-bordercolor;
   background: $table-td-bgcolor;
   display: inline-block;
-  > .fa-desktop{
+  > .fa-desktop {
     font-size: $table-icon-fontsize;
   }
-  > .fa-client-group{
+  > .fa-client-group {
     margin-bottom: -2px;
   }
 }
@@ -95,14 +107,14 @@
 // Default table detail
 //
 // for text detail
-.table-detail-default{
-  > tbody{
+.table-detail-default {
+  > tbody {
     cursor: $cursor-clickable;
   }
   .detail-default {
       padding: $padding-default;
       background-color: $table-detail-color;
-      .detail-title{
+      .detail-title {
         font-weight: $font-weight-default;
       }
   }

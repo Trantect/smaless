@@ -4059,9 +4059,6 @@ input[type="button"].btn-block {
     border: 1px solid #eee; }
     .panel-body .table-footer .table {
       white-space: nowrap; } }
-.footer {
-  padding: 8px; }
-
 table {
   background-color: transparent;
   border-spacing: 0;

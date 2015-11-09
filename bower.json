@@ -12,9 +12,9 @@
   "dependencies": {
   },
   "ignore": [
-    "fonts",
+    "test",
     "src",
-    "demo",
+    "Makefile",
     "node_modules",
     "bower_components",
     "Gruntfile.coffee",

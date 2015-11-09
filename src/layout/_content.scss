@@ -1,5 +1,6 @@
 /// Layout content
 content, #content {
+  margin-left: $sidebar-width;
   display: block;
   min-height: 669px;
   padding: $padding-default;

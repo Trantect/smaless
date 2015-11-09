@@ -43,3 +43,9 @@ dt{
   margin-right: $dt-margin-default;
   width: $dt-width-default;
 }
+
+ul,ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

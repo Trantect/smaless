@@ -24,12 +24,5 @@
 }
 /// Module panel-footer
 .panel-footer {
-  padding: 20px 0;
-  display: table;
-  width: 100%;
-  border-radius: 0 0 $panel-radius $panel-radius;
-  > :first-child {
-    vertical-align: middle;
-    display: table-cell;
-  }
+  padding: $padding-default;
 }

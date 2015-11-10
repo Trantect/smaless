@@ -7,10 +7,6 @@
 .table {
   width: 100%;
   max-width: 100%;
-  // change tr background color when odd
-  > tbody > tr:nth-of-type(4n+1) {
-    background-color: $table-bg-accent;
-  }
   td{
     white-space: nowrap;
     overflow: hidden;
@@ -118,6 +114,18 @@
       .detail-title {
         font-weight: $font-weight-default;
       }
+  }
+}
+
+.table-stripped-2 {
+  // change tr background color when odd
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-bg-accent;
+  }
+}
+.table-stripped-4 {
+  > tbody > tr:nth-of-type(4n+1) {
+    background-color: $table-bg-accent;
   }
 }
 

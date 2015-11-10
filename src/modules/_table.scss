@@ -56,7 +56,7 @@
 .table-sort {
   > thead {
     cursor: $cursor-clickable;
-    .fa-sort-asc, .fa-sort-desc {
+    .fa-sort-asc, .fa-sort-desc, .fa-sort-up, .fa-sort-down {
       margin-left: $table-sort-icon-margin;
       opacity: $table-sort-opacity;
     }
@@ -90,7 +90,6 @@
 
 // Icon table
 .table .td-icon {
-  margin: $table-td-margin;
   padding: 2px 5px;
   border-radius: $table-td-radius;
   border: 1px solid $table-td-bordercolor;
@@ -98,9 +97,11 @@
   display: inline-block;
   > .fa-desktop {
     font-size: $table-icon-fontsize;
+    margin-right: 5px;
   }
   > .fa-client-group {
     margin-bottom: -2px;
+    margin-right: 5px;
   }
 }
 

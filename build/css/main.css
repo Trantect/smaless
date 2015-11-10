@@ -3899,7 +3899,7 @@ input[type="button"].btn-block {
 .table {
   width: 100%;
   max-width: 100%; }
-  .table > tbody > tr:nth-of-type(odd) {
+  .table > tbody > tr:nth-of-type(4n+1) {
     background-color: #fafbfc; }
   .table td {
     white-space: nowrap;

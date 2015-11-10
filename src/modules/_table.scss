@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 100%;
   // change tr background color when odd
-  > tbody > tr:nth-of-type(odd) {
+  > tbody > tr:nth-of-type(4n+1) {
     background-color: $table-bg-accent;
   }
   td{

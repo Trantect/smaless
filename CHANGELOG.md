@@ -1,3 +1,10 @@
+# Version: V 0.1.1
+# New Features
+none
+# Fixed Issues
+> modify .table-footer to .statistics
+> fix .fa-sort-up .fa-sort-down in .table
+
 # Version: V 0.1.0
 # New Features
 > ## color

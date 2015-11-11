@@ -1,0 +1,44 @@
+/**
+ * Description.
+ *
+ * @access private
+ * @throws An exception.
+ * @todo Write some code maybe?
+ * @see %hello
+ * @see $world
+ * @see some-function
+ * @see {mixin} baz
+ * @param {String} $bar - Some string.
+ * @returns {Map} A random map.
+ * @group Helpers & dirty hacks
+ * @link http://sassdoc.com/
+ *
+ * @example scss
+ *   $bar: foo('bar');
+ */
+ @function foo($bar) {}
+
+/// @author Foo Bar <foo@bar.com>
+/// @deprecated Hey <http://message/with/link>.
+/// @type Bool | Map
+/// @prop {String} world [!] - A description.
+/// @prop nested - Nested map (something).
+/// @prop {String | Bool} nested.foo [bar] - Stuff.
+///
+/// @example
+///   An example!
+$hello: (
+  world: '!',
+  nested: (
+    foo: 'bar'
+  )
+);
+
+/**
+ * @content Content.
+ * @ignore This does nothing anyway.
+ * @since 1.0 Useless feature.
+ */
+@mixin some-mixin() {
+  @content;
+}

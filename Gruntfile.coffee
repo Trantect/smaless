@@ -21,12 +21,23 @@ module.exports = (grunt)->
             ext: '.css'
           }
         ]
+    sassdoc:
+        default:
+          src: 'build'
+          options:
+            dest: 'sassdoc'
+            display:
+              access: ['public', 'private']
+              alias: true
+              watermark: true
 
     shell:
       installSASS:
         command: 'sudo gem install sass'
       moveFontLib:
         command: 'cp -r src/lib/* build/'
+      runSassDoc:
+        command: './node_modules/sassdoc/bin/sassdoc src sassDoc'
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -34,8 +45,9 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-sassdoc'
 
   grunt.registerTask "buildEnv", ["shell:installSASS"]
   grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib", "sass:lib", "shell:moveFontLib"]
+  grunt.registerTask "buildLib", ["cleanLib", "sass:lib", "shell:moveFontLib", "shell:runSassDoc"]
   grunt.registerTask "default", ["buildLib"]

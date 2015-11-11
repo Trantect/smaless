@@ -6,6 +6,7 @@ env:
 # clear old output files
 clean:
 	rm -rf build
+	rm -rf sassDoc
 
 # build output files by grunt
 # you can modify Gruntfile.coffee to change tasks

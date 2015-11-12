@@ -1,4 +1,4 @@
-# [smaless](http://emily123.github.io/smaless/)
+# [smaless](http://belindaliu.github.io/smalessAPIDocs/)
 
 # Quick links
 
@@ -61,7 +61,7 @@
 
 >
 
-> [http://emily123.github.io/smaless/](http://emily123.github.io/smaless/)
+> [http://belindaliu.github.io/smalessAPIDocs/](http://belindaliu.github.io/smalessAPIDocs/)
 
 
 <a id="issue"></a>

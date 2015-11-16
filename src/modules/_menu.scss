@@ -2,44 +2,52 @@
   margin: 0px;
   padding: 10px 0px 0px 0px;
   > li{
-    padding: 15px 5px 12px 0px;
+    padding: 12px 5px 12px 15px;
     margin-right: 1px;
     cursor: pointer;
     > a {
-      padding-left: 12px;
       color: $sidebar-font-color;
+    }
+    .fa {
+      width: 20px;
     }
     &:hover, &:focus {
       border-left: 4px solid #616e75;
       background-color: #dde3eb;
+      padding-left: 11px;
       a {
         color: #222;
-        padding-left: 8px;
       }
     }
   }
   > .active {
-    border-left: 4px solid #009fe4;
+    padding-left: 11px;
+    border-left: 4px solid $sidebar-active-color;
     > a {
-      color: #009fe4;
+      color:$sidebar-active-color;
       font-weight: bold;
     }
     &:hover, &:focus {
+      padding-left: 11px;
       border-left: 4px solid #009fe4;
       a {
-        padding-left: 12px;
+        color: #009fe4;
       }
     }
   }
-  > li > .menu {
-    > li > a {
-      border-left: 4px solid #e9eff8;
-      color: $sidebar-font-color;
+  .menu {
+    padding-top: 0px;
+    > li {
+      padding: 12px 5px 12px 35px;
+      &:hover, &:focus {
+        padding-left: 31px;
+      }
     }
-    > .active > a {
-      color: #009fe4;
-      border-left: 4px solid #009fe4;
-      font-weight: bold;
+    > .active {
+      padding-left: 30px;
+      &:hover, &:focus {
+        padding-left: 30px;
+      }
     }
   }
 }

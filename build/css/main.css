@@ -209,6 +209,11 @@ ul, ol {
   margin: 0;
   list-style: none; }
 
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+
 table {
   background-color: transparent;
   border-spacing: 0;
@@ -247,6 +252,11 @@ ul, ol {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -4057,13 +4067,66 @@ input[type="button"].btn-block {
 .panel-footer {
   padding: 8px; }
 
+.menu {
+  margin: 0px;
+  padding: 10px 0px 0px 0px; }
+  .menu > li {
+    padding: 12px 5px 12px 15px;
+    margin-right: 1px;
+    cursor: pointer; }
+    .menu > li > a {
+      color: #555555; }
+    .menu > li .fa {
+      width: 20px; }
+    .menu > li:hover, .menu > li:focus {
+      border-left: 4px solid #616e75;
+      background-color: #dde3eb;
+      padding-left: 11px; }
+      .menu > li:hover a, .menu > li:focus a {
+        color: #222; }
+  .menu > .active {
+    padding-left: 11px;
+    border-left: 4px solid #009fe4; }
+    .menu > .active > a {
+      color: #009fe4;
+      font-weight: bold; }
+    .menu > .active:hover, .menu > .active:focus {
+      padding-left: 11px;
+      border-left: 4px solid #009fe4; }
+      .menu > .active:hover a, .menu > .active:focus a {
+        color: #009fe4; }
+  .menu .menu {
+    padding-top: 0px; }
+    .menu .menu > li {
+      padding: 12px 5px 12px 35px; }
+      .menu .menu > li:hover, .menu .menu > li:focus {
+        padding-left: 31px; }
+    .menu .menu > .active {
+      padding-left: 30px; }
+      .menu .menu > .active:hover, .menu .menu > .active:focus {
+        padding-left: 30px; }
+
 /*
  * Layout: Sidebar
  * ------------------
  */
 #sidebar, sidebar {
+  min-height: 1446px;
   width: 220px;
-  position: absolute; }
+  position: absolute;
+  margin-bottom: 8px;
+  background: #e9eff8;
+  box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07); }
+  #sidebar .user-panel, sidebar .user-panel {
+    padding: 17px 0px 0px 15px; }
+    #sidebar .user-panel > .user-info, sidebar .user-panel > .user-info {
+      font-weight: 600;
+      color: #555555;
+      padding: 0px; }
+      #sidebar .user-panel > .user-info > p, sidebar .user-panel > .user-info > p {
+        margin-bottom: 15px; }
+  #sidebar > ul.menu, sidebar > ul.menu {
+    border-top: 2px solid #e0e6ed; }
 
 @-ms-viewport {
   width: device-width; }

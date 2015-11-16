@@ -66,7 +66,7 @@
 
 <a id="issue"></a>
 ## Issue
-
+> [https://github.com/emily123/smaless/issues](https://github.com/emily123/smaless/issues)
 
 <a id="faq"></a>
 ## FAQ

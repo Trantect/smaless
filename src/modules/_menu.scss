@@ -11,7 +11,9 @@
     }
     &:hover, &:focus {
       border-left: 4px solid #616e75;
+      background-color: #dde3eb;
       a {
+        color: #222;
         padding-left: 8px;
       }
     }

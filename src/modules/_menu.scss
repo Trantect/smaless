@@ -1,0 +1,27 @@
+.menu {
+  > li {
+    margin: 0px;
+    padding: 12px 5px 12px 15px;
+    > a {
+      padding: 12px 5px 12px 15px;
+      color: $sidebar-font-color;
+    }
+  }
+  > .active > a {
+    color: #009fe4;
+    border-left: 4px solid #009fe4;
+    font-weight: bold;
+  }
+  > li > .menu {
+    > li > a {
+      padding: 12px 5px 12px 35px;
+      border-left: 4px solid #e9eff8;
+      color: $sidebar-font-color;
+    }
+    > .active > a {
+      color: #009fe4;
+      border-left: 4px solid #009fe4;
+      font-weight: bold;
+    }
+  }
+}

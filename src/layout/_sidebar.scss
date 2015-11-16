@@ -3,6 +3,21 @@
  * ------------------
  */
 #sidebar, sidebar {
+  min-height: 1446px;
   width: $sidebar-width;
   position: absolute;
+  margin-bottom: $margin-default;
+  background: #e9eff8;
+  box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
+  .user-panel {
+    padding: 17px 0px 0px 15px;
+    > .user-info {
+      font-weight: 600;
+      color: #555555;
+    }
+  }
+  > ul.menu {
+    border-top: 2px solid #e0e6ed;
+    padding: 17px 0px 0px 15px;
+  }
 }

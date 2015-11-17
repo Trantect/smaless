@@ -1,0 +1,23 @@
+/// Modules footer
+.footer {
+  padding: 20px 15px;
+  font-size: $font-size-base;
+  color: $footer-color;
+  background-color: rgb(238, 243, 250);
+  a{
+    color: $link-color;
+  }
+  a:hover, a:focus {
+    color: $footer-a-hover-color;
+  }
+}
+@media screen and (max-width: $screen-xs-max) {
+  .responsive-footer {
+    .is-align-right {
+      float: none;
+      margin-top: 10px;
+      text-align: center;
+      display: block;
+    }
+  }
+}

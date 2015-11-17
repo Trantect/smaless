@@ -1,0 +1,41 @@
+/**
+ * Description.
+ * @group Mixins
+ * @todo Write something
+ */
+
+@mixin footer() {
+  width: 100%;
+  display: table;
+  padding: 20px 0px;
+  font-size: $font-size-base;
+  > span {
+    padding-left: 15px;
+    display: table-cell;
+    color: $footer-color;
+  }
+  .help {
+    display: table-cell;
+    text-align: right;
+    padding-right: 15px;
+    a {
+      color: $link-color;
+    }
+    a:hover, a:focus {
+      color: $footer-a-hover-color;
+    }
+  }
+}
+/**
+ *@group footer-responsive
+ *
+ */
+@mixin footer-responsive() {
+  > span, .help {
+    display: block;
+    text-align: center;
+  }
+  .help {
+    margin-top: 10px;
+  }
+}

@@ -1,13 +1,9 @@
 /// Layout footer
 footer, #footer {
-  padding: 20px 15px;
-  font-size: $font-size-base;
-  color: $footer-color;
-  background-color: rgb(238, 243, 250);
-  a{
-    color: $link-color;
-  }
-  a:hover, a:focus {
-    color: $footer-a-hover-color;
+  @include footer()
+}
+@media screen and (max-width: $screen-sm-max) {
+  footer, #footer {
+    @include footer-responsive();
   }
 }

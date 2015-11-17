@@ -6,6 +6,7 @@
     margin-right: 1px;
     cursor: pointer;
     > a {
+      display: block;
       color: $sidebar-font-color;
     }
     .fa {
@@ -20,7 +21,8 @@
       }
     }
   }
-  > .active {
+
+  > .is-active {
     padding-left: 11px;
     border-left: 4px solid $sidebar-active-color;
     > a {
@@ -35,7 +37,9 @@
       }
     }
   }
+
   .menu {
+    display: block;
     padding-top: 0px;
     > li {
       padding: 12px 5px 12px 35px;
@@ -43,7 +47,7 @@
         padding-left: 31px;
       }
     }
-    > .active {
+    > .is-active {
       padding-left: 30px;
       &:hover, &:focus {
         padding-left: 30px;

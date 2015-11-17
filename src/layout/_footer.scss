@@ -1,12 +1,11 @@
 /// Layout footer
 footer, #footer {
-  padding: $padding-default;
+  padding: 20px 15px;
   font-size: $font-size-base;
-  text-align: center !important;
   color: $footer-color;
   background-color: rgb(238, 243, 250);
   a{
-    color: $footer-color;
+    color: $link-color;
   }
   a:hover, a:focus {
     color: $footer-a-hover-color;

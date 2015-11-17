@@ -4091,18 +4091,11 @@ input[type="button"].btn-block {
   padding: 20px 0px;
   font-size: 14px;
   background-color: #eef3fa; }
-  .footer > span {
-    padding-left: 15px;
-    display: table-cell;
-    color: #777; }
-  .footer .help {
-    display: table-cell;
-    text-align: right;
-    padding-right: 15px; }
-    .footer .help a {
-      color: #0189FF; }
-    .footer .help a:hover, .footer .help a:focus {
-      color: #2a6496; }
+  .footer > :first-child:not(.copyright) {
+    text-align: center;
+    color: #777;
+    width: 100%;
+    display: inline-block; }
 
 @media screen and (max-width: 991px) {
   .footer > span, .footer .help {
@@ -4110,6 +4103,19 @@ input[type="button"].btn-block {
     text-align: center; }
   .footer .help {
     margin-top: 10px; } }
+.help {
+  display: table-cell;
+  text-align: right;
+  padding-right: 15px; }
+  .help a {
+    color: #0189FF; }
+  .help a:hover, .help a:focus {
+    color: #2a6496; }
+
+.copyright {
+  padding-left: 15px;
+  color: #777; }
+
 /*
  * Layout: Sidebar
  * ------------------
@@ -4428,18 +4434,11 @@ footer, #footer {
   display: table;
   padding: 20px 0px;
   font-size: 14px; }
-  footer > span, #footer > span {
-    padding-left: 15px;
-    display: table-cell;
-    color: #777; }
-  footer .help, #footer .help {
-    display: table-cell;
-    text-align: right;
-    padding-right: 15px; }
-    footer .help a, #footer .help a {
-      color: #0189FF; }
-    footer .help a:hover, footer .help a:focus, #footer .help a:hover, #footer .help a:focus {
-      color: #2a6496; }
+  footer > :first-child:not(.copyright), #footer > :first-child:not(.copyright) {
+    text-align: center;
+    color: #777;
+    width: 100%;
+    display: inline-block; }
 
 @media screen and (max-width: 991px) {
   footer > span, footer .help, #footer > span, #footer .help {

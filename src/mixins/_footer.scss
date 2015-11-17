@@ -9,20 +9,12 @@
   display: table;
   padding: 20px 0px;
   font-size: $font-size-base;
-  > span {
-    padding-left: 15px;
-    display: table-cell;
-    color: $footer-color;
-  }
-  .help {
-    display: table-cell;
-    text-align: right;
-    padding-right: 15px;
-    a {
-      color: $link-color;
-    }
-    a:hover, a:focus {
-      color: $footer-a-hover-color;
+  > :first-child {
+    &:not(.copyright) {
+      text-align: center;
+      color: $footer-color;
+      width: 100%;
+      display: inline-block;
     }
   }
 }

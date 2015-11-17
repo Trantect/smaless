@@ -8,3 +8,20 @@
     @include footer-responsive();
   }
 }
+
+.help {
+  display: table-cell;
+  text-align: right;
+  padding-right: 15px;
+  a {
+    color: $link-color;
+  }
+  a:hover, a:focus {
+    color: $footer-a-hover-color;
+  }
+}
+
+.copyright{
+  padding-left: 15px;
+  color: $footer-color;
+}

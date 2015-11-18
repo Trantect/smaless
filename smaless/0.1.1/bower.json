@@ -1,0 +1,23 @@
+{
+  "name": "smaless",
+  "version": "0.1.1",
+  "homepage": "http://emily123.github.io/smaless/",
+  "authors": [
+    "emily.liu@trantect.com"
+  ],
+  "description": "",
+  "main": "build",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "ignore": [
+    "test",
+    "src",
+    "Makefile",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.coffee",
+    "package.json"
+  ]
+}

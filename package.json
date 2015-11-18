@@ -1,0 +1,7 @@
+{
+  "name": "smaless",
+  "version": "0.0.0",
+  "devDependencies": {
+    "bower": "1.6.3"
+  }
+}

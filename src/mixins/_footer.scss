@@ -9,10 +9,10 @@
   display: table;
   padding: 20px 0px;
   font-size: $font-size-base;
+  color: $gray-light;
   > :first-child {
     &:not(.copyright) {
       text-align: center;
-      color: $footer-color;
       width: 100%;
       display: inline-block;
     }

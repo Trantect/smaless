@@ -12,12 +12,12 @@
 
 //== Base Color
 // --------------------------------------------------
-$gray-base:              #282C34 !default;
-$gray-darker:            lighten($gray-base, 10%) !default;
-$gray-dark:              lighten($gray-base, 45%) !default;
-$gray:                   lighten($gray-base, 0%)  !default;
-$gray-light:             lighten($gray-base, 70%) !default; //(for default button )
-$gray-lighter:           lighten($gray-base, 76%) !default;
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $color-white: #fff !default;
 $color-black: #000 !default;
@@ -635,7 +635,6 @@ $cursor-disabled:                not-allowed;
 $cursor-clickable:               pointer;
 
 // Layout footer
-$footer-color:                    #777;
 $footer-a-hover-color:            #2a6496;
 
 // Panel

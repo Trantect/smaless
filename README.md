@@ -9,6 +9,8 @@
 
 > [Demo](#demo)
 
+> [CND](#cdn)
+
 > [Issue](#issue)
 
 > [FAQ](#faq)
@@ -62,6 +64,13 @@
 >
 
 > [http://belindaliu.github.io/smalessAPIDocs/](http://belindaliu.github.io/smalessAPIDocs/)
+
+<a id="cdn"></a>
+## CDN
+
+>
+
+> [http://emily123.github.io/smaless/](http://emily123.github.io/smaless/)
 
 
 <a id="issue"></a>

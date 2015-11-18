@@ -5,8 +5,35 @@
     <title>smalessCDN</title>
   </head>
   <body>
-    <p>
-      test
-    </p>
+    <h2>smaless CDN: </h2>
+    <div id="download">
+    </div>
+    <script type="text/javascript">
+      var fileNames;
+      function readTextFile(file){
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function (){
+          if(rawFile.readyState === 4){
+            if(rawFile.status === 200 || rawFile.status == 0){
+                var allText = rawFile.responseText;
+                fileNames = allText.split(" ");
+                for(i in fileNames){
+                  var node = document.createElement("P");
+                  node.id = fileNames[i];
+                  var aTag = document.createElement("A");
+                  aTag.href = "./smaless/" + fileNames[i] + "/build/css/main.css";
+                  aTag.innerHTML = "http://emily123.github.io/smaless/smaless/" + fileNames[i] + "/build/css/main.css";
+                  node.appendChild(aTag);
+                  var download = document.getElementById("download");
+                  download.appendChild(node);
+                }
+              }
+          }
+        }
+        rawFile.send(null);
+      }
+      readTextFile("./smaless/versionList.txt");
+    </script>
   </body>
 </html>

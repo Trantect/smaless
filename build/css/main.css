@@ -4071,9 +4071,9 @@ input[type="button"].btn-block {
   margin: 0px;
   padding: 10px 0px 0px 0px; }
   .menu > li {
+    border-left: 4px solid #e9eff8;
     padding: 12px 5px 12px 15px;
-    margin-right: 1px;
-    cursor: pointer; }
+    margin-right: 1px; }
     .menu > li > a {
       display: block;
       color: #555555; }
@@ -4082,17 +4082,17 @@ input[type="button"].btn-block {
     .menu > li:hover, .menu > li:focus {
       border-left: 4px solid #616e75;
       background-color: #dde3eb;
-      padding-left: 11px; }
+      padding: 12px 5px 12px 15px; }
       .menu > li:hover a, .menu > li:focus a {
         color: #222; }
   .menu > .is-active {
-    padding-left: 11px;
+    padding: 12px 5px 12px 15px;
     border-left: 4px solid #009fe4; }
     .menu > .is-active > a {
       color: #009fe4;
       font-weight: bold; }
     .menu > .is-active:hover, .menu > .is-active:focus {
-      padding-left: 11px;
+      padding: 12px 5px 12px 15px;
       border-left: 4px solid #009fe4; }
       .menu > .is-active:hover a, .menu > .is-active:focus a {
         color: #009fe4; }
@@ -4102,11 +4102,11 @@ input[type="button"].btn-block {
     .menu .menu > li {
       padding: 12px 5px 12px 35px; }
       .menu .menu > li:hover, .menu .menu > li:focus {
-        padding-left: 31px; }
+        padding: 12px 5px 12px 35px; }
     .menu .menu > .is-active {
-      padding-left: 30px; }
+      padding: 12px 5px 12px 35px; }
       .menu .menu > .is-active:hover, .menu .menu > .is-active:focus {
-        padding-left: 30px; }
+        padding: 12px 5px 12px 35px; }
 
 /*
  * Layout: Sidebar
@@ -4424,12 +4424,13 @@ body {
   .sidebar-open .content-wrapper, .sidebar-open .right-side, .sidebar-open .main-footer {
     transform: translate(220px, 0); } }
 footer, #footer {
-  padding: 20px 15px;
+  padding: 8px;
   font-size: 14px;
+  text-align: center !important;
   color: #777;
   background-color: #eef3fa; }
   footer a, #footer a {
-    color: #0189FF; }
+    color: #777; }
   footer a:hover, footer a:focus, #footer a:hover, #footer a:focus {
     color: #2a6496; }
 

@@ -4111,9 +4111,8 @@ input[type="button"].btn-block {
       padding: 12px 5px 12px 35px; }
       .menu .menu > .is-active > a:hover, .menu .menu > .is-active > a:focus {
         padding: 12px 5px 12px 35px; }
-
-.fa {
-  width: 20px; }
+  .menu .fa {
+    width: 20px; }
 
 .footer {
   width: 100%;

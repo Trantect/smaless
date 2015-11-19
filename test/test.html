@@ -13,39 +13,39 @@
         </div>
       </div>
       <ul class="menu">
-        <li>
+        <li class="is-active">
           <a href="/">
             <i class="fa fa-home"></i><span>首页</span>
           </a>
         </li>
         <li>
-          <a data-toggle="collapse" href="#pbe-terminal" class="">
+          <a data-toggle="collapse" href="#pbe-terminal" class="is-active">
             <i class="fa fa-laptop"></i><span>终端管理</span>
             <i class="fa fa-angle-up  is-align-right"></i>
           </a>
+          <ul class="menu">
+            <li>
+              <a href="/securitymonitor">
+                <i class="fa fa-circle-thin fa-1"></i><span>安全监控</span>
+              </a>
+            </li>
+            <li>
+              <a href="/terminalupgrademanager">
+                <i class="fa fa-circle-thin fa-1"></i><span>终端升级</span>
+              </a>
+            </li>
+            <li>
+              <a href="/bootspeed">
+                <i class="fa fa-circle-thin fa-1"></i><span>开机加速</span>
+              </a>
+            </li>
+            <li>
+              <a href="/hardwareInfo">
+                <i class="fa fa-circle-thin fa-1"></i><span>硬件资产</span>
+              </a>
+            </li>
+          </ul>
         </li>
-        <ul class="menu">
-          <li>
-            <a href="/securitymonitor">
-              <i class="fa fa-circle-thin fa-1"></i><span>安全监控</span>
-            </a>
-          </li>
-          <li>
-            <a href="/terminalupgrademanager">
-              <i class="fa fa-circle-thin fa-1"></i><span>终端升级</span>
-            </a>
-          </li>
-          <li class="is-active">
-            <a href="/bootspeed">
-              <i class="fa fa-circle-thin fa-1"></i><span>开机加速</span>
-            </a>
-          </li>
-          <li>
-            <a href="/hardwareInfo">
-              <i class="fa fa-circle-thin fa-1"></i><span>硬件资产</span>
-            </a>
-          </li>
-        </ul>
 
         <li>
           <a href="/softwaremanager">
@@ -110,19 +110,19 @@
             <i class="fa fa-cog"></i><span>设置中心</span>
             <i class="fa fa-angle-down  is-align-right"></i>
           </a>
+          <ul class="menu">
+            <li>
+              <a href="/serverConfig">
+                <i class="fa fa-circle-thin fa-1"></i><span>控制中心相关设置</span>
+              </a>
+            </li>
+            <li>
+              <a href="/clientConfig">
+                <i class="fa fa-circle-thin fa-1"></i><span>终端相关设置</span>
+              </a>
+            </li>
+          </ul>
         </li>
-        <ul class="menu">
-          <li>
-            <a href="/serverConfig">
-              <i class="fa fa-circle-thin fa-1"></i><span>控制中心相关设置</span>
-            </a>
-          </li>
-          <li>
-            <a href="/clientConfig">
-              <i class="fa fa-circle-thin fa-1"></i><span>终端相关设置</span>
-            </a>
-          </li>
-        </ul>
       </ul>
       <ul class="menu">
         <li>
@@ -417,7 +417,7 @@
         <span>Copyright © 2015 Your Company name</span>
         <span class="line">|</span>
         <span>Version: 1.0 alpha</span>
-      </span>  
+      </span>
       <span class="help">
         <span><a href="http://alpha.nj.trantect.com">云子可信官网</a></span>
         <span class="line">|</span>

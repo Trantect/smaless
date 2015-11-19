@@ -4079,43 +4079,41 @@ input[type="button"].btn-block {
 .menu {
   margin: 0px;
   padding: 10px 0px 0px 0px; }
-  .menu > li {
-    border-left: 4px solid #e9eff8;
-    padding: 12px 5px 12px 15px;
+  .menu li {
     margin-right: 1px; }
-    .menu > li > a {
+    .menu li > a {
       display: block;
-      color: #555555; }
-    .menu > li .fa {
-      width: 20px; }
-    .menu > li:hover, .menu > li:focus {
-      border-left: 4px solid #616e75;
-      background-color: #dde3eb;
-      padding: 12px 5px 12px 15px; }
-      .menu > li:hover a, .menu > li:focus a {
-        color: #222; }
-  .menu > .is-active {
-    padding: 12px 5px 12px 15px;
-    border-left: 4px solid #009fe4; }
-    .menu > .is-active > a {
-      color: #009fe4;
-      font-weight: bold; }
-    .menu > .is-active:hover, .menu > .is-active:focus {
       padding: 12px 5px 12px 15px;
-      border-left: 4px solid #009fe4; }
-      .menu > .is-active:hover a, .menu > .is-active:focus a {
-        color: #009fe4; }
+      color: #555555;
+      border-left: 4px solid #e9eff8; }
+      .menu li > a:hover, .menu li > a:focus {
+        background-color: #dde3eb;
+        padding: 12px 5px 12px 15px;
+        color: #222;
+        border-left: 4px solid #616e75; }
+  .menu > .is-active > a {
+    padding: 12px 5px 12px 15px;
+    color: #009fe4;
+    border-left: 4px solid #009fe4;
+    font-weight: bold; }
+    .menu > .is-active > a:hover, .menu > .is-active > a:focus {
+      padding: 12px 5px 12px 15px;
+      border-left: 4px solid #009fe4;
+      color: #009fe4; }
   .menu .menu {
     display: block;
     padding-top: 0px; }
-    .menu .menu > li {
+    .menu .menu > li > a {
       padding: 12px 5px 12px 35px; }
-      .menu .menu > li:hover, .menu .menu > li:focus {
+      .menu .menu > li > a:hover, .menu .menu > li > a:focus {
         padding: 12px 5px 12px 35px; }
-    .menu .menu > .is-active {
+    .menu .menu > .is-active > a {
       padding: 12px 5px 12px 35px; }
-      .menu .menu > .is-active:hover, .menu .menu > .is-active:focus {
+      .menu .menu > .is-active > a:hover, .menu .menu > .is-active > a:focus {
         padding: 12px 5px 12px 35px; }
+
+.fa {
+  width: 20px; }
 
 .footer {
   width: 100%;

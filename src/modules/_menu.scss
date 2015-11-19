@@ -1,38 +1,30 @@
 .menu {
   margin: 0px;
   padding: 10px 0px 0px 0px;
-  > li{
-    border-left: 4px solid $sidebar-bg-color;
-    padding: 12px 5px 12px 15px;
+  li {
     margin-right: 1px;
     > a {
       display: block;
-      color: $sidebar-font-color;
-    }
-    .fa {
-      width: 20px;
-    }
-    &:hover, &:focus {
-      border-left: 4px solid $sidebar-hover-bordercolor;
-      background-color: $sidebar-hover-bgcolor;
       padding: 12px 5px 12px 15px;
-      a {
+      color: $sidebar-font-color;
+      border-left: 4px solid $sidebar-bg-color;
+      &:hover, &:focus {
+        background-color: $sidebar-hover-bgcolor;
+        padding: 12px 5px 12px 15px;
         color: $sidebar-hover-color;
+        border-left: 4px solid $sidebar-hover-bordercolor;
       }
     }
   }
-
   > .is-active {
-    padding: 12px 5px 12px 15px;
-    border-left: 4px solid $sidebar-active-color;
     > a {
-      color:$sidebar-active-color;
-      font-weight: bold;
-    }
-    &:hover, &:focus {
       padding: 12px 5px 12px 15px;
+      color:$sidebar-active-color;
       border-left: 4px solid $sidebar-active-color;
-      a {
+      font-weight: bold;
+      &:hover, &:focus {
+        padding: 12px 5px 12px 15px;
+        border-left: 4px solid $sidebar-active-color;
         color: $sidebar-active-color;
       }
     }
@@ -42,16 +34,24 @@
     display: block;
     padding-top: 0px;
     > li {
-      padding: 12px 5px 12px 35px;
-      &:hover, &:focus {
+      > a {
         padding: 12px 5px 12px 35px;
+        &:hover, &:focus {
+          padding: 12px 5px 12px 35px;
+        }
       }
+
     }
     > .is-active {
-      padding: 12px 5px 12px 35px;
-      &:hover, &:focus {
+      > a {
         padding: 12px 5px 12px 35px;
+        &:hover, &:focus {
+          padding: 12px 5px 12px 35px;
+        }
       }
     }
   }
+}
+.fa {
+  width: 20px;
 }

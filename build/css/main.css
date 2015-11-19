@@ -171,12 +171,13 @@
   color: #fff; }
 
 /**
- * Description.
- * @group Mixins
+ * The footer is for layout and module
+ * @group footer
  * @todo Write something
  */
 /**
- *@group footer-responsive
+ * The footer-responsive is for layout and module
+ * @group footer-responsive
  *
  */
 table {
@@ -4120,7 +4121,9 @@ input[type="button"].btn-block {
   padding: 20px 0px;
   font-size: 14px;
   color: #777777;
-  background-color: #eef3fa; }
+  background-color: #eef3fa;
+  position: absolute;
+  bottom: 0px; }
   .footer > :first-child:not(.copyright) {
     text-align: center;
     width: 100%;
@@ -4463,6 +4466,12 @@ body {
 @media (max-width: 776px) {
   .sidebar-open .content-wrapper, .sidebar-open .right-side, .sidebar-open .main-footer {
     transform: translate(220px, 0); } }
+/**
+ * Description.
+ * @group footer
+ *
+ *
+ */
 footer, #footer {
   width: 100%;
   display: table;
@@ -4481,10 +4490,11 @@ footer, #footer {
   footer .help, #footer .help {
     margin-top: 10px; } }
 content, #content {
-  margin-left: 220px;
+  position: relative;
   display: block;
   min-height: 669px;
-  padding: 8px;
+  padding: 8px 8px 59px 8px;
+  margin-left: 220px;
   background-color: #eef3fa; }
 
 .is-nopadding {

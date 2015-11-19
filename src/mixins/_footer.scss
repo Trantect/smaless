@@ -1,6 +1,6 @@
 /**
- * Description.
- * @group Mixins
+ * The footer is for layout and module
+ * @group footer
  * @todo Write something
  */
 
@@ -19,7 +19,8 @@
   }
 }
 /**
- *@group footer-responsive
+ * The footer-responsive is for layout and module
+ * @group footer-responsive
  *
  */
 @mixin footer-responsive() {

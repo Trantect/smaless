@@ -1,8 +1,9 @@
 /// Layout content
 content, #content {
-  margin-left: $sidebar-width;
+  position: relative;
   display: block;
   min-height: 669px;
-  padding: $padding-default;
+  padding: $padding-default $padding-default 59px $padding-default;
+  margin-left: $sidebar-width;
   background-color: rgb(238, 243, 250);
 }

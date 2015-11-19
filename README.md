@@ -9,7 +9,7 @@
 
 > [Demo](#demo)
 
-> [CND](#cdn)
+> [CDN](#cdn)
 
 > [Issue](#issue)
 

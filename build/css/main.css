@@ -4116,6 +4116,9 @@ input[type="button"].btn-block {
   padding-left: 15px;
   color: #777777; }
 
+.line {
+  margin: 0px 8px; }
+
 /*
  * Layout: Sidebar
  * ------------------

@@ -218,6 +218,11 @@ ul, ol {
   margin: 0;
   list-style: none; }
 
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+
 table {
   background-color: transparent;
   border-spacing: 0;
@@ -256,6 +261,11 @@ ul, ol {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -4066,24 +4076,46 @@ input[type="button"].btn-block {
 .panel-footer {
   padding: 8px; }
 
-.menu > li {
+.menu {
   margin: 0px;
-  padding: 12px 5px 12px 15px; }
-  .menu > li > a {
+  padding: 10px 0px 0px 0px; }
+  .menu > li {
+    border-left: 4px solid #e9eff8;
     padding: 12px 5px 12px 15px;
-    color: #555555; }
-.menu > .active > a {
-  color: #009fe4;
-  border-left: 4px solid #009fe4;
-  font-weight: bold; }
-.menu > li > .menu > li > a {
-  padding: 12px 5px 12px 35px;
-  border-left: 4px solid #e9eff8;
-  color: #555555; }
-.menu > li > .menu > .active > a {
-  color: #009fe4;
-  border-left: 4px solid #009fe4;
-  font-weight: bold; }
+    margin-right: 1px; }
+    .menu > li > a {
+      display: block;
+      color: #555555; }
+    .menu > li .fa {
+      width: 20px; }
+    .menu > li:hover, .menu > li:focus {
+      border-left: 4px solid #616e75;
+      background-color: #dde3eb;
+      padding: 12px 5px 12px 15px; }
+      .menu > li:hover a, .menu > li:focus a {
+        color: #222; }
+  .menu > .is-active {
+    padding: 12px 5px 12px 15px;
+    border-left: 4px solid #009fe4; }
+    .menu > .is-active > a {
+      color: #009fe4;
+      font-weight: bold; }
+    .menu > .is-active:hover, .menu > .is-active:focus {
+      padding: 12px 5px 12px 15px;
+      border-left: 4px solid #009fe4; }
+      .menu > .is-active:hover a, .menu > .is-active:focus a {
+        color: #009fe4; }
+  .menu .menu {
+    display: block;
+    padding-top: 0px; }
+    .menu .menu > li {
+      padding: 12px 5px 12px 35px; }
+      .menu .menu > li:hover, .menu .menu > li:focus {
+        padding: 12px 5px 12px 35px; }
+    .menu .menu > .is-active {
+      padding: 12px 5px 12px 35px; }
+      .menu .menu > .is-active:hover, .menu .menu > .is-active:focus {
+        padding: 12px 5px 12px 35px; }
 
 .footer {
   width: 100%;
@@ -4134,10 +4166,12 @@ input[type="button"].btn-block {
     padding: 17px 0px 0px 15px; }
     #sidebar .user-panel > .user-info, sidebar .user-panel > .user-info {
       font-weight: 600;
-      color: #555555; }
+      color: #555555;
+      padding: 0px; }
+      #sidebar .user-panel > .user-info > p, sidebar .user-panel > .user-info > p {
+        margin-bottom: 15px; }
   #sidebar > ul.menu, sidebar > ul.menu {
-    border-top: 2px solid #e0e6ed;
-    padding: 17px 0px 0px 15px; }
+    border-top: 2px solid #e0e6ed; }
 
 @-ms-viewport {
   width: device-width; }

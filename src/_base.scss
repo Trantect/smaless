@@ -49,3 +49,8 @@ ul,ol {
   margin: 0;
   list-style: none;
 }
+body {
+  color: #333;
+  font-size: $font-size-base;
+  font-family:  Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体";
+}

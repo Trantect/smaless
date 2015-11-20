@@ -12,21 +12,22 @@
 
 //== Base Color
 // --------------------------------------------------
-$gray-base:              #282C34 !default;
-$gray-darker:            lighten($gray-base, 10%) !default;
-$gray-dark:              lighten($gray-base, 45%) !default;
-$gray:                   lighten($gray-base, 0%)  !default;
-$gray-light:             lighten($gray-base, 70%) !default; //(for default button )
-$gray-lighter:           lighten($gray-base, 76%) !default;
 
-$color-white: #fff !default;
-$color-black: #000 !default;
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$color-white:            #fff !default;
+$color-black:            #000 !default;
 
 $brand-success:     #00c644 !default;
 $brand-complete:    #2979fb !default;
-$brand-primary:     #0189FF !default;
+$brand-primary:     #0c85e2 !default;
 $brand-warning:     #f0ad4e !default;
-$brand-danger:      #f55753 !default;
+$brand-danger:      #f56c60 !default;
 $brand-info:        #33c5df !default;
 $brand-menu:        $gray-base !default;
 
@@ -623,8 +624,8 @@ $pagination-hover-bg:                  $gray-lighter;
 $pagination-hover-border:              #ddd;
 
 $pagination-active-color:              #fff;
-$pagination-active-bg:                 #009fe4;
-$pagination-active-border:             #009fe4;
+$pagination-active-bg:                 $brand-primary;
+$pagination-active-border:             $brand-primary;
 
 $pagination-disabled-color:            #777;
 $pagination-disabled-bg:               #fff;
@@ -635,7 +636,6 @@ $cursor-disabled:                not-allowed;
 $cursor-clickable:               pointer;
 
 // Layout footer
-$footer-color:                    #777;
 $footer-a-hover-color:            #2a6496;
 
 // Panel
@@ -645,3 +645,8 @@ $panel-radius:                    3px;
 // sidebar
 $sidebar-width:                    220px;
 $sidebar-font-color:               #555555;
+$sidebar-bg-color:                 #e9eff8;
+$sidebar-hover-color:              #222;
+$sidebar-hover-bordercolor:        #616e75;
+$sidebar-hover-bgcolor:            #dde3eb;
+$sidebar-active-color:             $brand-primary;

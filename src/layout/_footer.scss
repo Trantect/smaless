@@ -1,7 +1,14 @@
-/// Layout footer
+/**
+ * This footer is layout.
+ */
+
 footer, #footer {
   @include footer()
 }
+
+/**
+ * This footer-responsive is layout.
+ */
 @media screen and (max-width: $screen-sm-max) {
   footer, #footer {
     @include footer-responsive();

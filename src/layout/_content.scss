@@ -1,8 +1,14 @@
 /// Layout content
 content, #content {
-  margin-left: $sidebar-width;
+  position: relative;
   display: block;
   min-height: 669px;
-  padding: $padding-default;
+  padding: 0px 0px 59px 0px;
+  margin-left: $sidebar-width;
   background-color: rgb(238, 243, 250);
+}
+@media screen and (max-width: $screen-sm-max) {
+  content, #content {
+    margin-left: 0px;
+  }
 }

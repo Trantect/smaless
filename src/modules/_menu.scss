@@ -1,27 +1,57 @@
 .menu {
-  > li {
-    margin: 0px;
-    padding: 12px 5px 12px 15px;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  li {
+    margin-right: 1px;
     > a {
+      display: block;
       padding: 12px 5px 12px 15px;
       color: $sidebar-font-color;
+      border-left: 4px solid $sidebar-bg-color;
+      &:hover, &:focus {
+        background-color: $sidebar-hover-bgcolor;
+        padding: 12px 5px 12px 15px;
+        color: $sidebar-hover-color;
+        border-left: 4px solid $sidebar-hover-bordercolor;
+      }
     }
   }
-  > .active > a {
-    color: #009fe4;
-    border-left: 4px solid #009fe4;
-    font-weight: bold;
-  }
-  > li > .menu {
-    > li > a {
-      padding: 12px 5px 12px 35px;
-      border-left: 4px solid #e9eff8;
-      color: $sidebar-font-color;
-    }
-    > .active > a {
-      color: #009fe4;
-      border-left: 4px solid #009fe4;
+  > .is-active {
+    > a {
+      padding: 12px 5px 12px 15px;
+      color:$sidebar-active-color;
+      border-left: 4px solid $sidebar-active-color;
       font-weight: bold;
+      &:hover, &:focus {
+        padding: 12px 5px 12px 15px;
+        border-left: 4px solid $sidebar-active-color;
+        color: $sidebar-active-color;
+      }
     }
+  }
+
+  .menu {
+    display: block;
+    padding-top: 0px;
+    > li {
+      > a {
+        padding: 12px 5px 12px 35px;
+        &:hover, &:focus {
+          padding: 12px 5px 12px 35px;
+        }
+      }
+
+    }
+    > .is-active {
+      > a {
+        padding: 12px 5px 12px 35px;
+        &:hover, &:focus {
+          padding: 12px 5px 12px 35px;
+        }
+      }
+    }
+  }
+  .fa {
+    width: 20px;
   }
 }

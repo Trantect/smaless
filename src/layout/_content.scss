@@ -7,3 +7,8 @@ content, #content {
   margin-left: $sidebar-width;
   background-color: rgb(238, 243, 250);
 }
+@media screen and (max-width: $screen-sm-max) {
+  content, #content {
+    margin-left: 0px;
+  }
+}

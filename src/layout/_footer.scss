@@ -1,14 +1,14 @@
 /**
- * Description.
- * @group footer
- *
- *
+ * This footer is layout.
  */
-/// Layout footer
 
 footer, #footer {
   @include footer()
 }
+
+/**
+ * This footer-responsive is layout.
+ */
 @media screen and (max-width: $screen-sm-max) {
   footer, #footer {
     @include footer-responsive();

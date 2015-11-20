@@ -2,7 +2,7 @@
  * Layout: Sidebar
  * ------------------
  */
-#sidebar, sidebar {
+sidebar, #sidebar {
   min-height: 1446px;
   width: $sidebar-width;
   position: absolute;
@@ -22,5 +22,10 @@
   }
   > ul.menu {
     border-top: 2px solid #e0e6ed;
+  }
+}
+@media screen and (max-width: $screen-sm-max) {
+  sidebar, #sidebar {
+    left: -220px;
   }
 }

@@ -12,6 +12,7 @@
 
 //== Base Color
 // --------------------------------------------------
+
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
@@ -19,14 +20,14 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$color-white: #fff !default;
-$color-black: #000 !default;
+$color-white:            #fff !default;
+$color-black:            #000 !default;
 
 $brand-success:     #00c644 !default;
 $brand-complete:    #2979fb !default;
-$brand-primary:     #0189FF !default;
+$brand-primary:     #0c85e2 !default;
 $brand-warning:     #f0ad4e !default;
-$brand-danger:      #f55753 !default;
+$brand-danger:      #f56c60 !default;
 $brand-info:        #33c5df !default;
 $brand-menu:        $gray-base !default;
 
@@ -623,8 +624,8 @@ $pagination-hover-bg:                  $gray-lighter;
 $pagination-hover-border:              #ddd;
 
 $pagination-active-color:              #fff;
-$pagination-active-bg:                 #009fe4;
-$pagination-active-border:             #009fe4;
+$pagination-active-bg:                 $brand-primary;
+$pagination-active-border:             $brand-primary;
 
 $pagination-disabled-color:            #777;
 $pagination-disabled-bg:               #fff;
@@ -648,4 +649,4 @@ $sidebar-bg-color:                 #e9eff8;
 $sidebar-hover-color:              #222;
 $sidebar-hover-bordercolor:        #616e75;
 $sidebar-hover-bgcolor:            #dde3eb;
-$sidebar-active-color:             #009fe4;
+$sidebar-active-color:             $brand-primary;

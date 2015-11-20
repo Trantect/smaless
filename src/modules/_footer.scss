@@ -1,16 +1,55 @@
-/// Modules footer
+/**
+  * @module Media [.media]
+  * @description Place an image to the left of a block of content
+  *
+  * @modifier [.media--reversed] Place the image to the right of the content
+  * @name dfdrsgtsd
+  * @example
+    <div class="media">
+      <img class="media__img" src="http://www.placecage.com/150/150" alt="Cage" />
+      <p class="media__content">Sorry boss but there's only two men I trust. One of them's me. The other's not you. Put... the bunny... back... in the box.</p>
+    </div>
+*/
+.media {
+  background-color: rgb(238, 243, 250);
+  position: absolute;
+  bottom: 0px;
+}
+
+％guigh {
+  @include footer();
+}
+
+/**
+  * @submodule Media Image [.media__img]
+  * @description Image container for media
+  */
+@function  gh() {}
+.media__img {
+  background-color: rgb(238, 243, 250);
+  position: absolute;
+  bottom: 0px;
+}
 .footer {
+  /// This is include footer and add some features of  module footer
     @include footer();
     background-color: rgb(238, 243, 250);
     position: absolute;
     bottom: 0px;
 }
+
+/**
+ * This footer-responsive is module
+ */
 @media screen and (max-width: $screen-sm-max) {
   .footer {
     @include footer-responsive();
   }
 }
 
+/**
+ * ClassName(help) is a module and its function is for the right component in footer
+ */
 .help {
   display: table-cell;
   text-align: right;
@@ -22,11 +61,16 @@
     color: $footer-a-hover-color;
   }
 }
-
+/**
+ * ClassName(copyright) is a module and its function is for the left component in footer
+ */
 .copyright{
   padding-left: 15px;
   color: $gray-light;
 }
+/**
+ * ClassName(line) is a module and its function is for "|" in footer
+ */
 .line {
   margin: 0px $margin-default;
 }

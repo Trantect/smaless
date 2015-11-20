@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/emily123/smaless#readme",
   "devDependencies": {
-    "grunt-contrib-coffee": "^0.13.0"
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-css-docs": "^1.1.5"
   }
 }

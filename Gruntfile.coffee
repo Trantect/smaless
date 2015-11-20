@@ -9,7 +9,7 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
     clean:
-      lib: ['build']
+      lib: ['dist', 'styleguide', 'scssDoc.html']
     sass:
       lib:
         files: [
@@ -17,27 +17,34 @@ module.exports = (grunt)->
             expand: true,
             cwd: 'src',
             src: ['*.scss']
-            dest: 'build/css/',
+            dest: 'dist/css/',
             ext: '.css'
           }
         ]
-    sassdoc:
-        default:
-          src: 'build'
-          options:
-            dest: 'sassdoc'
-            display:
-              access: ['public', 'private']
-              alias: true
-              watermark: true
+
+    cssdocs:
+      docs:
+        files: [
+          {
+            src: ['src/**/*.{scss,sass,less,styl}']
+            dest: 'styleguide'
+          }
+        ]
+        options:
+          template: './node_modules/grunt-css-docs/template/'
+          parsers:
+            link: (i, line, block) ->
+              exp = "/(b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig"
+              line.replace(exp, "<a href='$1'>$1</a>")
+              return line
 
     shell:
       installSASS:
         command: 'sudo gem install sass'
       moveFontLib:
-        command: 'cp -r src/lib/* build/'
-      runSassDoc:
-        command: './node_modules/sassdoc/bin/sassdoc src sassDoc'
+        command: 'cp -r src/lib/* dist/'
+      renameSassDoc:
+        command: 'mv styleguideindex.html scssDoc.html'
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -45,9 +52,9 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-sassdoc'
+  grunt.loadNpmTasks 'grunt-css-docs'
 
   grunt.registerTask "buildEnv", ["shell:installSASS"]
   grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib", "sass:lib", "shell:moveFontLib", "shell:runSassDoc"]
+  grunt.registerTask "buildLib", ["cleanLib","cssdocs:docs", "shell:renameSassDoc", "sass:lib", "shell:moveFontLib"]
   grunt.registerTask "default", ["buildLib"]

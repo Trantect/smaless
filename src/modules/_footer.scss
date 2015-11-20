@@ -8,10 +8,6 @@
   @include footer();
 }
 
-/**
-  * @submodule Media Image [.media__img]
-  * @description Image container for media
-  */
 @function  gh() {}
 .media__img {
   background-color: rgb(238, 243, 250);

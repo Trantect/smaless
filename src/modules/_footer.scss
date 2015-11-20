@@ -1,15 +1,3 @@
-/**
-  * @module Media [.media]
-  * @description Place an image to the left of a block of content
-  *
-  * @modifier [.media--reversed] Place the image to the right of the content
-  * @name dfdrsgtsd
-  * @example
-    <div class="media">
-      <img class="media__img" src="http://www.placecage.com/150/150" alt="Cage" />
-      <p class="media__content">Sorry boss but there's only two men I trust. One of them's me. The other's not you. Put... the bunny... back... in the box.</p>
-    </div>
-*/
 .media {
   background-color: rgb(238, 243, 250);
   position: absolute;

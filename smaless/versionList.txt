@@ -1,1 +1,1 @@
-0.1.2-sidebar.f3ed670 0.1.2-sidebar.797c041 0.1.2-sidebar.59b47be 0.1.2-sidebar.3ff126d 0.1.2-footer.f331058 0.1.2-footer.6e5308b 0.1.2-footer.26c77d3 0.1.2-alpha.32ff854 0.1.1 0.1.0
+0.2.0 0.1.2-sidebar.f3ed670 0.1.2-sidebar.797c041 0.1.2-sidebar.59b47be 0.1.2-sidebar.3ff126d 0.1.2-footer.f331058 0.1.2-footer.6e5308b 0.1.2-footer.26c77d3 0.1.2-alpha.32ff854 0.1.1 0.1.0

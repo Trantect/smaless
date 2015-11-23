@@ -6,4 +6,4 @@ bower_components
 demo/scss/*.css
 demo/scss/*.map
 demo/js
-build/css/*.map
+dist/css/*.map

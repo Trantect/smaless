@@ -9,7 +9,7 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
     clean:
-      lib: ['dist', 'styleguide', 'scssDoc.html']
+      lib: ['dist', 'sassDoc']
     sass:
       lib:
         files: [
@@ -22,29 +22,25 @@ module.exports = (grunt)->
           }
         ]
 
-    cssdocs:
-      docs:
-        files: [
-          {
-            src: ['src/**/*.{scss,sass,less,styl}']
-            dest: 'styleguide'
-          }
-        ]
-        options:
-          template: './node_modules/grunt-css-docs/template/'
-          parsers:
-            link: (i, line, block) ->
-              exp = "/(b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig"
-              line.replace(exp, "<a href='$1'>$1</a>")
-              return line
+    sassdoc:
+        default:
+          src: 'build'
+          options:
+            dest: 'sassdoc'
+            display:
+              access: ['public', 'private']
+              alias: true
+              watermark: true
 
     shell:
       installSASS:
         command: 'sudo gem install sass'
       moveFontLib:
         command: 'cp -r src/lib/* dist/'
-      renameSassDoc:
-        command: 'mv styleguideindex.html scssDoc.html'
+      command: 'cp -r src/lib/* build/'
+      runSassDoc:
+        command: './node_modules/sassdoc/bin/sassdoc src sassDoc'
+
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -52,9 +48,9 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-css-docs'
+  grunt.loadNpmTasks 'grunt-sassdoc'
 
   grunt.registerTask "buildEnv", ["shell:installSASS"]
   grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib","cssdocs:docs", "shell:renameSassDoc", "sass:lib", "shell:moveFontLib"]
+  grunt.registerTask "buildLib", ["cleanLib", "sass:lib", "shell:moveFontLib", "shell:runSassDoc"]
   grunt.registerTask "default", ["buildLib"]

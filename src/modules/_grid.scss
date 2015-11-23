@@ -38,6 +38,7 @@
 
 .row {
   @include make-row;
+  margin-bottom: 20px;
 }
 
 
@@ -82,4 +83,3 @@
 @media (min-width: $screen-lg-min) {
   @include make-grid(lg);
 }
-

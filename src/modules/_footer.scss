@@ -1,39 +1,27 @@
-.media {
-  background-color: rgb(238, 243, 250);
-  position: absolute;
-  bottom: 0px;
-}
+/// This footer is a module and @include from footer in  mixins file
+/// @group footer
+/// @since 0.2.0
 
-％guigh {
-  @include footer();
-}
-
-@function  gh() {}
-.media__img {
-  background-color: rgb(238, 243, 250);
-  position: absolute;
-  bottom: 0px;
-}
 .footer {
-  /// This is include footer and add some features of  module footer
+/// This is include footer and add some features of  module footer
     @include footer();
     background-color: rgb(238, 243, 250);
     position: absolute;
     bottom: 0px;
 }
 
-/**
- * This footer-responsive is module
- */
+/// This footer-responsive is module
+/// @group footer
+
 @media screen and (max-width: $screen-sm-max) {
   .footer {
     @include footer-responsive();
   }
 }
 
-/**
- * ClassName(help) is a module and its function is for the right component in footer
- */
+ /// ClassName(help) is a module and its function is for the right component in footer
+ /// @group footer
+
 .help {
   display: table-cell;
   text-align: right;
@@ -45,16 +33,18 @@
     color: $footer-a-hover-color;
   }
 }
-/**
- * ClassName(copyright) is a module and its function is for the left component in footer
- */
+
+/// ClassName(copyright) is a module and its function is for the left component in footer
+ /// @group footer
+
 .copyright{
   padding-left: 15px;
   color: $gray-light;
 }
-/**
- * ClassName(line) is a module and its function is for "|" in footer
- */
+
+/// ClassName(line) is a module and its function is for "|" in footer
+ /// @group footer
+
 .line {
   margin: 0px $margin-default;
 }

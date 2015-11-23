@@ -1,10 +1,9 @@
-/**
- * path is smaless/src/mixins/_footer.scss and the footer is for layout and module.
- * @example scss - basic usage
- *  @mixin name() { ... }
- * @todo Write something
- * @since 0.1.2 footer
- */
+/// path is smaless/src/mixins/_footer.scss and the footer is for layout and module.
+/// @example scss - basic usage
+///  @mixin name() { ... }
+/// @group footer
+/// @since 0.2.0
+
 
 @mixin footer() {
   width: 100%;
@@ -20,10 +19,9 @@
     }
   }
 }
-/**
- * The footer-responsive is for layout and module
- *
- */
+
+/// The footer-responsive is for layout and module,
+/// @group footer
 @mixin footer-responsive() {
   > span, .help {
     display: block;

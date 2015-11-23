@@ -1,14 +1,11 @@
-/**
- * This footer is layout.
- */
+/// This footer is a layout and @include from footer in  mixins file
+/// @group footer
+/// @since 0.2.0
 
 footer, #footer {
   @include footer()
 }
 
-/**
- * This footer-responsive is layout.
- */
 @media screen and (max-width: $screen-sm-max) {
   footer, #footer {
     @include footer-responsive();

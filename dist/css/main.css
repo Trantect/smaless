@@ -170,17 +170,6 @@
 .fa-inverse {
   color: #fff; }
 
-/**
- * path is smaless/src/mixins/_footer.scss and the footer is for layout and module.
- * @example scss - basic usage
- *  @mixin name() { ... }
- * @todo Write something
- * @since 0.1.2 footer
- */
-/**
- * The footer-responsive is for layout and module
- *
- */
 table {
   background-color: transparent;
   border-spacing: 0;
@@ -4118,27 +4107,6 @@ input[type="button"].btn-block {
   .menu .fa {
     width: 20px; }
 
-.media {
-  background-color: #eef3fa;
-  position: absolute;
-  bottom: 0px; }
-
-％guigh {
-  width: 100%;
-  display: table;
-  padding: 20px 0px;
-  font-size: 14px;
-  color: #777777; }
-  ％guigh > :first-child:not(.copyright) {
-    text-align: center;
-    width: 100%;
-    display: inline-block; }
-
-.media__img {
-  background-color: #eef3fa;
-  position: absolute;
-  bottom: 0px; }
-
 .footer {
   width: 100%;
   display: table;
@@ -4153,18 +4121,12 @@ input[type="button"].btn-block {
     width: 100%;
     display: inline-block; }
 
-/**
- * This footer-responsive is module
- */
 @media screen and (max-width: 991px) {
   .footer > span, .footer .help {
     display: block;
     text-align: center; }
   .footer .help {
     margin-top: 10px; } }
-/**
- * ClassName(help) is a module and its function is for the right component in footer
- */
 .help {
   display: table-cell;
   text-align: right;
@@ -4174,23 +4136,13 @@ input[type="button"].btn-block {
   .help a:hover, .help a:focus {
     color: #2a6496; }
 
-/**
- * ClassName(copyright) is a module and its function is for the left component in footer
- */
 .copyright {
   padding-left: 15px;
   color: #777777; }
 
-/**
- * ClassName(line) is a module and its function is for "|" in footer
- */
 .line {
   margin: 0px 8px; }
 
-/*
- * Layout: Sidebar
- * ------------------
- */
 sidebar, #sidebar {
   min-height: 1446px;
   width: 220px;
@@ -4203,9 +4155,8 @@ sidebar, #sidebar {
     sidebar .user-panel > .user-info, #sidebar .user-panel > .user-info {
       font-weight: 600;
       color: #555555;
-      padding: 0px; }
-      sidebar .user-panel > .user-info > p, #sidebar .user-panel > .user-info > p {
-        margin-bottom: 15px; }
+      padding: 0px;
+      margin-bottom: 15px; }
   sidebar > ul.menu, #sidebar > ul.menu {
     border-top: 2px solid #e0e6ed; }
 
@@ -4505,9 +4456,6 @@ body {
 @media (max-width: 776px) {
   .sidebar-open .content-wrapper, .sidebar-open .right-side, .sidebar-open .main-footer {
     transform: translate(220px, 0); } }
-/**
- * This footer is layout.
- */
 footer, #footer {
   width: 100%;
   display: table;
@@ -4519,9 +4467,6 @@ footer, #footer {
     width: 100%;
     display: inline-block; }
 
-/**
- * This footer-responsive is layout.
- */
 @media screen and (max-width: 991px) {
   footer > span, footer .help, #footer > span, #footer .help {
     display: block;

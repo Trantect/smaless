@@ -2,6 +2,24 @@
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
 
+# Version: V 0.2.0
+## New Features
+```
+sidebar:
+    basic layout with sidebar, like: sidebar, #sidebar
+
+footer:
+    footer with two children, like: .copyright, .help
+```
+# Fixed Issues
+```
+1. change table-layout to fixed
+
+2. fa-sort-up and fa-sort-down margin-left
+```
+
+
+
 # Version: V 0.1.1
 ## New Features
 ```

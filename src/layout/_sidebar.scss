@@ -1,7 +1,7 @@
-/*
- * Layout: Sidebar
- * ------------------
- */
+/// Sidebar is a layout and it supports user-panel, user-info and menu
+/// @group sidebar
+/// @since 0.2.0
+
 sidebar, #sidebar {
   min-height: 1446px;
   width: $sidebar-width;
@@ -15,15 +15,16 @@ sidebar, #sidebar {
       font-weight: 600;
       color: $sidebar-font-color;
       padding: 0px;
-      > p {
-        margin-bottom: 15px;
-      }
+      margin-bottom: 15px;
     }
   }
   > ul.menu {
     border-top: 2px solid #e0e6ed;
   }
 }
+
+/// This is a responsive ,it hides sidebar when screen less than $screen-sm-max
+/// @group sidebar
 @media screen and (max-width: $screen-sm-max) {
   sidebar, #sidebar {
     left: -220px;

@@ -25,7 +25,7 @@
     "grunt-contrib-clean": "0.6.0",
     "grunt-contrib-watch": "0.6.1",
     "grunt-contrib-jade": "0.15.0",
-    "sassdoc": "1.10.0"
+    "sassdoc": "2.1.15"
   },
   "homepage": "https://github.com/emily123/smaless#readme",
   "devDependencies": {

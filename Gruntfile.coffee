@@ -9,7 +9,7 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
     clean:
-      lib: ['dist', 'sassDoc']
+      lib: ['build', 'sassDoc']
     sass:
       lib:
         files: [
@@ -17,7 +17,7 @@ module.exports = (grunt)->
             expand: true,
             cwd: 'src',
             src: ['*.scss']
-            dest: 'dist/css/',
+            dest: 'build/css/',
             ext: '.css'
           }
         ]
@@ -39,7 +39,7 @@ module.exports = (grunt)->
       installSASS:
         command: 'sudo gem install sass'
       moveFontLib:
-        command: 'cp -r src/lib/* dist/'
+        command: 'cp -r src/lib/* build/'
       command: 'cp -r src/lib/* build/'
       runSassDoc:
         command: './node_modules/sassdoc/bin/sassdoc src sassDoc'

@@ -51,13 +51,9 @@
 
 > ### Step 3
 ```
-    make clean
+    make buildScss
 ```
 
-> ### Step 4
-```
-    make build
-```
 <a id="demo"></a>
 ## Demo
 

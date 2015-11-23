@@ -5,5 +5,5 @@ env:
 
 # build output files by grunt
 # you can modify Gruntfile.coffee to change tasks
-build:
+buildScss:
 	grunt

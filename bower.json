@@ -14,11 +14,12 @@
   "ignore": [
     "test",
     "src",
-    "sassDoc",
+    "sassdoc",
     "Makefile",
     "node_modules",
     "bower_components",
     "Gruntfile.coffee",
-    "package.json"
+    "package.json",
+    "concatSass.js"
   ]
 }

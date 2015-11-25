@@ -639,15 +639,6 @@ sidebar, #sidebar {
 @media screen and (max-width: 991px) {
   sidebar, #sidebar {
     left: -220px; } }
-.is-nopadding {
-  padding: 0 !important; }
-
-.is-align-right {
-  float: right; }
-
-.is-align-left {
-  float: left; }
-
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -4085,7 +4076,8 @@ input[type="button"].btn-block {
 .panel {
   padding: 8px 0;
   border-radius: 3px;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
 .panel-header {
   border-bottom: 1px solid #eeeeee;
@@ -4460,3 +4452,12 @@ mark,
     float: left;
     clear: left;
     text-align: right; } }
+
+.is-nopadding {
+  padding: 0 !important; }
+
+.is-align-right {
+  float: right; }
+
+.is-align-left {
+  float: left; }

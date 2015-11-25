@@ -9,18 +9,10 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
     clean:
-      lib: ['build', 'sassDoc']
+      lib: ['build', 'sassDoc', 'src/main.scss']
     sass:
       lib:
-        files: [
-          {
-            expand: true,
-            cwd: 'src',
-            src: ['*.scss']
-            dest: 'build/css/',
-            ext: '.css'
-          }
-        ]
+        files: 'build/css/main.css':'src/main.scss'
 
     sassdoc:
         default:
@@ -41,7 +33,8 @@ module.exports = (grunt)->
       command: 'cp -r src/lib/* build/'
       runSassDoc:
         command: './node_modules/sassdoc/bin/sassdoc src sassDoc'
-
+      concatSass:
+        command: 'node concatSass.js'
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -49,9 +42,8 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-sassdoc'
 
   grunt.registerTask "buildEnv", ["shell:installSASS"]
   grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib", "sass:lib", "shell:moveFontLib", "shell:runSassDoc"]
+  grunt.registerTask "buildLib", ["cleanLib", "shell:concatSass", "sass:lib", "shell:moveFontLib", "shell:runSassDoc"]
   grunt.registerTask "default", ["buildLib"]

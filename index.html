@@ -20,12 +20,14 @@
                 var allText = rawFile.responseText;
                 fileNames = allText.split(" ");
                 for(i in fileNames){
-                  var node = document.createElement("P");
-                  node.id = fileNames[i];
+                  var node = document.createElement("DIV");
                   var aTag = document.createElement("A");
+                  aTag.innerHTML = "V " + fileNames[i] + ":";
                   aTag.href = "./smaless/" + fileNames[i] + "/build/css/main.css";
-                  aTag.innerHTML = "http://emily123.github.io/smaless/smaless/" + fileNames[i] + "/build/css/main.css";
                   node.appendChild(aTag);
+                  var span = document.createElement("SPAN");
+                  span.innerHTML = " http://emily123.github.io/smaless/smaless/" + fileNames[i] + "/build/css/main.css";
+                  node.appendChild(span);
                   var download = document.getElementById("download");
                   download.appendChild(node);
                 }

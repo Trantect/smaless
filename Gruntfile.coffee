@@ -8,11 +8,14 @@ module.exports = (grunt)->
       options:
         spawn: false
         debounceDelay: 300
+
     clean:
-      lib: ['build', 'sassDoc', 'src/main.scss']
+      lib: ['sassDoc']
+      tmp: ['src/tmp']
+
     sass:
       lib:
-        files: 'build/css/main.css':'src/main.scss'
+        files: 'build/css/main.css':'src/tmp/main.scss'
 
     sassdoc:
         default:
@@ -32,11 +35,14 @@ module.exports = (grunt)->
         command: 'sudo gem install sass'
       moveFontLib:
         command: 'cp -r src/lib/* build/'
-      command: 'cp -r src/lib/* build/'
       runSassDoc:
         command: './node_modules/sassdoc/bin/sassdoc src sassDoc'
       concatSass:
-        command: 'node concatSass.js'
+        command: 'node concatAllScss.js'
+      generateComponent:
+        command: 'node generateComponents.js'
+      compileComponents:
+        command: 'sh compileScss.sh'
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -44,8 +50,9 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-sass'
 
   grunt.registerTask "buildEnv", ["shell:installSASS"]
   grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib", "shell:concatSass", "sass:lib", "shell:moveFontLib", "shell:runSassDoc"]
-  grunt.registerTask "default", ["buildLib"]
+  grunt.registerTask "buildLib", ["cleanLib", "shell:concatSass", "shell:generateComponent", "sass:lib", "shell:compileComponents","shell:moveFontLib", "shell:runSassDoc"]
+  grunt.registerTask "default", ["buildLib", "clean:tmp"]

@@ -11,11 +11,11 @@ sidebar, #sidebar {
   box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
   .user-panel {
     padding: 17px 0px 0px 15px;
+    margin-bottom: 15px;
     > .user-info {
       font-weight: 600;
       color: $sidebar-font-color;
       padding: 0px;
-      margin-bottom: 15px;
     }
   }
   > ul.menu {

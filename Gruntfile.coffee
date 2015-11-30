@@ -26,9 +26,7 @@ module.exports = (grunt)->
               access: ['public', 'private']
               alias: true
               watermark: false
-            # groups:
-            #   wds: 'WebDevStudios',
-            #   'undefined': 'Bourbon & Neat'
+
 
     shell:
       installSASS:

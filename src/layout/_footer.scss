@@ -3,7 +3,7 @@
 /// @since 0.2.0
 
 footer, #footer {
-  @include footer()
+  @include footer();
 }
 
 @media screen and (max-width: $screen-sm-max) {

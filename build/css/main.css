@@ -505,12 +505,12 @@ sidebar, #sidebar {
   background: #e9eff8;
   box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07); }
   sidebar .user-panel, #sidebar .user-panel {
-    padding: 17px 0px 0px 15px; }
+    padding: 17px 0px 0px 15px;
+    margin-bottom: 15px; }
     sidebar .user-panel > .user-info, #sidebar .user-panel > .user-info {
       font-weight: 600;
       color: #555555;
-      padding: 0px;
-      margin-bottom: 15px; }
+      padding: 0px; }
   sidebar > ul.menu, #sidebar > ul.menu {
     border-top: 2px solid #e0e6ed; }
 
@@ -834,9 +834,11 @@ input[type="button"].btn-block {
   width: 100%; }
 
 .content-title {
-  background: #eef3fa;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 15px 15px 10px 20px; }
+
+.content-body {
+  padding: 20px 15px; }
 
 .footer {
   width: 100%;
@@ -3882,14 +3884,16 @@ input[type="button"].btn-block {
     cursor: not-allowed; }
 
 .panel {
-  padding: 8px 0;
+  padding: 8px;
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
 .panel-header {
   border-bottom: 1px solid #eee;
-  width: 100%;
+  width: -webkit-calc(100% - 16px);
+  width: -moz-calc(100% - 16px);
+  width: calc(100% - 16px);
   display: table;
   border-radius: 3px 3px 0 0; }
   .panel-header * > {

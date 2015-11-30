@@ -26,6 +26,12 @@
         └── build/
             ├── css/
             │   ├── main.css
+            ├── components/
+            │   ├── button.css
+            │   ├── content.css
+            │   ├── dashboard.css
+            │   ├── footer.css
+            │   ├── ...
             ├── images/
             │   └── main.png
             └── font/

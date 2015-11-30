@@ -632,6 +632,15 @@ sidebar, #sidebar {
 @media screen and (max-width: 991px) {
   sidebar, #sidebar {
     left: -220px; } }
+.is-nopadding {
+  padding: 0 !important; }
+
+.is-align-right {
+  float: right; }
+
+.is-align-left {
+  float: left; }
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -4449,14 +4458,5 @@ mark,
     float: left;
     clear: left;
     text-align: right; } }
-
-.is-nopadding {
-  padding: 0 !important; }
-
-.is-align-right {
-  float: right; }
-
-.is-align-left {
-  float: left; }
 
 /*# sourceMappingURL=main.css.map */

@@ -44,8 +44,7 @@ function outputFile(_list, _path){
 }
 
 (function main(argument) {
-  var totalList = fs.readdirSync("src/layout").concat(fs.readdirSync("src/modules"));
-  totalList.push("_state.scss");
+  var totalList = fs.readdirSync("src/layout").concat(fs.readdirSync("src/modules")).concat(fs.readdirSync("src/states"));
   for(index in totalList){
     var file = totalList[index];
     var nameList = findDependency().concat(findModuleFiles(file));

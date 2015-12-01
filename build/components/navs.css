@@ -6,7 +6,6 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /*----------------------------*/
 /*----------------------------*/
 /* Mixing Color varriable for creating both light and dark colors */
@@ -27,23 +26,19 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -173,7 +168,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: white; }
+  color: #fff; }
 
 table {
   background-color: transparent;
@@ -314,15 +309,15 @@ h6, .h6 {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: black, 93.5%; }
+        background-color: #000, 93.5%; }
     .nav > li.disabled > a {
-      color: black, 46.7%; }
+      color: #000, 46.7%; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-        color: black, 46.7%;
+        color: #000, 46.7%;
         text-decoration: none;
         background-color: transparent; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: black, 93.5%;
+    background-color: #000, 93.5%;
     border-color: #0c85e2; }
   .nav .nav-divider {
     height: 1px;
@@ -333,7 +328,7 @@ h6, .h6 {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #ddd; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -343,11 +338,11 @@ h6, .h6 {
       border: 1px solid transparent;
       border-radius: 4px 4px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: black, 93.5% black, 93.5% #dddddd; }
+        border-color: #000, 93.5% #000, 93.5% #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: black, 33.5%;
+      color: #000, 33.5%;
       background-color: #eeeeee;
-      border: 1px solid #dddddd;
+      border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
 
@@ -358,7 +353,7 @@ h6, .h6 {
   .nav-pills > li + li {
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: white;
+    color: #fff;
     background-color: #0c85e2; }
 
 .nav-stacked > li {
@@ -394,10 +389,10 @@ h6, .h6 {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border: 1px solid #dddddd; }
+    border: 1px solid #ddd; }
   @media (min-width: 768px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
-      border-bottom: 1px solid #dddddd;
+      border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover,
@@ -413,3 +408,5 @@ h6, .h6 {
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px; }
+
+/*# sourceMappingURL=navs.css.map */

@@ -18,7 +18,8 @@
   @include clearfix;
 }
 
-// Generate the extra small columns
+/// Generate the extra small columns
+
 @mixin make-xs-column($columns, $gutter: $grid-gutter-width) {
   position: relative;
   float: left;

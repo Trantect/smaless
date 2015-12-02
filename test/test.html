@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <link rel="stylesheet" href="../build/css/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <sidebar class="sidebar">
+      <div class="user-panel">
+        <div class="user-info">
+          <p>你好, super</p>
+        </div>
+      </div>
+      <ul class="menu">
+        <li class="is-active">
+          <a href="/">
+            <i class="fa fa-home"></i><span>首页</span>
+          </a>
+        </li>
+        <li>
+          <a data-toggle="collapse" href="#pbe-terminal" class="is-active">
+            <i class="fa fa-laptop"></i><span>终端管理</span>
+            <i class="fa fa-angle-up  is-align-right"></i>
+          </a>
+          <ul class="menu">
+            <li>
+              <a href="/securitymonitor">
+                <i class="fa fa-circle-thin fa-1"></i><span>安全监控</span>
+              </a>
+            </li>
+            <li>
+              <a href="/terminalupgrademanager">
+                <i class="fa fa-circle-thin fa-1"></i><span>终端升级</span>
+              </a>
+            </li>
+            <li>
+              <a href="/bootspeed">
+                <i class="fa fa-circle-thin fa-1"></i><span>开机加速</span>
+              </a>
+            </li>
+            <li>
+              <a href="/hardwareInfo">
+                <i class="fa fa-circle-thin fa-1"></i><span>硬件资产</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="/softwaremanager">
+            <i class="fa fa-archive"></i><span>软件管理</span>
+            <small></small>
+          </a>
+        </li>
+        <li>
+          <a href="/logcenter">
+            <i class="fa fa-bar-chart-o"></i><span>统计报表</span>
+          </a>
+        </li>
+        <li>
+          <a href="/safeLogs">
+            <i class="fa fa-lock"></i><span>安全日志</span>
+          </a>
+        </li>
+        <li>
+          <a href="/serviceLogs">
+            <i class="fa fa-database"></i><span>服务日志</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="/currenttask">
+            <i class="fa fa-tasks"></i><span>当前任务</span>
+            <small></small>
+          </a>
+        </li>
+        <li>
+          <a href="/historytask">
+            <i class="fa fa-outdent"></i><span>历史任务</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="/accountmanager">
+            <i class="fa fa-user"></i><span>帐号管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="/groupmanager">
+            <i class="fa fa-users"></i><span>分组管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="/chronoexam">
+            <i class="fa fa-clock-o"></i><span>定时体检</span>
+          </a>
+        </li>
+        <li>
+          <a href="/multicenter">
+            <i class="fa fa-sitemap"></i><span>多级中心</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a data-toggle="collapse" href="#config-list">
+            <i class="fa fa-cog"></i><span>设置中心</span>
+            <i class="fa fa-angle-down  is-align-right"></i>
+          </a>
+          <ul class="menu">
+            <li>
+              <a href="/serverConfig">
+                <i class="fa fa-circle-thin fa-1"></i><span>控制中心相关设置</span>
+              </a>
+            </li>
+            <li>
+              <a href="/clientConfig">
+                <i class="fa fa-circle-thin fa-1"></i><span>终端相关设置</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="/installClient" target="_blank">
+            <i class="fa fa-download"></i><span>下载终端</span>
+          </a>
+        </li>
+      </ul>
+    </sidebar>
+    <content select="">
+      <div class="content-title">
+        <h3>首页</h3>
+      </div>
+      <div class="content-body">
+        <div class="panel panel-header">
+        <h3>多级</h3>
+        </div>
+        <div class="panel panel-body">
+          <div class="responsive">
+            <table class="table table-sort table-detail-default table-stripped-4">
+              <thead>
+                <tr>
+                  <th>Name<i class="fa fa-sort"></i></th>
+                  <th>Position<i class="fa fa-sort-asc"></i></th>
+                  <th>Office<i class="fa fa-sort-desc"></i></th>
+                  <th>Age<i class="fa fa-sort-up"></i></th>
+                  <th>Date<i class="fa fa-sort-desc"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="is-nopadding">
+                    <div class="detail-default">
+                      <div class="detail-title">title</div>
+                      <dl>
+                        <dt> email:</dt>
+                        <dd> 123</dd>
+                        <dt> name:</dt>
+                        <dd> aaa</dd>
+                      </dl>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="is-nopadding">
+                    <div class="detail-default">
+                      <div class="detail-title">title</div>
+                      <dl>
+                        <dt> email:</dt>
+                        <dd> 123</dd>
+                        <dt> name:</dt>
+                        <dd> aaa</dd>
+                      </dl>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="is-nopadding">
+                    <div class="detail-default">
+                      <div class="detail-title">title</div>
+                      <dl>
+                        <dt> email:</dt>
+                        <dd> 123</dd>
+                        <dt> name:</dt>
+                        <dd> aaa</dd>
+                      </dl>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="is-nopadding">
+                    <div class="detail-default">
+                      <div class="detail-title">title</div>
+                      <dl>
+                        <dt> email:</dt>
+                        <dd> 123</dd>
+                        <dt> name:</dt>
+                        <dd> aaa</dd>
+                      </dl>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="is-nopadding">
+                    <div class="detail-default">
+                      <div class="detail-title">title</div>
+                      <dl>
+                        <dt> email:</dt>
+                        <dd> 123</dd>
+                        <dt> name:</dt>
+                        <dd> aaa</dd>
+                      </dl>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-desktop"></i>
+                      <span>Mark</span>
+                    </div>
+                  </td>
+                  <td>7579 Santa Forest</td>
+                  <td>
+                    <div class="td-icon">
+                      <i class="fa fa-client-group"></i>
+                      <span>Ema</span>
+                    </div>
+                  </td>
+                  <td>21</td>
+                  <td>2013/05/13</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="statistics">
+              <span>总共11条数据</span>
+              <ul class="pagination">
+                <li class="is-disabled"><a href="#">«</a></li>
+                <li class="is-active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="copyright">
+          <span>Copyright © 2015 Your Company name</span>
+          <span class="line">|</span>
+          <span>Version: 1.0 alpha</span>
+        </span>
+        <span class="help">
+          <span><a href="http://alpha.nj.trantect.com">云子可信官网</a></span>
+          <span class="line">|</span>
+          <sapn><a href=" " >帮助中心</a></span>
+        </span>
+      </div>
+
+    </content>
+    <div id="footer">
+      <span class="copyright">
+        <span>Copyright © 2015 Your Company name</span>
+        <span class="line">|</span>
+        <span>Version: 1.0 alpha</span>
+      </span>
+      <span class="help">
+        <span><a href="http://alpha.nj.trantect.com">云子可信官网</a></span>
+        <span class="line">|</span>
+        <sapn><a href=" " >帮助中心</a></span>
+      </span>
+    </div>
+    <footer>
+      <span>Copyright © 2015 Your Company name | Version: 1.0 alpha</span>
+    </footer>
+  </body>
+</html>

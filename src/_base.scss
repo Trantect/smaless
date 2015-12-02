@@ -1,40 +1,121 @@
-//base
-@import "base/variables";
+/// You can set basic styles like:
+/// body{font-size: 14px}
+table {
+  background-color: $table-bg;
+  border-spacing: $table-spacing;
+  border-collapse: collapse;
+  td,
+  th {
+    &[class*="col-"] {
+      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+      float: none;
+      display: table-cell;
+    }
+  }
+}
 
-// Utilities
-// @import base/hide-text
-// @import base/opacity
-// @import base/image
-// @import base/labels
-// @import base/reset-filter
-// @import base/resize
-@import "base/responsive-visibility";
-// @import base/size
-// @import base/tab-focus
-// @import base/reset-text
-// @import base/text-emphasis
-// @import base/text-overflow
-// @import base/vendor-prefixes
+// Table cell sizing
+//
+// Reset default table behavior
+table col[class*="col-"] {
+  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+  float: none;
+  display: table-column;
+}
 
-// Components
-// @import base/alerts
-// @import base/buttons
-// @import base/panels
-// @import base/pagination
-// @import base/list-group
-@import "base/nav-divider";
-// @import base/forms
-// @import base/progress-bar
-//@import "base/table-row";
+caption {
+  padding-top: $padding-default;
+  padding-bottom: $padding-default;
+  color: $text-muted;
+  text-align: left;
+}
 
-// Skins
-// @import base/background-variant
-// @import base/border-radius
-// @import base/gradients
+th {
+  text-align: left;
+}
+// Description Lists
+dl {
+  // margin-top: 0; // Remove browser default
+  // margin-bottom: $line-height-computed;
+}
+dt,
+dd {
+  line-height: $line-height-base;
+}
+// dt {
+//   font-weight: bold;
+// }
+dd {
+  margin-left: 0; // Undo browser default
+}
+dl{
+  margin:$dl-margin-default;
+  padding: $padding-default;
+}
+dt{
+  float: left;
+  text-align: right;
+  margin-right: $dt-margin-default;
+  width: $dt-width-default;
+}
 
-// Layout
-@import "base/clearfix";
-// @import base/center-block
-@import "base/nav-vertical-align";
-@import "base/grid-framework";
-@import "base/grid";
+ul,ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  color: #333;
+  font-size: $font-size-base;
+  font-family:  Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体";
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+//    color: $headings-small-color;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin: 0;
+  // margin-top: $line-height-computed;
+  // margin-bottom: ($line-height-computed / 2);
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h5, .h5,
+h6, .h6 {
+  margin: 0;
+  // margin-top: ($line-height-computed / 2);
+  // margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+// ==for content-header
+h4, .h4{
+  margin: 0;
+  // margin-top: ($line-height-computed / 5);
+  // margin-bottom: ($line-height-computed / 5);
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }

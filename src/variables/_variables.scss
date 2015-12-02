@@ -1,94 +1,122 @@
-// Variables
+/*----------------------------*/
+//Variables
+/*----------------------------*/
+
+// if you want to override variables , consider use `default`
+// for example:
+// $color: red;
+// $color: blue !default;
+// then the real value of $color will be red.
+
+
+
+//== Base Color
 // --------------------------------------------------
 
-//== Base Grey Color
-// --------------------------------------------------
-$gray-base: #263238 !default;
-$gray-darker:            lighten($gray-base, 10%) !default;
-$gray-dark:              lighten($gray-base, 30%) !default;
-$gray:                   lighten($gray-base, 0%) !default;
-$gray-light:             lighten($gray-base, 50%) !default;
-$gray-lighter:           lighten($gray-base, 78%) !default;
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$color-white: #fff !default;
-$color-black: #000 !default;
+$color-white:            #fff !default;
+$color-black:            #000 !default;
 
-$brand-success: #00c644 !default;
-$brand-complete : #2979fb !default;
-$brand-primary: #1F8FE4 !default;
-$brand-warning: #f0ad4e !default;
-$brand-danger: #ff6c60 !default;
-$brand-info: #33c5df !default;
+$brand-success:     #00c644 !default;
+$brand-complete:    #2979fb !default;
+$brand-primary:     #0c85e2 !default;
+$brand-warning:     #f0ad4e !default;
+$brand-danger:      #f56c60 !default;
+$brand-info:        #33c5df !default;
+$brand-menu:        $gray-base !default;
 
-//- Mixing Color varriable for creating both light and dark colors
-$mix-percentage-dark: 92% !default;
-$mix-percentage-darker: 75% !default;
-$mix-percentage-light: 80% !default;
-$mix-percentage-lighter: 60% !default;
-$mix-percentage-lightest: 50% !default;
+/* Mixing Color varriable for creating both light and dark colors */
+$mix-percentage-dark:      92% !default;
+$mix-percentage-darker:    75% !default;
+$mix-percentage-light:     80% !default;
+$mix-percentage-lighter:   60% !default;
+$mix-percentage-lightest:  20% !default;
 
-//- Lighter colors
-$color-success-light: mix($brand-success, $color-white, $mix-percentage-light) !default;
-$color-success-lighter: mix($brand-success, $color-white, $mix-percentage-lighter) !default;
+/* Lighter colors */
+$color-success-light:      mix($brand-success, $color-white, $mix-percentage-light) !default;
+$color-success-lighter:    mix($brand-success, $color-white, $mix-percentage-lighter) !default;
+$color-success-lightest:   mix($brand-success, $color-white, $mix-percentage-lightest) !default;
 
-$color-complete-light: mix($brand-complete, $color-white, $mix-percentage-light) !default;
-$color-complete-lighter: mix($brand-complete, $color-white, $mix-percentage-lighter) !default;
+$color-complete-light:     mix($brand-complete, $color-white, $mix-percentage-light) !default;
+$color-complete-lighter:   mix($brand-complete, $color-white, $mix-percentage-lighter) !default;
+$color-complete-lightest:  mix($brand-complete, $color-white, $mix-percentage-lightest) !default;
 
-$color-primary-light: mix($brand-primary, $color-white, $mix-percentage-light) !default;
-$color-primary-lighter: mix($brand-primary, $color-white, $mix-percentage-lighter) !default;
+$color-primary-light:      mix($brand-primary, $color-white, $mix-percentage-light) !default;
+$color-primary-lighter:    mix($brand-primary, $color-white, $mix-percentage-lighter) !default;
+$color-primary-lightest:   mix($brand-primary, $color-white, $mix-percentage-lightest) !default;
 
-$color-warning-light: mix($brand-warning, $color-white, $mix-percentage-light) !default;
-$color-warning-lighter: mix($brand-warning, $color-white, $mix-percentage-lighter) !default;
+$color-warning-light:      mix($brand-warning, $color-white, $mix-percentage-light) !default;
+$color-warning-lighter:    mix($brand-warning, $color-white, $mix-percentage-lighter) !default;
+$color-warning-lightest:   mix($brand-warning, $color-white, $mix-percentage-lightest) !default;
 
-$color-danger-light: mix($brand-danger, $color-white, $mix-percentage-light) !default;
-$color-danger-lighter: mix($brand-danger, $color-white, $mix-percentage-lighter) !default;
+$color-danger-light:       mix($brand-danger, $color-white, $mix-percentage-light) !default;
+$color-danger-lighter:     mix($brand-danger, $color-white, $mix-percentage-lighter) !default;
+$color-danger-lightest:    mix($brand-danger, $color-white, $mix-percentage-lightest) !default;
 
-$color-info-light: mix($brand-info, $color-white, $mix-percentage-light) !default;
-$color-info-lighter: mix($brand-info, $color-white, $mix-percentage-lighter) !default;
+$color-info-light:         mix($brand-info, $color-white, $mix-percentage-light) !default;
+$color-info-lighter:       mix($brand-info, $color-white, $mix-percentage-lighter) !default;
+$color-info-lightest:      mix($brand-info, $color-white, $mix-percentage-lightest) !default;
 
-//- Darker colors
-$color-success-dark: mix($brand-success, $color-black, $mix-percentage-dark) !default;
-$color-success-darker: mix($brand-success, $color-black, $mix-percentage-darker) !default;
+/* Darker colors */
+$color-success-dark:       mix($brand-success, $color-black, $mix-percentage-dark) !default;
+$color-success-darker:     mix($brand-success, $color-black, $mix-percentage-darker) !default;
 
-$color-complete-dark: mix($brand-complete, $color-black, $mix-percentage-dark) !default;
-$color-complete-darker: mix($brand-complete, $color-black, $mix-percentage-darker) !default;
+$color-complete-dark:      mix($brand-complete, $color-black, $mix-percentage-dark) !default;
+$color-complete-darker:    mix($brand-complete, $color-black, $mix-percentage-darker) !default;
 
-$color-primary-dark: mix($brand-primary, $color-black, $mix-percentage-dark) !default;
-$color-primary-darker: mix($brand-primary, $color-black, $mix-percentage-darker) !default;
+$color-primary-dark:       mix($brand-primary, $color-black, $mix-percentage-dark) !default;
+$color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker) !default;
 
-$color-warning-dark: mix($brand-warning, $color-black, $mix-percentage-dark) !default;
-$color-warning-darker: mix($brand-warning, $color-black, $mix-percentage-darker) !default;
+$color-warning-dark:       mix($brand-warning, $color-black, $mix-percentage-dark) !default;
+$color-warning-darker:     mix($brand-warning, $color-black, $mix-percentage-darker) !default;
 
-$color-danger-dark: mix($brand-danger, $color-black, $mix-percentage-dark) !default;
-$color-danger-darker: mix($brand-danger, $color-black, $mix-percentage-darker) !default;
+$color-danger-dark:        mix($brand-danger, $color-black, $mix-percentage-dark) !default;
+$color-danger-darker:      mix($brand-danger, $color-black, $mix-percentage-darker) !default;
 
-$color-info-dark: mix($brand-info, $color-black, $mix-percentage-dark) !default;
-$color-info-darker: mix($brand-info, $color-black, $mix-percentage-darker) !default;
+$color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark) !default;
+$color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker) !default;
+
+
+//** Padding.
+$padding-default:            8px;
+
+// ** Margin
+$margin-default:            8px;
+
+// ** Border
+$border-color-default:      #eee;
 
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
-//Menu Animation Curve
+/* Menu Animation Curve */
 $menu-bezier:.05, .74, .27, .99;
 $menu-icon-size:40px;
-$color-menu :#2b303b;
-$color-menu-dark :mix($color-menu, #000, 77%);
-$color-menu-darker :mix($color-menu, #000, 90%);
 
-//Generating Menu font color
-$color-menu-light :mix($color-menu, #fff, 52%);
-//Menu Font Color
+$sidebar-menu-bg :$gray;
+$sidebar-menu-hover: mix($brand-menu, #000, 88%);
+
+/* Generating Menu font color */
+$sidebar-memu-color: $gray-dark;
+/* Menu Font Color */
 $color-menu-link-hover:#fff;
+
 
 //== Layout (sidebar & navbar)
 // --------------------------------------------------
-$layout-header-height:60px;
-$layout-mobile-header-height:48px;
-$layout-mobile-logo-scale:0.8;
+$layout-header-height:              60px;
+$layout-mobile-header-height:       48px;
+$layout-mobile-logo-scale:          0.8;
 $layout-sidepanel-width-collapsed : 70px;
-$layout-sidepanel-pin-width:220px;
-$layout-right-quickview-width: 285px;
-$layout-user-profile-margin:25px;
-$layout-gutter-sm : 5px;
+$layout-sidepanel-pin-width:        220px;
+$layout-right-quickview-width:      285px;
+$layout-user-profile-margin:        25px;
+$layout-gutter-sm :                 5px;
 
 
 //== Scaffolding
@@ -118,15 +146,17 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !def
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;   // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default;   // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h1:            floor(($font-size-base * 2.6)) !default;   // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default;  // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default;    // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.4)) !default;    // ~20px (* for content-header *)
+$font-size-h5:            $font-size-base !default;                  // ~14px
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default;   // ~12px
+
+$font-weight-default:     600 !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -138,23 +168,6 @@ $headings-font-family:    $font-family-sans-serif !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
-$headings-small-color:    inherit !default;
-
-
-//== Iconography
-// --------------------------------------------------
-//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
-
-//** Load fonts from this directory.
-
-// [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
-// [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-//$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
-
-//** File name for all font files.
-//$icon-font-name:          "glyphicons-halflings-regular" !default;
-//** Element ID within SVG icon file.
-//$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 
 //== Components
@@ -201,29 +214,29 @@ $caret-width-large:         5px !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              $gray-darker !default;
+$btn-default-bg:                 $color-white !default;
+$btn-default-border:             $gray-light !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $color-white !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             $btn-primary-bg !default;
 
-$btn-success-color:              #fff !default;
+$btn-success-color:              $color-white !default;
 $btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-border:             $btn-success-bg !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-border:                $btn-info-bg !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-border:             $btn-warning-bg !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-border:              $btn-danger-bg !default;
 
 $btn-link-disabled-color:        ($color-black, 46.7%) !default; // #777
 
@@ -364,7 +377,7 @@ $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 $container-lg:                 $container-large-desktop !default;
 
 
-//== Navbar
+//== Navbar (header)
 // --------------------------------------------------
 //##
 
@@ -376,8 +389,8 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-color:             $gray-dark !default;
+$navbar-default-bg:                $color-white !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
@@ -455,57 +468,6 @@ $nav-pills-active-link-hover-bg:            $component-active-bg !default;
 $nav-pills-active-link-hover-color:         $component-active-color !default;
 
 
-//== Pagination
-// --------------------------------------------------
-//##
-
-
-//== Pager
-// --------------------------------------------------
-//##
-
-
-//== Jumbotron
-// --------------------------------------------------
-//##
-
-
-//== Form states and alerts
-// --------------------------------------------------
-//## Define colors for form feedback states and, by default, alerts.
-
-
-//== Tooltips
-// --------------------------------------------------
-//##
-
-
-//== Popovers
-// --------------------------------------------------
-//##
-
-
-//== Labels
-// --------------------------------------------------
-//##
-
-
-//== Modals
-// --------------------------------------------------
-//##
-
-
-
-//== Alerts
-// --------------------------------------------------
-//## Define alert colors, border radius, and padding.
-
-
-//== Progress bars
-// --------------------------------------------------
-//##
-
-
 //== List group
 // --------------------------------------------------
 //##
@@ -579,26 +541,6 @@ $panel-primary-heading-bg:    $brand-primary !default;
 //$panel-danger-heading-bg:     $state-danger-bg !default;
 
 
-//== Thumbnails (designed to showcase linked images with minimal required markup)
-// --------------------------------------------------
-//##
-
-
-//== Wells
-// --------------------------------------------------
-//##
-
-
-//== Badges
-// --------------------------------------------------
-//##
-
-
-//== Breadcrumbs
-// --------------------------------------------------
-//##
-
-
 //== Carousel (slideshow component)
 // --------------------------------------------------
 //##
@@ -615,12 +557,6 @@ $carousel-indicator-border-color:             #fff !default;
 
 $carousel-caption-color:                      #fff !default;
 
-
-//== Close
-// --------------------------------------------------
-//##
-
-
 //== Code
 // --------------------------------------------------
 //##
@@ -636,11 +572,84 @@ $pre-color:                   ($color-black, 20%) !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
 
-
-//== Type
-// --------------------------------------------------
-//##
-
 //== Transition global options
 $transition-speed: .3s;
 $transition-fn:    ease-in-out;//cubic-bezier(0.32,1.25,0.375,1.15);
+
+//** Text muted color
+$text-muted:                  $gray-light !default;
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+//** Default background color used for all tables.
+$table-bg:                      transparent;
+//** Border color for table and cell borders.
+$table-border-color:            $border-color-default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #fafbfc;
+//** table spacing for base `table`.
+$table-spacing:                 0;
+//** table detail background color.
+$table-detail-color:            #fcfcfc;
+$table-sort-opacity:            0.7;
+$table-unsort-opacity:          0.3;
+$table-sort-icon-margin:        5px;
+
+//td use module td-icon
+$table-td-bordercolor:               #dfe5e8;
+$table-td-bgcolor:                  #eceff1;
+$table-td-margin:                   $margin-default;
+$table-icon-fontsize:               10px;
+$table-td-radius:                   3px;
+
+
+//== dl, dt, dd
+//
+$dl-margin-default:             0;
+$dt-width-default:              100px;
+$dt-margin-default:             $margin-default;
+
+
+//== Pagination
+//
+//##
+
+$pagination-color:                     #428bca;
+$pagination-bg:                        #fff;
+$pagination-border:                    #ddd;
+
+$pagination-hover-color:               $link-hover-color;
+$pagination-hover-bg:                  $gray-lighter;
+$pagination-hover-border:              #ddd;
+
+$pagination-active-color:              #fff;
+$pagination-active-bg:                 $brand-primary;
+$pagination-active-border:             $brand-primary;
+
+$pagination-disabled-color:            #777;
+$pagination-disabled-bg:               #fff;
+$pagination-disabled-border:           #ddd;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed;
+$cursor-clickable:               pointer;
+
+// Layout footer
+$footer-a-hover-color:            #2a6496;
+
+// Panel
+$panel-heading-bdcolor:           $border-color-default;
+$panel-radius:                    3px;
+
+// sidebar
+$sidebar-width:                    220px;
+$sidebar-font-color:               #555555;
+$sidebar-bg-color:                 #e9eff8;
+$sidebar-hover-color:              #222;
+$sidebar-hover-bordercolor:        #616e75;
+$sidebar-hover-bgcolor:            #dde3eb;
+$sidebar-active-color:             $brand-primary;
+
+/// content
+$content-bg-color:                 #eef3fa;

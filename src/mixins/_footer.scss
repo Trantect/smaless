@@ -1,0 +1,33 @@
+/// path is smaless/src/mixins/_footer.scss and the footer is for layout and module.
+/// @example scss - basic usage
+///  @mixin name() { ... }
+/// @group footer
+/// @since 0.2.0
+
+
+@mixin footer() {
+  width: 100%;
+  display: table;
+  padding: 20px 0px;
+  font-size: $font-size-base;
+  color: $gray-light;
+  > :first-child {
+    &:not(.copyright) {
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+/// The footer-responsive is for layout and module,
+/// @group footer
+@mixin footer-responsive() {
+  > span, .help {
+    display: block;
+    text-align: center;
+  }
+  .help {
+    margin-top: 10px;
+  }
+}

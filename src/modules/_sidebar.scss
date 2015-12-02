@@ -15,12 +15,21 @@
     padding: 0;
     > a {
       padding: 12px 5px 12px 15px;
-      color: $color-menu-light;
+      color: $sidebar-memu-color;
       display: block;
       > .fa,
       > .glyphicon,
       > .ion {
         width: 20px;
+      }
+    }
+    &:hover, &.open {
+      background: $sidebar-menu-hover;
+    }
+    &.active {
+      background: $brand-primary;
+      & > a {
+        color: #fff;
       }
     }
     .label,
@@ -56,19 +65,28 @@
     padding:0;
     margin:0;
     padding-left: 5px;
-    .treeview-menu {
-      padding-left: 20px;
-    }
+    padding-left: 20px;
     > li {
       margin: 0;
       > a {
         padding: 5px 5px 5px 15px;
         display: block;
+        color: $sidebar-memu-color;
+        background: $sidebar-menu-bg;
         font-size: 14px;
         > .fa,
         > .glyphicon,
         > .ion {
           width: 20px;
+        }
+        &:hover, &.open {
+          background: $sidebar-menu-hover;
+        }
+        &.active {
+          background: $brand-primary;
+          & > a {
+            color: #fff;
+          }
         }
         > .fa-angle-left,
         > .fa-angle-down {
@@ -85,7 +103,7 @@
   left: 0;
   min-height: 100%;
   width: $layout-sidepanel-pin-width;
-  z-index: 810;
+  z-index: 1000;
   //Using disposable variable to join statements with a comma
   // @transition-rule: $transition-speed $transition-fn,
   //   width $transition-speed $transition-fn;
@@ -109,7 +127,7 @@
 }
 
 .main-sidebar{
-  background: $color-menu;
+  background: $brand-menu;
   bottom: 0;
   left: 0;
   overflow: visible;
@@ -249,6 +267,10 @@
 .sidebar-form {
   overflow: hidden;
   text-overflow: clip;
+  // remove border from form
+  input:focus {
+    border-color: transparent;
+  }
 }
 
 .sidebar-menu {

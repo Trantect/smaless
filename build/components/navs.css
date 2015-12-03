@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/*----------------------------*/
+/*----------------------------*/
+/* Base Color varriable for creating both light and dark colors */
+/* Mixing Color varriable for creating both light and dark colors */
+/*Primary color shades */
+/*success color shades */
+/*danger color shades */
+/*warning color shades */
+/*info color shades */
+/* Menu Animation Curve */
+/* Generating Menu font color */
+/* Menu Font Color */
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -6,14 +18,8 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/*----------------------------*/
-/*----------------------------*/
-/* Mixing Color varriable for creating both light and dark colors */
-/* Lighter colors */
-/* Darker colors */
+
 /* Menu Animation Curve */
-/* Generating Menu font color */
-/* Menu Font Color */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
@@ -26,19 +32,23 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eee;
+  border: solid 0.08em #eeeeee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -168,7 +178,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: #fff; }
+  color: white; }
 
 table {
   background-color: transparent;
@@ -291,6 +301,10 @@ h5, .h5 {
 h6, .h6 {
   font-size: 12px; }
 
+button {
+  border: none;
+  outline: 0; }
+
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -309,15 +323,15 @@ h6, .h6 {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #000, 93.5%; }
+        background-color: black, 93.5%; }
     .nav > li.disabled > a {
-      color: #000, 46.7%; }
+      color: black, 46.7%; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-        color: #000, 46.7%;
+        color: black, 46.7%;
         text-decoration: none;
         background-color: transparent; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #000, 93.5%;
+    background-color: black, 93.5%;
     border-color: #0c85e2; }
   .nav .nav-divider {
     height: 1px;
@@ -328,7 +342,7 @@ h6, .h6 {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #dddddd; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -338,11 +352,11 @@ h6, .h6 {
       border: 1px solid transparent;
       border-radius: 4px 4px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #000, 93.5% #000, 93.5% #ddd; }
+        border-color: black, 93.5% black, 93.5% #dddddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: #000, 33.5%;
+      color: black, 33.5%;
       background-color: #eeeeee;
-      border: 1px solid #ddd;
+      border: 1px solid #dddddd;
       border-bottom-color: transparent;
       cursor: default; }
 
@@ -353,7 +367,7 @@ h6, .h6 {
   .nav-pills > li + li {
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #fff;
+    color: white;
     background-color: #0c85e2; }
 
 .nav-stacked > li {
@@ -389,10 +403,10 @@ h6, .h6 {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border: 1px solid #ddd; }
+    border: 1px solid #dddddd; }
   @media (min-width: 768px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #dddddd;
       border-radius: 4px 4px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover,
@@ -408,5 +422,3 @@ h6, .h6 {
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px; }
-
-/*# sourceMappingURL=navs.css.map */

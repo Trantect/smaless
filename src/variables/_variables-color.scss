@@ -13,74 +13,77 @@
 //== Base Color
 // --------------------------------------------------
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-base:              #000;
+$brand-primary:          #0c85e2;
+$brand-success:          #00c644;
+$brand-danger:           #ff6c60;
+$brand-warning:          #f0ad4e;
+$brand-info:             #33c5df;
 
-$color-white:            #fff !default;
-$color-black:            #000 !default;
 
-$brand-success:     #00c644 !default;
-$brand-complete:    #2979fb !default;
-$brand-primary:     #0c85e2 !default;
-$brand-warning:     #f0ad4e !default;
-$brand-danger:      #f56c60 !default;
-$brand-info:        #33c5df !default;
-$brand-menu:        $gray-base !default;
+
+
+
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%); // #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+
+
+
+
+
+
+/* Base Color varriable for creating both light and dark colors */
+$color-white:            #fff;
+$color-black:            #000;
 
 /* Mixing Color varriable for creating both light and dark colors */
-$mix-percentage-dark:      92% !default;
-$mix-percentage-darker:    75% !default;
-$mix-percentage-light:     80% !default;
-$mix-percentage-lighter:   60% !default;
-$mix-percentage-lightest:  20% !default;
+$mix-percentage-dark:      92%;
+$mix-percentage-darker:    75%;
+$mix-percentage-light:     80%;
+$mix-percentage-lighter:   60%;
+$mix-percentage-lightest:  20%;
 
-/* Lighter colors */
-$color-success-light:      mix($brand-success, $color-white, $mix-percentage-light) !default;
-$color-success-lighter:    mix($brand-success, $color-white, $mix-percentage-lighter) !default;
-$color-success-lightest:   mix($brand-success, $color-white, $mix-percentage-lightest) !default;
+/*Primary color shades */
+$color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker);
+$color-primary-dark:       mix($brand-primary, $color-black, $mix-percentage-dark);
+$color-primary-light:      mix($brand-primary, $color-white, $mix-percentage-light);
+$color-primary-lighter:    mix($brand-primary, $color-white, $mix-percentage-lighter);
+$color-primary-lightest:   mix($brand-primary, $color-white, $mix-percentage-lightest);
 
-$color-complete-light:     mix($brand-complete, $color-white, $mix-percentage-light) !default;
-$color-complete-lighter:   mix($brand-complete, $color-white, $mix-percentage-lighter) !default;
-$color-complete-lightest:  mix($brand-complete, $color-white, $mix-percentage-lightest) !default;
+/*success color shades */
+$color-success-darker:     mix($brand-success, $color-black, $mix-percentage-darker);
+$color-success-dark:       mix($brand-success, $color-black, $mix-percentage-dark);
+$color-success-light:      mix($brand-success, $color-white, $mix-percentage-light);
+$color-success-lighter:    mix($brand-success, $color-white, $mix-percentage-lighter);
+$color-success-lightest:   mix($brand-success, $color-white, $mix-percentage-lightest);
 
-$color-primary-light:      mix($brand-primary, $color-white, $mix-percentage-light) !default;
-$color-primary-lighter:    mix($brand-primary, $color-white, $mix-percentage-lighter) !default;
-$color-primary-lightest:   mix($brand-primary, $color-white, $mix-percentage-lightest) !default;
+/*danger color shades */
+$color-danger-darker:      mix($brand-danger, $color-black, $mix-percentage-darker);
+$color-danger-dark:        mix($brand-danger, $color-black, $mix-percentage-dark);
+$color-danger-light:       mix($brand-danger, $color-white, $mix-percentage-light);
+$color-danger-lighter:     mix($brand-danger, $color-white, $mix-percentage-lighter);
+$color-danger-lightest:    mix($brand-danger, $color-white, $mix-percentage-lightest);
 
-$color-warning-light:      mix($brand-warning, $color-white, $mix-percentage-light) !default;
-$color-warning-lighter:    mix($brand-warning, $color-white, $mix-percentage-lighter) !default;
-$color-warning-lightest:   mix($brand-warning, $color-white, $mix-percentage-lightest) !default;
+/*warning color shades */
+$color-warning-darker:     mix($brand-warning, $color-black, $mix-percentage-darker);
+$color-warning-dark:       mix($brand-warning, $color-black, $mix-percentage-dark);
+$color-warning-light:      mix($brand-warning, $color-white, $mix-percentage-light);
+$color-warning-lighter:    mix($brand-warning, $color-white, $mix-percentage-lighter);
+$color-warning-lightest:   mix($brand-warning, $color-white, $mix-percentage-lightest);
 
-$color-danger-light:       mix($brand-danger, $color-white, $mix-percentage-light) !default;
-$color-danger-lighter:     mix($brand-danger, $color-white, $mix-percentage-lighter) !default;
-$color-danger-lightest:    mix($brand-danger, $color-white, $mix-percentage-lightest) !default;
+/*info color shades */
+$color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker);
+$color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark);
+$color-info-light:         mix($brand-info, $color-white, $mix-percentage-light);
+$color-info-lighter:       mix($brand-info, $color-white, $mix-percentage-lighter);
+$color-info-lightest:      mix($brand-info, $color-white, $mix-percentage-lightest);
 
-$color-info-light:         mix($brand-info, $color-white, $mix-percentage-light) !default;
-$color-info-lighter:       mix($brand-info, $color-white, $mix-percentage-lighter) !default;
-$color-info-lightest:      mix($brand-info, $color-white, $mix-percentage-lightest) !default;
 
-/* Darker colors */
-$color-success-dark:       mix($brand-success, $color-black, $mix-percentage-dark) !default;
-$color-success-darker:     mix($brand-success, $color-black, $mix-percentage-darker) !default;
 
-$color-complete-dark:      mix($brand-complete, $color-black, $mix-percentage-dark) !default;
-$color-complete-darker:    mix($brand-complete, $color-black, $mix-percentage-darker) !default;
-
-$color-primary-dark:       mix($brand-primary, $color-black, $mix-percentage-dark) !default;
-$color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker) !default;
-
-$color-warning-dark:       mix($brand-warning, $color-black, $mix-percentage-dark) !default;
-$color-warning-darker:     mix($brand-warning, $color-black, $mix-percentage-darker) !default;
-
-$color-danger-dark:        mix($brand-danger, $color-black, $mix-percentage-dark) !default;
-$color-danger-darker:      mix($brand-danger, $color-black, $mix-percentage-darker) !default;
-
-$color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark) !default;
-$color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker) !default;
 
 
 //** Padding.
@@ -97,9 +100,6 @@ $border-color-default:      #eee;
 /* Menu Animation Curve */
 $menu-bezier:.05, .74, .27, .99;
 $menu-icon-size:40px;
-
-$sidebar-menu-bg :$gray;
-$sidebar-menu-hover: mix($brand-menu, #000, 88%);
 
 /* Generating Menu font color */
 $sidebar-memu-color: $gray-dark;

@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/*----------------------------*/
+/*----------------------------*/
+/* Base Color varriable for creating both light and dark colors */
+/* Mixing Color varriable for creating both light and dark colors */
+/*Primary color shades */
+/*success color shades */
+/*danger color shades */
+/*warning color shades */
+/*info color shades */
+/* Menu Animation Curve */
+/* Generating Menu font color */
+/* Menu Font Color */
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -6,14 +18,8 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/*----------------------------*/
-/*----------------------------*/
-/* Mixing Color varriable for creating both light and dark colors */
-/* Lighter colors */
-/* Darker colors */
+
 /* Menu Animation Curve */
-/* Generating Menu font color */
-/* Menu Font Color */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
@@ -26,19 +32,23 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eee;
+  border: solid 0.08em #eeeeee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -168,7 +178,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: #fff; }
+  color: white; }
 
 table {
   background-color: transparent;
@@ -291,6 +301,10 @@ h5, .h5 {
 h6, .h6 {
   font-size: 12px; }
 
+button {
+  border: none;
+  outline: 0; }
+
 .table {
   width: 100%;
   max-width: 100%;
@@ -308,10 +322,10 @@ h6, .h6 {
     padding: 8px;
     line-height: 1.42857;
     vertical-align: middle;
-    border-top: 1px solid #eee; }
+    border-top: 1px solid #eeeeee; }
   .table > thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #eee; }
+    border-bottom: 2px solid #eeeeee; }
   .table > caption + thead > tr:first-child > th,
   .table > caption + thead > tr:first-child > td,
   .table > colgroup + thead > tr:first-child > th,
@@ -320,7 +334,7 @@ h6, .h6 {
   .table > thead:first-child > tr:first-child > td {
     border-top: 0; }
   .table > tbody + tbody {
-    border-top: 2px solid #eee; }
+    border-top: 2px solid #eeeeee; }
 
 .table-sort > thead {
   cursor: pointer; }
@@ -374,8 +388,6 @@ h6, .h6 {
     overflow: auto;
     margin: 30px 0 16px 0;
     border-radius: 3px 3px 0 0;
-    border: 1px solid #eee; }
+    border: 1px solid #eeeeee; }
     .responsive .table {
       white-space: nowrap; } }
-
-/*# sourceMappingURL=table.css.map */

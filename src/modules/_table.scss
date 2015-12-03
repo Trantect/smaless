@@ -91,7 +91,10 @@
   border-radius: $table-td-radius;
   border: 1px solid $table-td-bordercolor;
   background: $table-td-bgcolor;
-  display: inline-block;
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   > .fa-desktop {
     font-size: $table-icon-fontsize;
     margin-right: 5px;

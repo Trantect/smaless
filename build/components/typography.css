@@ -308,15 +308,6 @@ button {
 p {
   margin: 0 0 10px; }
 
-.lead {
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4; }
-  @media (min-width: 768px) {
-    .lead {
-      font-size: 21px; } }
-
 small,
 .small {
   font-size: 85%; }
@@ -325,46 +316,5 @@ mark,
 .mark {
   padding: .2em; }
 
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-.text-center {
-  text-align: center; }
-
-.text-justify {
-  text-align: justify; }
-
-.text-nowrap {
-  white-space: nowrap; }
-
-.text-lowercase {
-  text-transform: lowercase; }
-
-.text-uppercase {
-  text-transform: uppercase; }
-
-.text-capitalize {
-  text-transform: capitalize; }
-
 .bg-primary {
   color: #fff; }
-
-.page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px; }
-
-.list-inline {
-  margin-left: -5px; }
-  .list-inline > li {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px; }
-
-@media (min-width: 768px) {
-  .dl-horizontal dt {
-    float: left;
-    clear: left;
-    text-align: right; } }

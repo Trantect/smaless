@@ -15,16 +15,16 @@ p {
   margin: 0 0 ($line-height-computed / 2);
 }
 
-.lead {
-  margin-bottom: $line-height-computed;
-  font-size: floor(($font-size-base * 1.15));
-  font-weight: 300;
-  line-height: 1.4;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: ($font-size-base * 1.5);
-  }
-}
+// .lead {
+//   margin-bottom: $line-height-computed;
+//   font-size: floor(($font-size-base * 1.15));
+//   font-weight: 300;
+//   line-height: 1.4;
+//
+//   @media (min-width: $screen-sm-min) {
+//     font-size: ($font-size-base * 1.5);
+//   }
+// }
 
 
 // Emphasis & misc
@@ -43,16 +43,16 @@ mark,
 }
 
 // Alignment
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }
-.text-nowrap         { white-space: nowrap; }
-
-// Transformation
-.text-lowercase      { text-transform: lowercase; }
-.text-uppercase      { text-transform: uppercase; }
-.text-capitalize     { text-transform: capitalize; }
+// .text-left           { text-align: left; }
+// .text-right          { text-align: right; }
+// .text-center         { text-align: center; }
+// .text-justify        { text-align: justify; }
+// .text-nowrap         { white-space: nowrap; }
+//
+// // Transformation
+// .text-lowercase      { text-transform: lowercase; }
+// .text-uppercase      { text-transform: uppercase; }
+// .text-capitalize     { text-transform: capitalize; }
 
 
 
@@ -87,13 +87,13 @@ mark,
 
 // Page header
 // -------------------------
-
-.page-header {
-  padding-bottom: (($line-height-computed / 2) - 1);
-  margin: ($line-height-computed * 2) 0 $line-height-computed;
-//  border-bottom: 1px solid $page-header-border-color;
-}
-
+//
+// .page-header {
+//   padding-bottom: (($line-height-computed / 2) - 1);
+//   margin: ($line-height-computed * 2) 0 $line-height-computed;
+// //  border-bottom: 1px solid $page-header-border-color;
+// }
+//
 
 // Lists
 // -------------------------
@@ -102,28 +102,28 @@ mark,
 // List options
 
 // [converter] extracted from `.list-unstyled` for libsass compatibility
-@mixin list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
-.list-unstyled {
-  // @include list-unstyled;
-}
+// @mixin list-unstyled {
+//   padding-left: 0;
+//   list-style: none;
+// }
+// // [converter] extracted as `@mixin list-unstyled` for libsass compatibility
+// .list-unstyled {
+//   // @include list-unstyled;
+// }
 
 
 // Inline turns list items into inline-block
-.list-inline {
-  // @include list-unstyled;
-  margin-left: -5px;
-
-  > li {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-
+// .list-inline {
+//   // @include list-unstyled;
+//   margin-left: -5px;
+//
+//   > li {
+//     display: inline-block;
+//     padding-left: 5px;
+//     padding-right: 5px;
+//   }
+// }
+//
 
 
 // Horizontal description lists
@@ -131,21 +131,21 @@ mark,
 // Defaults to being stacked without any of the below styles applied, until the
 // grid breakpoint is reached (default of ~768px).
 
-.dl-horizontal {
-  dd {
-    // @include clearfix; // Clear the floated `dt` if an empty `dd` is present
-  }
-
-  @media (min-width: $grid-float-breakpoint) {
-    dt {
-      float: left;
-//      width: ($dl-horizontal-offset - 20);
-      clear: left;
-      text-align: right;
-      // @include text-overflow;
-    }
-    dd {
-//      margin-left: $dl-horizontal-offset;
-    }
-  }
-}
+// .dl-horizontal {
+//   dd {
+//     // @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+//   }
+//
+//   @media (min-width: $grid-float-breakpoint) {
+//     dt {
+//       float: left;
+// //      width: ($dl-horizontal-offset - 20);
+//       clear: left;
+//       text-align: right;
+//       // @include text-overflow;
+//     }
+//     dd {
+// //      margin-left: $dl-horizontal-offset;
+//     }
+//   }
+// }

@@ -18,7 +18,6 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Menu Animation Curve */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -32,23 +31,19 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -178,7 +173,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: white; }
+  color: #fff; }
 
 table {
   background-color: transparent;
@@ -339,3 +334,5 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1; }
+
+/*# sourceMappingURL=dashboard.css.map */

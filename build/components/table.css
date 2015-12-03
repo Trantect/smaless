@@ -347,7 +347,10 @@ h6, .h6 {
   border-radius: 3px;
   border: 1px solid #dfe5e8;
   background: #eceff1;
-  display: inline-block; }
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
   .table .td-icon > .fa-desktop {
     font-size: 10px;
     margin-right: 5px; }

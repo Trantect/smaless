@@ -500,7 +500,7 @@ h6, .h6 {
     margin-top: -7px; }
 
 sidebar, #sidebar {
-  min-height: 1446px;
+  min-height: 100%;
   width: 220px;
   position: absolute;
   margin-bottom: 8px;

@@ -327,3 +327,46 @@ button {
 
 .fa-desktop:before {
   content: "\f108"; }
+
+.fa-home:before {
+  content: "\f015"; }
+
+.fa-laptop:before {
+  content: "\f109"; }
+
+.fa-archive:before {
+  content: "\f187"; }
+
+.fa-bar-chart-o:before,
+.fa-lock:before {
+  content: "\f023"; }
+
+.fa-database:before {
+  content: "\f1c0"; }
+
+.fa-tasks:before {
+  content: "\f0ae"; }
+
+.fa-outdent:before {
+  content: "\f03b"; }
+
+.fa-user:before {
+  content: "\f007"; }
+
+.fa-users:before {
+  content: "\f0c0"; }
+
+.fa-clock-o:before {
+  content: "\f017"; }
+
+.fa-cog:before {
+  content: "\f013"; }
+
+.fa-download:before {
+  content: "\f019"; }
+
+.fa-circle-thin:before {
+  content: "\f1db"; }
+
+.fa-angle-down:before {
+  content: "\f107"; }

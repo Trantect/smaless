@@ -18,7 +18,6 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Menu Animation Curve */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -32,23 +31,19 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -178,7 +173,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: white; }
+  color: #fff; }
 
 table {
   background-color: transparent;
@@ -229,7 +224,7 @@ ul, ol {
 body {
   color: #333;
   font-size: 14px;
-  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -305,6 +300,9 @@ button {
   border: none;
   outline: 0; }
 
+p {
+  margin: 0 0 10px; }
+
 .pagination {
   display: inline-block;
   padding: 0;
@@ -321,8 +319,8 @@ button {
       line-height: 1.42857;
       text-decoration: none;
       color: #428bca;
-      background-color: white;
-      border: 1px solid #dddddd;
+      background-color: #fff;
+      border: 1px solid #ddd;
       margin-left: -1px; }
     .pagination > li:first-child > a,
     .pagination > li:first-child > span {
@@ -339,13 +337,13 @@ button {
     z-index: 3;
     color: #085a99;
     background-color: #eeeeee;
-    border-color: #dddddd; }
+    border-color: #ddd; }
   .pagination > .is-active > a, .pagination > .is-active > a:hover, .pagination > .is-active > a:focus,
   .pagination > .is-active > span,
   .pagination > .is-active > span:hover,
   .pagination > .is-active > span:focus {
     z-index: 2;
-    color: white;
+    color: #fff;
     background-color: #0c85e2;
     border-color: #0c85e2;
     cursor: not-allowed; }
@@ -355,7 +353,9 @@ button {
   .pagination > .is-disabled > a,
   .pagination > .is-disabled > a:hover,
   .pagination > .is-disabled > a:focus {
-    color: #777777;
-    background-color: white;
-    border-color: #dddddd;
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
     cursor: not-allowed; }
+
+/*# sourceMappingURL=pagination.css.map */

@@ -18,7 +18,6 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Menu Animation Curve */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -32,23 +31,19 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -178,7 +173,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: white; }
+  color: #fff; }
 
 table {
   background-color: transparent;
@@ -229,7 +224,7 @@ ul, ol {
 body {
   color: #333;
   font-size: 14px;
-  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -305,23 +300,107 @@ button {
   border: none;
   outline: 0; }
 
-sidebar, #sidebar {
-  min-height: 100%;
-  width: 220px;
-  position: absolute;
-  margin-bottom: 8px;
-  background: #e9eff8;
-  box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07); }
-  sidebar .user-panel, #sidebar .user-panel {
-    padding: 17px 0px 0px 15px;
-    margin-bottom: 15px; }
-    sidebar .user-panel > .user-info, #sidebar .user-panel > .user-info {
-      font-weight: 600;
-      color: #555555;
-      padding: 0px; }
-  sidebar > ul.menu, #sidebar > ul.menu {
-    border-top: 2px solid #e0e6ed; }
+p {
+  margin: 0 0 10px; }
 
-@media screen and (max-width: 991px) {
-  sidebar, #sidebar {
-    left: -220px; } }
+.visible-xs {
+  display: none !important; }
+
+.visible-sm {
+  display: none !important; }
+
+.visible-md {
+  display: none !important; }
+
+.visible-lg {
+  display: none !important; }
+
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important; }
+
+  table.visible-xs {
+    display: table !important; }
+
+  tr.visible-xs {
+    display: table-row !important; }
+
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important; } }
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important; }
+
+  table.visible-sm {
+    display: table !important; }
+
+  tr.visible-sm {
+    display: table-row !important; }
+
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important; }
+
+  table.visible-md {
+    display: table !important; }
+
+  tr.visible-md {
+    display: table-row !important; }
+
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important; } }
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important; }
+
+  table.visible-lg {
+    display: table !important; }
+
+  tr.visible-lg {
+    display: table-row !important; }
+
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important; } }
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; } }
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; } }
+.visible-print {
+  display: none !important; }
+
+@media print {
+  .visible-print {
+    display: block !important; }
+
+  table.visible-print {
+    display: table !important; }
+
+  tr.visible-print {
+    display: table-row !important; }
+
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important; } }
+@media print {
+  .hidden-print {
+    display: none !important; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -229,7 +229,7 @@ ul, ol {
 body {
   color: #333;
   font-size: 14px;
-  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -304,6 +304,9 @@ h6, .h6 {
 button {
   border: none;
   outline: 0; }
+
+p {
+  margin: 0 0 10px; }
 
 .panel {
   padding: 8px;

@@ -229,7 +229,7 @@ ul, ol {
 body {
   color: #333;
   font-size: 14px;
-  font-family: Helvetica,'Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -305,6 +305,9 @@ button {
   border: none;
   outline: 0; }
 
+p {
+  margin: 0 0 10px; }
+
 .content-title {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 15px 15px 10px 20px; }
@@ -315,7 +318,7 @@ button {
 content, #content {
   position: relative;
   display: block;
-  min-height: 669px;
+  min-height: 100%;
   padding: 0px 0px 59px 0px;
   margin-left: 220px;
   background-color: #eef3fa; }

@@ -49,8 +49,8 @@ $mix-percentage-lighter:   60%;
 $mix-percentage-lightest:  20%;
 
 /*default color shades */
-$color-default-darker:     mix($color-white, $color-black,15%);
-$color-default-dark:       mix($color-white, $color-black,10%);
+$color-default-darker:     mix($color-white, $color-black,85%);
+$color-default-dark:       mix($color-white, $color-black,90%);
 
 /*Primary color shades */
 $color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker);

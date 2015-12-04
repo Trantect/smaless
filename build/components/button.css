@@ -322,11 +322,12 @@ p {
 
 .btn-default {
   color: #333333;
-  border: 1px solid #cccccc; }
+  border: 1px solid #cccccc;
+  background-color: white; }
   .btn-default:focus, .btn-default:hover {
-    background-color: #191919; }
+    background-color: #e5e5e5; }
   .btn-default:active {
-    background-color: #262626; }
+    background-color: #d8d8d8; }
 
 .btn-primary {
   color: white;

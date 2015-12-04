@@ -5,7 +5,6 @@
 @mixin button-variant($color, $background, $border, $hoverBackground, $activeBackground) {
   color: $color;
   background-color: $background;
-  &:focus,
   &:hover {
     background-color: $hoverBackground;
   }

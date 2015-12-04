@@ -1,4 +1,10 @@
 /* smaless: V 0.3.0 */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .menu {
   margin: 0px;
   padding: 10px 0px 0px 0px; }
@@ -12,7 +18,7 @@
       .menu li > a:hover, .menu li > a:focus {
         background-color: #dde3eb;
         padding: 12px 5px 12px 15px;
-        color: #222;
+        color: #222222;
         border-left: 4px solid #616e75; }
   .menu > .is-active > a {
     padding: 12px 5px 12px 15px;
@@ -36,5 +42,3 @@
         padding: 12px 5px 12px 35px; }
   .menu .fa {
     width: 20px; }
-
-/*# sourceMappingURL=menu.css.map */

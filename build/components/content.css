@@ -19,7 +19,6 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Menu Animation Curve */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -33,23 +32,19 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -179,7 +174,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: white; }
+  color: #fff; }
 
 table {
   background-color: transparent;
@@ -319,7 +314,7 @@ p {
 content, #content {
   position: relative;
   display: block;
-  min-height: 100%;
+  min-height: calc(100% - 59px);
   padding: 0px 0px 59px 0px;
   margin-left: 220px;
   background-color: #eef3fa; }
@@ -327,3 +322,5 @@ content, #content {
 @media screen and (max-width: 991px) {
   content, #content {
     margin-left: 0px; } }
+
+/*# sourceMappingURL=content.css.map */

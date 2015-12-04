@@ -1,10 +1,11 @@
 var fs = require('fs');
+var currentVersion = "0.3.0";
 
 function writeName(_list){
   var _nameList = _list.map(function (file) {
     return '@import "' + file + '"'
   })
-  var _str = _nameList.join(';\n');
+  var _str = "/* smaless: " + currentVersion + " */\n" + _nameList.join(';\n');
   fs.writeFile('src/tmp/main.scss', _str, function (err) {
   	if (err){
   		console.log(err);

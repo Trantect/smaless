@@ -1,6 +1,6 @@
-/*----------------------------*/
+// /*----------------------------*/
 //Variables
-/*----------------------------*/
+// /*----------------------------*/
 
 // if you want to override variables , consider use `default`
 // for example:
@@ -37,50 +37,50 @@ $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
 
 
-/* Base Color varriable for creating both light and dark colors */
+// /* Base Color varriable for creating both light and dark colors */
 $color-white:            #fff;
 $color-black:            #000;
 
-/* Mixing Color varriable for creating both light and dark colors */
+// /* Mixing Color varriable for creating both light and dark colors */
 $mix-percentage-dark:      92%;
 $mix-percentage-darker:    75%;
 $mix-percentage-light:     80%;
 $mix-percentage-lighter:   60%;
 $mix-percentage-lightest:  20%;
 
-/*default color shades */
+// default color shades
 $color-default-darker:     mix($color-white, $color-black,85%);
 $color-default-dark:       mix($color-white, $color-black,90%);
 
-/*Primary color shades */
+// Primary color shades
 $color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker);
 $color-primary-dark:       mix($brand-primary, $color-black, $mix-percentage-dark);
 $color-primary-light:      mix($brand-primary, $color-white, $mix-percentage-light);
 $color-primary-lighter:    mix($brand-primary, $color-white, $mix-percentage-lighter);
 $color-primary-lightest:   mix($brand-primary, $color-white, $mix-percentage-lightest);
 
-/*success color shades */
+// success color shades
 $color-success-darker:     mix($brand-success, $color-black, $mix-percentage-darker);
 $color-success-dark:       mix($brand-success, $color-black, $mix-percentage-dark);
 $color-success-light:      mix($brand-success, $color-white, $mix-percentage-light);
 $color-success-lighter:    mix($brand-success, $color-white, $mix-percentage-lighter);
 $color-success-lightest:   mix($brand-success, $color-white, $mix-percentage-lightest);
 
-/*danger color shades */
+// danger color shades
 $color-danger-darker:      mix($brand-danger, $color-black, $mix-percentage-darker);
 $color-danger-dark:        mix($brand-danger, $color-black, $mix-percentage-dark);
 $color-danger-light:       mix($brand-danger, $color-white, $mix-percentage-light);
 $color-danger-lighter:     mix($brand-danger, $color-white, $mix-percentage-lighter);
 $color-danger-lightest:    mix($brand-danger, $color-white, $mix-percentage-lightest);
 
-/*warning color shades */
+// warning color shades
 $color-warning-darker:     mix($brand-warning, $color-black, $mix-percentage-darker);
 $color-warning-dark:       mix($brand-warning, $color-black, $mix-percentage-dark);
 $color-warning-light:      mix($brand-warning, $color-white, $mix-percentage-light);
 $color-warning-lighter:    mix($brand-warning, $color-white, $mix-percentage-lighter);
 $color-warning-lightest:   mix($brand-warning, $color-white, $mix-percentage-lightest);
 
-/*info color shades */
+// info color shades
 $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker);
 $color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark);
 $color-info-light:         mix($brand-info, $color-white, $mix-percentage-light);
@@ -105,13 +105,12 @@ $border-color-default:      #eee;
 
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
-/* Menu Animation Curve */
 $menu-bezier:.05, .74, .27, .99;
 $menu-icon-size:40px;
 
-/* Generating Menu font color */
+// /* Generating Menu font color */
 $sidebar-memu-color: $gray-dark;
-/* Menu Font Color */
+// /* Menu Font Color */
 $color-menu-link-hover:#fff;
 
 

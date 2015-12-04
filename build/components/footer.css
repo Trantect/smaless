@@ -1,4 +1,10 @@
 /* smaless: V 0.3.0 */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .footer {
   width: 100%;
   display: table;
@@ -52,5 +58,3 @@ footer, #footer {
     text-align: center; }
   footer .help, #footer .help {
     margin-top: 10px; } }
-
-/*# sourceMappingURL=footer.css.map */

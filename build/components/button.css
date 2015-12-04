@@ -1,4 +1,10 @@
 /* smaless: V 0.3.0 */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .btn {
   font-weight: normal;
   text-align: center;
@@ -12,52 +18,52 @@
 
 .btn-default {
   color: #333333;
-  border: 1px solid #ccc;
-  background-color: #fff; }
+  border: 1px solid #cccccc;
+  background-color: white; }
   .btn-default:hover {
-    background-color: #e6e6e6; }
+    background-color: #e5e5e5; }
   .btn-default:active {
-    background-color: #d9d9d9; }
+    background-color: #d8d8d8; }
 
 .btn-primary {
-  color: #fff;
+  color: white;
   background-color: #0c85e2; }
   .btn-primary:hover {
-    background-color: #3d9de8; }
+    background-color: #3c9de7; }
   .btn-primary:active {
-    background-color: #0b7ad0; }
+    background-color: #0b7acf; }
 
 .btn-success {
-  color: #fff;
+  color: white;
   background-color: #00c644; }
   .btn-success:hover {
-    background-color: #33d169; }
+    background-color: #32d169; }
   .btn-success:active {
-    background-color: #00b63f; }
+    background-color: #00b63e; }
 
 .btn-info {
-  color: #fff;
+  color: white;
   background-color: #33c5df; }
   .btn-info:hover {
-    background-color: #5cd1e5; }
+    background-color: #5bd0e5; }
   .btn-info:active {
-    background-color: #2fb5cd; }
+    background-color: #2eb5cd; }
 
 .btn-warning {
-  color: #fff;
+  color: white;
   background-color: #f0ad4e; }
   .btn-warning:hover {
     background-color: #f3bd71; }
   .btn-warning:active {
-    background-color: #dd9f48; }
+    background-color: #dc9f47; }
 
 .btn-danger {
-  color: #fff;
+  color: white;
   background-color: #ff6c60; }
   .btn-danger:hover {
-    background-color: #ff8980; }
+    background-color: #ff897f; }
   .btn-danger:active {
-    background-color: #eb6358; }
+    background-color: #ea6358; }
 
 .btn-lg {
   padding: 10px 16px;
@@ -83,5 +89,3 @@
 
 .btn-block + .btn-block {
   margin-top: 5px; }
-
-/*# sourceMappingURL=button.css.map */

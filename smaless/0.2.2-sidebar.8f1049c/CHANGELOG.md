@@ -1,6 +1,18 @@
 [API Document](http://emily123.github.io/smaless/)
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
+# Version: V 0.2.2
+## New Features
+```
+none
+```
+# Fixed Issues
+```
+1. modify min-height in sidebar
+
+2. modify .td-icon ellipsis in table  
+```
+
 # Version: V 0.2.1
 ## New Features
 ```

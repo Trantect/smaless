@@ -36,6 +36,7 @@ $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
 
 
+
 /* Base Color varriable for creating both light and dark colors */
 $color-white:            #fff;
 $color-black:            #000;
@@ -46,6 +47,10 @@ $mix-percentage-darker:    75%;
 $mix-percentage-light:     80%;
 $mix-percentage-lighter:   60%;
 $mix-percentage-lightest:  20%;
+
+/*default color shades */
+$color-default-darker:     mix($color-white, $color-black,15%);
+$color-default-dark:       mix($color-white, $color-black,10%);
 
 /*Primary color shades */
 $color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker);
@@ -84,6 +89,9 @@ $color-info-lightest:      mix($brand-info, $color-white, $mix-percentage-lighte
 
 
 
+
+
+$border-color-btn:         #ccc;
 
 
 //** Padding.

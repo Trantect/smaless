@@ -1,6 +1,18 @@
 [API Document](http://emily123.github.io/smaless/)
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
+# Version: V 0.3.0
+## New Features
+```
+fix button colors
+```
+# Fixed Issues
+```
+1. fix content min-height
+
+2. fix sidebar min-height  
+```
+
 # Version: V 0.2.2
 ## New Features
 ```

@@ -191,52 +191,52 @@ sidebar, #sidebar {
 
 .btn-default {
   color: #333333;
-  border: 1px solid #cccccc;
-  background-color: white; }
+  border: 1px solid #ccc;
+  background-color: #fff; }
   .btn-default:hover {
-    background-color: #e5e5e5; }
+    background-color: #e6e6e6; }
   .btn-default:active {
-    background-color: #d8d8d8; }
+    background-color: #d9d9d9; }
 
 .btn-primary {
-  color: white;
+  color: #fff;
   background-color: #0c85e2; }
   .btn-primary:hover {
-    background-color: #3c9de7; }
+    background-color: #3d9de8; }
   .btn-primary:active {
-    background-color: #0b7acf; }
+    background-color: #0b7ad0; }
 
 .btn-success {
-  color: white;
+  color: #fff;
   background-color: #00c644; }
   .btn-success:hover {
-    background-color: #32d169; }
+    background-color: #33d169; }
   .btn-success:active {
-    background-color: #00b63e; }
+    background-color: #00b63f; }
 
 .btn-info {
-  color: white;
+  color: #fff;
   background-color: #33c5df; }
   .btn-info:hover {
-    background-color: #5bd0e5; }
+    background-color: #5cd1e5; }
   .btn-info:active {
-    background-color: #2eb5cd; }
+    background-color: #2fb5cd; }
 
 .btn-warning {
-  color: white;
+  color: #fff;
   background-color: #f0ad4e; }
   .btn-warning:hover {
     background-color: #f3bd71; }
   .btn-warning:active {
-    background-color: #dc9f47; }
+    background-color: #dd9f48; }
 
 .btn-danger {
-  color: white;
+  color: #fff;
   background-color: #ff6c60; }
   .btn-danger:hover {
-    background-color: #ff897f; }
+    background-color: #ff8980; }
   .btn-danger:active {
-    background-color: #ea6358; }
+    background-color: #eb6358; }
 
 .btn-lg {
   padding: 10px 16px;
@@ -984,7 +984,6 @@ sidebar, #sidebar {
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -995,15 +994,15 @@ sidebar, #sidebar {
 
 .fa-unsorted:after,
 .fa-sort:after {
-  content: "\f0dc"; }
+  content: ""; }
 
 .fa-sort-down:after,
 .fa-sort-desc:after {
-  content: "\f0dd"; }
+  content: ""; }
 
 .fa-sort-up:after,
 .fa-sort-asc:after {
-  content: "\f0de"; }
+  content: ""; }
 
 .fa-client-group {
   background: url("../images/clientGroup.png");
@@ -1012,53 +1011,53 @@ sidebar, #sidebar {
   height: 12px; }
 
 .fa-desktop:before {
-  content: "\f108"; }
+  content: ""; }
 
 .fa-home:before {
-  content: "\f015"; }
+  content: ""; }
 
 .fa-laptop:before {
-  content: "\f109"; }
+  content: ""; }
 
 .fa-archive:before {
-  content: "\f187"; }
+  content: ""; }
 
 .fa-bar-chart-o:before,
 .fa-lock:before {
-  content: "\f023"; }
+  content: ""; }
 
 .fa-database:before {
-  content: "\f1c0"; }
+  content: ""; }
 
 .fa-tasks:before {
-  content: "\f0ae"; }
+  content: ""; }
 
 .fa-outdent:before {
-  content: "\f03b"; }
+  content: ""; }
 
 .fa-user:before {
-  content: "\f007"; }
+  content: ""; }
 
 .fa-users:before {
-  content: "\f0c0"; }
+  content: ""; }
 
 .fa-clock-o:before {
-  content: "\f017"; }
+  content: ""; }
 
 .fa-cog:before {
-  content: "\f013"; }
+  content: ""; }
 
 .fa-download:before {
-  content: "\f019"; }
+  content: ""; }
 
 .fa-circle-thin:before {
-  content: "\f1db"; }
+  content: ""; }
 
 .fa-angle-down:before {
-  content: "\f107"; }
+  content: ""; }
 
 .fa-angle-up:before {
-  content: "\f106"; }
+  content: ""; }
 
 .menu {
   margin: 0px;
@@ -1073,7 +1072,7 @@ sidebar, #sidebar {
       .menu li > a:hover, .menu li > a:focus {
         background-color: #dde3eb;
         padding: 12px 5px 12px 15px;
-        color: #222222;
+        color: #222;
         border-left: 4px solid #616e75; }
   .menu > .is-active > a {
     padding: 12px 5px 12px 15px;
@@ -1114,8 +1113,8 @@ sidebar, #sidebar {
       line-height: 1.42857;
       text-decoration: none;
       color: #428bca;
-      background-color: white;
-      border: 1px solid #dddddd;
+      background-color: #fff;
+      border: 1px solid #ddd;
       margin-left: -1px; }
     .pagination > li:first-child > a,
     .pagination > li:first-child > span {
@@ -1132,13 +1131,13 @@ sidebar, #sidebar {
     z-index: 3;
     color: #085a99;
     background-color: #eeeeee;
-    border-color: #dddddd; }
+    border-color: #ddd; }
   .pagination > .is-active > a, .pagination > .is-active > a:hover, .pagination > .is-active > a:focus,
   .pagination > .is-active > span,
   .pagination > .is-active > span:hover,
   .pagination > .is-active > span:focus {
     z-index: 2;
-    color: white;
+    color: #fff;
     background-color: #0c85e2;
     border-color: #0c85e2;
     cursor: not-allowed; }
@@ -1148,9 +1147,9 @@ sidebar, #sidebar {
   .pagination > .is-disabled > a,
   .pagination > .is-disabled > a:hover,
   .pagination > .is-disabled > a:focus {
-    color: #777777;
-    background-color: white;
-    border-color: #dddddd;
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
     cursor: not-allowed; }
 
 .panel {
@@ -1160,10 +1159,11 @@ sidebar, #sidebar {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
 .panel-header {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
   width: -webkit-calc(100% - 16px);
   width: -moz-calc(100% - 16px);
   width: calc(100% - 16px);
+  font-size: 18px;
   display: table;
   border-radius: 3px 3px 0 0; }
   .panel-header * > {
@@ -1194,10 +1194,10 @@ sidebar, #sidebar {
     padding: 8px;
     line-height: 1.42857;
     vertical-align: middle;
-    border-top: 1px solid #eeeeee; }
+    border-top: 1px solid #eee; }
   .table > thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #eeeeee; }
+    border-bottom: 2px solid #eee; }
   .table > caption + thead > tr:first-child > th,
   .table > caption + thead > tr:first-child > td,
   .table > colgroup + thead > tr:first-child > th,
@@ -1206,7 +1206,7 @@ sidebar, #sidebar {
   .table > thead:first-child > tr:first-child > td {
     border-top: 0; }
   .table > tbody + tbody {
-    border-top: 2px solid #eeeeee; }
+    border-top: 2px solid #eee; }
 
 .table-sort > thead {
   cursor: pointer; }
@@ -1263,7 +1263,7 @@ sidebar, #sidebar {
     overflow: auto;
     margin: 30px 0 16px 0;
     border-radius: 3px 3px 0 0;
-    border: 1px solid #eeeeee; }
+    border: 1px solid #eee; }
     .responsive .table {
       white-space: nowrap; } }
 .is-nopadding {
@@ -1402,3 +1402,5 @@ button {
 
 p {
   margin: 0 0 10px; }
+
+/*# sourceMappingURL=main.css.map */

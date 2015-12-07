@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* smaless: V 0.3.0 */
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -6,7 +7,6 @@
   src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -17,15 +17,15 @@
 
 .fa-unsorted:after,
 .fa-sort:after {
-  content: "\f0dc"; }
+  content: ""; }
 
 .fa-sort-down:after,
 .fa-sort-desc:after {
-  content: "\f0dd"; }
+  content: ""; }
 
 .fa-sort-up:after,
 .fa-sort-asc:after {
-  content: "\f0de"; }
+  content: ""; }
 
 .fa-client-group {
   background: url("../images/clientGroup.png");
@@ -34,50 +34,52 @@
   height: 12px; }
 
 .fa-desktop:before {
-  content: "\f108"; }
+  content: ""; }
 
 .fa-home:before {
-  content: "\f015"; }
+  content: ""; }
 
 .fa-laptop:before {
-  content: "\f109"; }
+  content: ""; }
 
 .fa-archive:before {
-  content: "\f187"; }
+  content: ""; }
 
 .fa-bar-chart-o:before,
 .fa-lock:before {
-  content: "\f023"; }
+  content: ""; }
 
 .fa-database:before {
-  content: "\f1c0"; }
+  content: ""; }
 
 .fa-tasks:before {
-  content: "\f0ae"; }
+  content: ""; }
 
 .fa-outdent:before {
-  content: "\f03b"; }
+  content: ""; }
 
 .fa-user:before {
-  content: "\f007"; }
+  content: ""; }
 
 .fa-users:before {
-  content: "\f0c0"; }
+  content: ""; }
 
 .fa-clock-o:before {
-  content: "\f017"; }
+  content: ""; }
 
 .fa-cog:before {
-  content: "\f013"; }
+  content: ""; }
 
 .fa-download:before {
-  content: "\f019"; }
+  content: ""; }
 
 .fa-circle-thin:before {
-  content: "\f1db"; }
+  content: ""; }
 
 .fa-angle-down:before {
-  content: "\f107"; }
+  content: ""; }
 
 .fa-angle-up:before {
-  content: "\f106"; }
+  content: ""; }
+
+/*# sourceMappingURL=icons.css.map */

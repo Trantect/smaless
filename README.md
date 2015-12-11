@@ -65,7 +65,7 @@
 
 >
 
-> [http://belindaliu.github.io/smalessAPIDocs/](http://belindaliu.github.io/smalessAPIDocs/)
+> [http://mario56.github.io/smalessAPIDocs/](http://mario56.github.io/smalessAPIDocs/)
 
 <a id="cdn"></a>
 ## CDN

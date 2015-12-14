@@ -65,6 +65,10 @@ footer, #footer {
   padding: 10px;
   background-color: black; }
 
+.demo2 {
+  color: blue;
+  background-color: yellow; }
+
 .visible-xs {
   display: none !important; }
 

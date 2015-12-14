@@ -60,6 +60,11 @@ footer, #footer {
     text-align: center; }
   footer .help, #footer .help {
     margin-top: 10px; } }
+.demo {
+  color: red;
+  padding: 10px;
+  background-color: black; }
+
 .visible-xs {
   display: none !important; }
 

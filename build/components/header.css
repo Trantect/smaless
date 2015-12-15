@@ -1,9 +1,10 @@
 /* smaless: V 0.3.0 */
 .demo {
-  color: blue;
   background-color: #0c85e2;
-  height: 50px;
-  margin: 0;
-  padding: 0; }
+  height: 50px; }
+  .demo a {
+    color: blue;
+    text-align: center;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=header.css.map */

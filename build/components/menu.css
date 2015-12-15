@@ -12,7 +12,7 @@
       .menu li > a:hover, .menu li > a:focus {
         background-color: #dde3eb;
         padding: 12px 5px 12px 15px;
-        color: #222;
+        color: #222222;
         border-left: 4px solid #616e75; }
   .menu > .is-active > a {
     padding: 12px 5px 12px 15px;
@@ -36,5 +36,3 @@
         padding: 12px 5px 12px 35px; }
   .menu .fa {
     width: 20px; }
-
-/*# sourceMappingURL=menu.css.map */

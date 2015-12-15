@@ -1,11 +1,9 @@
 /* smaless: V 0.3.0 */
 .demo {
-  color: red;
-  padding: 10px;
-  background-color: black; }
-
-.demo2 {
   color: blue;
-  background-color: yellow; }
+  background-color: #0c85e2;
+  height: 50px;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=header.css.map */

@@ -1,0 +1,53 @@
+.nav{
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  @include clearfix;
+  a {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    line-height: $layout-header-height;
+    .user {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+    img {
+      opacity: 0.8;
+      font-size: 12px;
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
+.nav-toolbar{
+  li{
+    float: left;
+  }
+}
+.nav-right{
+  float:right;
+}
+.nav-left{
+  float : left;
+}
+
+.fa {
+
+  font: normal normal normal 14px/1 FontAwesome;
+  color: rgba(255, 255, 255, 0.8);
+}
+.fa-bars {
+
+  line-height: $layout-header-height;
+  font-size: 20px;
+  &:hover, &:focus {
+    color: $gray-base;
+  }
+}
+.user-info {
+  cursor: default;
+  span{
+    margin-left:5px;
+  }
+}

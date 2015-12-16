@@ -1,8 +1,18 @@
-.demo{
-  background-color:red;
-  font-size:20px;
-  text-align:center;
-}
-.demo{
-  color : #fff;
+header {
+  height: $layout-header-height;
+  background-color: $brand-primary;
+  .logo {
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: $layout-header-height;
+    width: $layout-sidepanel-pin-width;
+    img {
+      height: 28px;
+      vertical-align: middle;
+    }
+  }
+  .header-nav{
+    margin-right: 10px;
+  }
 }

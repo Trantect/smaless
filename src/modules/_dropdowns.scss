@@ -1,0 +1,8 @@
+.dropdown {
+  &:hover, &:focus {
+    background-color: $header-hover-bgcolor;
+    a {
+      color: $header-hover-color;
+    }
+  }
+}

@@ -1,8 +1,15 @@
 /* smaless: V 0.3.0 */
-.demo {
-  background-color: red;
-  font-size: 20px;
-  text-align: center; }
-
-.demo {
-  color: #fff; }
+header {
+  height: 50px;
+  background-color: #0c85e2; }
+  header .logo {
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    width: 220px; }
+    header .logo img {
+      height: 28px;
+      vertical-align: middle; }
+  header .header-nav {
+    margin-right: 10px; }

@@ -1157,7 +1157,8 @@ sidebar, #sidebar {
 .nav {
   margin-bottom: 0;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
   .nav:before, .nav:after {
     content: " ";
     display: table; }

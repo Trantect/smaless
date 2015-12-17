@@ -20,7 +20,11 @@
       opacity: 0.8;
       font-size: 12px;
       height: 15px;
-      width: 15px; }
+      width: 15px;
+      vertical-align: middle; }
+  .nav .fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: rgba(255, 255, 255, 0.8); }
 
 .nav-toolbar li {
   float: left; }
@@ -31,15 +35,11 @@
 .nav-left {
   float: left; }
 
-.fa {
-  font: normal normal normal 14px/1 FontAwesome;
-  color: rgba(255, 255, 255, 0.8); }
-
 .fa-bars {
   line-height: 50px;
   font-size: 20px; }
   .fa-bars:hover, .fa-bars:focus {
-    color: black; }
+    color: white; }
 
 .user-info {
   cursor: default; }

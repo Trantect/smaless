@@ -3,7 +3,7 @@
 content, #content {
   position: relative;
   display: block;
-  min-height: calc(100% - 59px);
+  min-height: calc(100% - 109px);
   padding: 0px 0px 59px 0px;
   margin-left: 220px;
   background-color: #eef3fa; }
@@ -176,7 +176,7 @@ header {
     display: none !important; } }
 sidebar, #sidebar {
   left: 0;
-  min-height: 100%;
+  min-height: calc(100% - 50px);
   width: 220px;
   position: absolute;
   background: #e9eff8;
@@ -1000,17 +1000,46 @@ sidebar, #sidebar {
     margin-left: 100%; } }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?z6c2o8");
+  src: url("fonts/icomoon.eot?z6c2o8#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?z6c2o8") format("truetype"), url("fonts/icomoon.woff?z6c2o8") format("woff"), url("fonts/icomoon.svg?z6c2o8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .fa-sign-out:before {
   content: "\f08b"; }
 
 .fa-bars:before {
   content: "\f0c9"; }
 
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../font/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+.icon-virus:before {
+  content: "\e900"; }
+
+.icon-hips:before {
+  content: "\e901"; }
+
+.icon-vul:before {
+  content: "\e902"; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .fa {
   display: inline-block;
@@ -1134,14 +1163,16 @@ sidebar, #sidebar {
     display: table; }
   .nav:after {
     clear: both; }
+  .nav .user {
+    font-size: 16px;
+    margin-right: 5px; }
+    .nav .user span {
+      margin-left: 5px; }
   .nav a {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
     padding: 15px;
     line-height: 50px; }
-    .nav a .user {
-      font-size: 16px;
-      margin-right: 5px; }
     .nav a img {
       opacity: 0.8;
       font-size: 12px;
@@ -1169,8 +1200,6 @@ sidebar, #sidebar {
 
 .user-info {
   cursor: default; }
-  .user-info span {
-    margin-left: 5px; }
 
 .pagination {
   display: inline-block;

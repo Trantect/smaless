@@ -4,7 +4,7 @@
 
 sidebar, #sidebar {
   left: 0;
-  min-height: 100%;
+  min-height: calc(100% - 50px);
   width: $sidebar-width;
   position: absolute;
   background: $sidebar-bg-color;

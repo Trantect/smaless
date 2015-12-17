@@ -3,15 +3,18 @@
   padding-left: 0; // Override default ul/ol
   list-style: none;
   @include clearfix;
+  .user {
+    font-size: 16px;
+    margin-right: 5px;
+    span{
+      margin-left:5px;
+    }
+  }
   a {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
     padding: 15px;
     line-height: $layout-header-height;
-    .user {
-      font-size: 16px;
-      margin-right: 5px;
-    }
     img {
       opacity: 0.8;
       font-size: 12px;
@@ -21,7 +24,6 @@
     }
   }
   .fa {
-
     font: normal normal normal 14px/1 FontAwesome;
     color: rgba(255, 255, 255, 0.8);
   }
@@ -49,7 +51,4 @@
 }
 .user-info {
   cursor: default;
-  span{
-    margin-left:5px;
-  }
 }

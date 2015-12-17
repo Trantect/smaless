@@ -8,8 +8,7 @@
 // $color: blue !default;
 // then the real value of $color will be red.
 
-//nav-color
-$header-hover-bgcolor: #2a6496;
+
 //== Base Color
 // --------------------------------------------------
 
@@ -106,7 +105,7 @@ $border-color-default:      #eee;
 //== Menu Vars (Sidebar)
 // --------------------------------------------------
 $menu-bezier:.05, .74, .27, .99;
-$menu-icon-size:40px;
+$menu-icon-size: 40px;
 
 // /* Generating Menu font color */
 $sidebar-memu-color: $gray-dark;
@@ -116,7 +115,7 @@ $color-menu-link-hover:#fff;
 
 //== Layout (sidebar & navbar)
 // --------------------------------------------------
-$layout-header-height:              60px;
+$layout-header-height:              50px;
 $layout-mobile-header-height:       48px;
 $layout-mobile-logo-scale:          0.8;
 $layout-sidepanel-width-collapsed : 70px;
@@ -660,3 +659,6 @@ $sidebar-active-color:             $brand-primary;
 
 /// content
 $content-bg-color:                 #eef3fa;
+//nav-color
+$header-hover-bgcolor:             #2a6496;
+$header-bgcolor:                   $brand-primary;

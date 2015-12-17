@@ -20,6 +20,11 @@
       vertical-align: middle;
     }
   }
+  .fa {
+
+    font: normal normal normal 14px/1 FontAwesome;
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 .nav-toolbar{
   li{
@@ -33,17 +38,13 @@
   float : left;
 }
 
-.fa {
 
-  font: normal normal normal 14px/1 FontAwesome;
-  color: rgba(255, 255, 255, 0.8);
-}
 .fa-bars {
 
   line-height: $layout-header-height;
   font-size: 20px;
   &:hover, &:focus {
-    color: $gray-base;
+    color: $color-white;
   }
 }
 .user-info {

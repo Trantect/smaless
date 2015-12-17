@@ -3,7 +3,7 @@
 content, #content {
   position: relative;
   display: block;
-  min-height: calc(100% - 109px);
+  min-height: -moz-calc(100% - 109px);
   padding: 0px 0px 59px 0px;
   margin-left: 220px;
   background-color: #eef3fa; }
@@ -177,6 +177,7 @@ header {
 sidebar, #sidebar {
   left: 0;
   min-height: calc(100% - 50px);
+  min-height: -moz-calc(100% - 50px);
   width: 220px;
   position: absolute;
   background: #e9eff8;
@@ -287,7 +288,7 @@ sidebar, #sidebar {
   padding: 20px 15px; }
 
 .dropdown:hover, .dropdown:focus {
-  background-color: #2a6496; }
+  background-color: #010f1b; }
   .dropdown:hover a, .dropdown:focus a {
     color: white; }
 
@@ -1185,12 +1186,6 @@ sidebar, #sidebar {
     color: rgba(255, 255, 255, 0.8); }
 
 .nav-toolbar li {
-  float: left; }
-
-.nav-right {
-  float: right; }
-
-.nav-left {
   float: left; }
 
 .fa-bars {

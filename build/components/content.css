@@ -9,7 +9,7 @@
 content, #content {
   position: relative;
   display: block;
-  min-height: calc(100% - 109px);
+  min-height: -moz-calc(100% - 109px);
   padding: 0px 0px 59px 0px;
   margin-left: 220px;
   background-color: #eef3fa; }

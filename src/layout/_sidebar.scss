@@ -5,6 +5,7 @@
 sidebar, #sidebar {
   left: 0;
   min-height: calc(100% - 50px);
+  min-height: -moz-calc(100% - 50px);
   width: $sidebar-width;
   position: absolute;
   background: $sidebar-bg-color;

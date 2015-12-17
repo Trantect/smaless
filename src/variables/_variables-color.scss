@@ -659,6 +659,9 @@ $sidebar-active-color:             $brand-primary;
 
 /// content
 $content-bg-color:                 #eef3fa;
-//nav-color
-$header-hover-bgcolor:             #2a6496;
+/// nav-color
+/// @group header
+/// @since 0.4.0
+$header-hover-bgcolor:             mix($brand-primary, $color-black, 12%);
+/// @group header
 $header-bgcolor:                   $brand-primary;

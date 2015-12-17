@@ -11,7 +11,10 @@ $menu-bezier:.05, .74, .27, .99;
 $menu-icon-size:40px;
 
 //== Layout (sidebar & navbar)
-// --------------------------------------------------
+// -------------------------------------------------
+/// This is a layout variables-px
+/// @group header
+/// @since 0.4.0
 $layout-header-height:              50px;
 $layout-mobile-header-height:       48px;
 $layout-mobile-logo-scale:          0.8;

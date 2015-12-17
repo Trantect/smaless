@@ -1,3 +1,6 @@
+/// This is nav module, it is a right component of header.
+/// @group header
+/// @since 0.4.0
 .nav{
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
@@ -29,6 +32,9 @@
     color: rgba(255, 255, 255, 0.8);
   }
 }
+/// This is a nav-toolbar module, and it is a child of nav.
+/// @group header
+/// @since 0.4.0
 .nav-toolbar{
   li{
     float: left;
@@ -43,6 +49,9 @@
     color: $color-white;
   }
 }
+/// This is a user-info module, and it appears user information
+/// @group header
+/// @since 0.4.0
 .user-info {
   cursor: default;
 }

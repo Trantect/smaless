@@ -1,0 +1,42 @@
+/* smaless: V 0.3.0 */
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden; }
+  .nav:before, .nav:after {
+    content: " ";
+    display: table; }
+  .nav:after {
+    clear: both; }
+  .nav .user {
+    font-size: 16px;
+    margin-right: 5px; }
+    .nav .user span {
+      margin-left: 5px; }
+  .nav a {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    line-height: 50px; }
+    .nav a img {
+      opacity: 0.8;
+      font-size: 12px;
+      height: 15px;
+      width: 15px;
+      vertical-align: middle; }
+  .nav .fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: rgba(255, 255, 255, 0.8); }
+
+.nav-toolbar li {
+  float: left; }
+
+.fa-bars {
+  line-height: 50px;
+  font-size: 20px; }
+  .fa-bars:hover, .fa-bars:focus {
+    color: white; }
+
+.user-info {
+  cursor: default; }

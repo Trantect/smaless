@@ -28,9 +28,11 @@ header {
   /// @since 0.4.0
   .user-info {
     cursor: default;
-    &:hover, &:focus {
-      background-color: $header-bgcolor;
-      color: rgba(255, 255, 255, 0.8);
+    a {
+      &:hover, &:focus {
+        background-color: $header-bgcolor;
+        color: rgba(255, 255, 255, 0.8);
+      }
     }
   }
 

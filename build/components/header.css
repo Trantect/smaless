@@ -13,8 +13,7 @@ header {
       height: 28px;
       padding: 11px 0; }
   header .user {
-    font-size: 16px;
-    margin-right: 5px; }
+    font-size: 16px; }
     header .user span {
       margin-left: 5px; }
   header .user-info {

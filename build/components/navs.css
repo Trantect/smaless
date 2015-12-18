@@ -12,6 +12,7 @@
     clear: both; }
   .nav a {
     height: 20px;
+    line-height: 20px;
     overflow: hidden;
     display: block;
     font-weight: 600;

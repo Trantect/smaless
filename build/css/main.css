@@ -74,8 +74,7 @@ header {
       height: 28px;
       padding: 11px 0; }
   header .user {
-    font-size: 16px;
-    margin-right: 5px; }
+    font-size: 16px; }
     header .user span {
       margin-left: 5px; }
   header .user-info {
@@ -1180,6 +1179,7 @@ sidebar, #sidebar {
     clear: both; }
   .nav a {
     height: 20px;
+    line-height: 20px;
     overflow: hidden;
     display: block;
     font-weight: 600;

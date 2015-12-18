@@ -80,7 +80,7 @@ header {
       margin-left: 5px; }
   header .user-info {
     cursor: default; }
-    header .user-info:hover, header .user-info:focus {
+    header .user-info a:hover, header .user-info a:focus {
       background-color: #0c85e2;
       color: rgba(255, 255, 255, 0.8); }
   header .icon-vul {

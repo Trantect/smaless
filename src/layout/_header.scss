@@ -8,12 +8,39 @@ header {
     float: left;
     display: block;
     text-align: center;
-    line-height: $layout-header-height;
     width: $layout-sidepanel-pin-width;
+    overflow: hidden;
+    height: $layout-header-height;
     img {
       height: 28px;
-      vertical-align: middle;
+      padding: 11px 0;
     }
+  }
+  .user {
+    font-size: 16px;
+    margin-right: 5px;
+    span{
+      margin-left:5px;
+    }
+  }
+  /// This is a user-info module, and it appears user information
+  /// @group header
+  /// @since 0.4.0
+  .user-info {
+    cursor: default;
+    &:hover, &:focus {
+      background-color: $header-bgcolor;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .icon-vul{
+    font-size: 16px;
+  }
+  .icon-virus, .icon-hips{
+    font-size: 15px;
+    position: relative;
+    top: 1px;
   }
   .header-nav{
     margin-right: 10px;

@@ -67,11 +67,28 @@ header {
     float: left;
     display: block;
     text-align: center;
-    line-height: 50px;
-    width: 220px; }
+    width: 220px;
+    overflow: hidden;
+    height: 50px; }
     header .logo img {
       height: 28px;
-      vertical-align: middle; }
+      padding: 11px 0; }
+  header .user {
+    font-size: 16px;
+    margin-right: 5px; }
+    header .user span {
+      margin-left: 5px; }
+  header .user-info {
+    cursor: default; }
+    header .user-info:hover, header .user-info:focus {
+      background-color: #0c85e2;
+      color: rgba(255, 255, 255, 0.8); }
+  header .icon-vul {
+    font-size: 16px; }
+  header .icon-virus, header .icon-hips {
+    font-size: 15px;
+    position: relative;
+    top: 1px; }
   header .header-nav {
     margin-right: 10px; }
 
@@ -286,11 +303,6 @@ sidebar, #sidebar {
 
 .content-body {
   padding: 20px 15px; }
-
-.dropdown:hover, .dropdown:focus {
-  background-color: #0a75c6; }
-  .dropdown:hover a, .dropdown:focus a {
-    color: white; }
 
 .footer {
   width: 100%;
@@ -1159,43 +1171,31 @@ sidebar, #sidebar {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 50px; }
   .nav:before, .nav:after {
     content: " ";
     display: table; }
   .nav:after {
     clear: both; }
-  .nav .user {
-    font-size: 16px;
-    margin-right: 5px; }
-    .nav .user span {
-      margin-left: 5px; }
   .nav a {
+    height: 20px;
+    overflow: hidden;
+    display: block;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    line-height: 50px; }
-    .nav a img {
-      opacity: 0.8;
-      font-size: 12px;
-      height: 15px;
-      width: 15px;
-      vertical-align: middle; }
-  .nav .fa {
-    font: normal normal normal 14px/1 FontAwesome;
-    color: rgba(255, 255, 255, 0.8); }
+    padding: 15px; }
+    .nav a:hover, .nav a:focus {
+      background-color: #0a75c6;
+      color: white; }
+  .nav .fa-bars {
+    line-height: 20px;
+    font-size: 20px; }
+    .nav .fa-bars:hover, .nav .fa-bars:focus {
+      color: white; }
 
 .nav-toolbar li {
   float: left; }
-
-.fa-bars {
-  line-height: 50px;
-  font-size: 20px; }
-  .fa-bars:hover, .fa-bars:focus {
-    color: white; }
-
-.user-info {
-  cursor: default; }
 
 .pagination {
   display: inline-block;

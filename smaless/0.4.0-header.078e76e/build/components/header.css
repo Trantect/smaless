@@ -1,0 +1,32 @@
+/* smaless: V 0.3.0 */
+header {
+  height: 50px;
+  background-color: #0c85e2; }
+  header .logo {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 220px;
+    overflow: hidden;
+    height: 50px; }
+    header .logo img {
+      height: 28px;
+      padding: 11px 0; }
+  header .user {
+    font-size: 16px;
+    margin-right: 5px; }
+    header .user span {
+      margin-left: 5px; }
+  header .user-info {
+    cursor: default; }
+    header .user-info:hover, header .user-info:focus {
+      background-color: #0c85e2;
+      color: rgba(255, 255, 255, 0.8); }
+  header .icon-vul {
+    font-size: 16px; }
+  header .icon-virus, header .icon-hips {
+    font-size: 15px;
+    position: relative;
+    top: 1px; }
+  header .header-nav {
+    margin-right: 10px; }

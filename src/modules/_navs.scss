@@ -24,9 +24,6 @@
   .fa-bars {
     line-height: 20px;
     font-size: 20px;
-    &:hover, &:focus {
-      color: $color-white;
-    }
   }
 }
 /// This is a nav-toolbar module, and it is a child of nav.

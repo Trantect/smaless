@@ -24,8 +24,6 @@
   .nav .fa-bars {
     line-height: 20px;
     font-size: 20px; }
-    .nav .fa-bars:hover, .nav .fa-bars:focus {
-      color: white; }
 
 .nav-toolbar li {
   float: left; }

@@ -1,6 +1,17 @@
 [API Document](http://emily123.github.io/smaless/)
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
+
+# Version: V 0.4.0
+## New Features
+```
+ header without responsive or dropdown
+```
+# Fixed Issues
+```
+ fix content and sidebar min-height
+```
+
 # Version: V 0.3.0
 ## New Features
 ```

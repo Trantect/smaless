@@ -1,0 +1,26 @@
+/// This is badges module
+/// @group badge
+/// @since 0.4.0
+.badge {
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 15px;
+}
+.badge-up{
+  position: relative;
+  top: -12px;
+  left: -4px;
+  margin-right: -18px;
+}
+.badge-right{
+  float:right;
+}
+.badge-warning { background-color: $brand-warning; }
+.badge-info { background-color: $brand-info; }
+.badge-danger { background-color: $brand-danger; }
+.badge-success { background-color: $brand-success; }

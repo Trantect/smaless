@@ -20,6 +20,9 @@
 .fa-bars:before {
   content: "\f0c9"; }
 
+.fa-sitemap:before {
+  content: "\f0e8"; }
+
 .icon-virus:before {
   content: "\e900"; }
 

@@ -93,6 +93,27 @@ header {
   header .header-nav {
     margin-right: 10px; }
 
+@media screen and (max-width: 879px) {
+  header .user-info {
+    display: none; } }
+@media screen and (max-width: 800px) {
+  header .logo {
+    float: none;
+    margin: 0 auto; }
+  header .nav {
+    display: block;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    background-color: #0c85e2; }
+  header .header-nav {
+    margin-right: 0; }
+
+  content {
+    margin-top: 50px; } }
+@media screen and (max-width: 550px) {
+  .user-exit {
+    display: none; } }
 .visible-xs {
   display: none !important; }
 
@@ -213,6 +234,37 @@ sidebar, #sidebar {
 @media screen and (max-width: 991px) {
   sidebar, #sidebar {
     left: -220px; } }
+.badge {
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 15px; }
+
+.badge-up {
+  position: relative;
+  top: -12px;
+  left: -4px;
+  margin-right: -18px; }
+
+.badge-right {
+  float: right; }
+
+.badge-warning {
+  background-color: #f0ad4e; }
+
+.badge-info {
+  background-color: #33c5df; }
+
+.badge-danger {
+  background-color: #ff6c60; }
+
+.badge-success {
+  background-color: #00c644; }
+
 .btn {
   font-weight: normal;
   text-align: center;
@@ -1033,6 +1085,9 @@ sidebar, #sidebar {
 .fa-bars:before {
   content: "\f0c9"; }
 
+.fa-sitemap:before {
+  content: "\f0e8"; }
+
 .icon-virus:before {
   content: "\e900"; }
 
@@ -1424,7 +1479,8 @@ ul, ol {
 body {
   color: #333;
   font-size: 14px;
-  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体"; }
+  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体";
+  min-width: 456px; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {

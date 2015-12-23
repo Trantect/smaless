@@ -135,13 +135,7 @@
 
 // table responsive
 @media screen and (max-width: $screen-xs-max) {
-  .responsive{
-    overflow: auto;
-    margin: 30px 0 $margin-default + $margin-default 0;
-    border-radius: $panel-radius $panel-radius 0 0;
-    border: 1px solid $table-border-color;
-    .table {
-      white-space: nowrap;
-    }
+  .table {
+    white-space: nowrap;
   }
 }

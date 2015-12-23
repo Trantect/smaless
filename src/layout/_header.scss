@@ -1,7 +1,7 @@
 /// This is a header layout and it supports nav, nav-toolbar, user-info, dropdown
 /// @group header
 /// @since 0.4.0
-header {
+header, #header {
   height: $layout-header-height;
   background-color: $header-bgcolor;
   .logo {
@@ -74,7 +74,10 @@ header {
       margin-right: 0;
     }
   }
-  content{
+  content, #content{
+    margin-top: 50px;
+  }
+  sidebar, #sidebar{
     margin-top: 50px;
   }
 }

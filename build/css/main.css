@@ -3,6 +3,7 @@
 content, #content {
   position: relative;
   display: block;
+  min-height: calc(100% - 109px);
   min-height: -moz-calc(100% - 109px);
   padding: 0px 0px 59px 0px;
   margin-left: 220px;
@@ -1414,13 +1415,8 @@ sidebar, #sidebar {
   background-color: #fafbfc; }
 
 @media screen and (max-width: 767px) {
-  .responsive {
-    overflow: auto;
-    margin: 30px 0 16px 0;
-    border-radius: 3px 3px 0 0;
-    border: 1px solid #eeeeee; }
-    .responsive .table {
-      white-space: nowrap; } }
+  .table {
+    white-space: nowrap; } }
 .is-nopadding {
   padding: 0 !important; }
 

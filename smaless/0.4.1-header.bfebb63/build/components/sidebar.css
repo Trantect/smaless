@@ -1,0 +1,22 @@
+/* smaless: V 0.4.0 */
+sidebar, #sidebar {
+  left: 0;
+  min-height: calc(100% - 50px);
+  min-height: -moz-calc(100% - 50px);
+  width: 220px;
+  position: absolute;
+  background: #e9eff8;
+  box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07); }
+  sidebar .user-panel, #sidebar .user-panel {
+    padding: 17px 0px 0px 15px;
+    margin-bottom: 15px; }
+    sidebar .user-panel > .user-info, #sidebar .user-panel > .user-info {
+      font-weight: 600;
+      color: #555555;
+      padding: 0px; }
+  sidebar > ul.menu, #sidebar > ul.menu {
+    border-top: 2px solid #e0e6ed; }
+
+@media screen and (max-width: 991px) {
+  sidebar, #sidebar {
+    left: -220px; } }

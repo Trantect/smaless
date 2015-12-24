@@ -98,16 +98,16 @@ header, #header {
   header .user-info {
     display: none; } }
 @media screen and (max-width: 800px) {
-  header .logo {
+  header .logo, #header .logo {
     float: none;
     margin: 0 auto; }
-  header .nav {
+  header .nav, #header .nav {
     display: block;
     position: relative;
     top: 0;
     overflow: hidden;
     background-color: #0c85e2; }
-  header .header-nav {
+  header .header-nav, #header .header-nav {
     margin-right: 0; }
 
   content, #content {
@@ -1418,8 +1418,11 @@ sidebar, #sidebar {
   background-color: #fafbfc; }
 
 @media screen and (max-width: 767px) {
-  .table {
-    white-space: nowrap; } }
+  table-responsive {
+    width: 100%;
+    overflow: auto; }
+    table-responsive table, table-responsive .statistics {
+      min-width: 400px; } }
 .is-nopadding {
   padding: 0 !important; }
 

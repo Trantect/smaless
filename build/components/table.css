@@ -81,8 +81,9 @@
   background-color: #fafbfc; }
 
 @media screen and (max-width: 767px) {
-  table-responsive {
+  .table-responsive {
     width: 100%;
+    white-space: nowrap;
     overflow: auto; }
-    table-responsive table, table-responsive .statistics {
-      min-width: 400px; } }
+    .table-responsive table, .table-responsive .statistics {
+      min-width: 456px; } }

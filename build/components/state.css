@@ -7,3 +7,15 @@
 
 .is-align-left {
   float: left; }
+
+.is-sidebar-hidden {
+  left: -220px !important; }
+
+.is-sidebar-show {
+  left: 0 !important; }
+
+.is-content-decompressed {
+  margin-left: 0 !important; }
+
+.is-content-compressed {
+  margin-left: 220px !important; }

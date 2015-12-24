@@ -135,7 +135,11 @@
 
 // table responsive
 @media screen and (max-width: $screen-xs-max) {
-  .table {
-    white-space: nowrap;
+  table-responsive{
+    width:100%;
+    overflow: auto;
+    table,.statistics{
+      min-width: 400px
+    }
   }
 }

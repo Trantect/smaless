@@ -2,6 +2,18 @@
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
 
+# Version: V 0.4.1
+## New Features
+```
+ none
+```
+# Fixed Issues
+```
+1. fix header responsive
+
+2. fix table responsive
+```
+
 # Version: V 0.4.0
 ## New Features
 ```

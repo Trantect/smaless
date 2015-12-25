@@ -133,7 +133,8 @@
   }
 }
 
-// table responsive
+/// table responsive
+/// @group table
 @media screen and (max-width: $screen-xs-max) {
   .table-responsive{
     width:100%;

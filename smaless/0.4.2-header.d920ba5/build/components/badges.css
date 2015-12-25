@@ -1,0 +1,31 @@
+/* smaless: V 0.4.1 */
+.badge {
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 15px; }
+
+.badge-up {
+  position: relative;
+  top: -12px;
+  left: -4px;
+  margin-right: -18px; }
+
+.badge-right {
+  float: right; }
+
+.badge-warning {
+  background-color: #f0ad4e; }
+
+.badge-info {
+  background-color: #33c5df; }
+
+.badge-danger {
+  background-color: #ff6c60; }
+
+.badge-success {
+  background-color: #00c644; }

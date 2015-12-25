@@ -8,7 +8,7 @@
   overflow: hidden;
   height: $layout-header-height;
   @include clearfix;
-  a {
+  .nav-item {
     height: 20px;
     line-height: 20px;
     overflow: hidden;

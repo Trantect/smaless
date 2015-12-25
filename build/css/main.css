@@ -1445,6 +1445,9 @@ sidebar, #sidebar {
 .is-content-compressed {
   margin-left: 220px !important; }
 
+* {
+  box-sizing: content-box; }
+
 table {
   background-color: transparent;
   border-spacing: 0;

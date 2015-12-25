@@ -1,5 +1,5 @@
 var fs = require('fs');
-var currentVersion = "V 0.4.1";
+var currentVersion = "V 0.4.2";
 
 function findModuleFiles(_name) {
   var totalList = fs.readdirSync("src/modules").map(function (file) {

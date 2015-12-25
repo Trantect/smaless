@@ -1,5 +1,5 @@
 var fs = require('fs');
-var currentVersion = "0.4.1";
+var currentVersion = "0.4.2";
 
 function writeName(_list){
   var _nameList = _list.map(function (file) {

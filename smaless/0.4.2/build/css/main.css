@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* smaless: 0.4.0 */
+/* smaless: 0.4.2 */
 content, #content {
   position: relative;
   display: block;
@@ -80,7 +80,7 @@ header, #header {
       margin-left: 5px; }
   header .user-info, #header .user-info {
     cursor: default; }
-    header .user-info a:hover, header .user-info a:focus, #header .user-info a:hover, #header .user-info a:focus {
+    header .user-info .nav-item:hover, header .user-info .nav-item:focus, #header .user-info .nav-item:hover, #header .user-info .nav-item:focus {
       background-color: #0c85e2;
       color: rgba(255, 255, 255, 0.8); }
   header .icon-vul, #header .icon-vul {
@@ -1238,7 +1238,7 @@ sidebar, #sidebar {
     display: table; }
   .nav:after {
     clear: both; }
-  .nav a {
+  .nav .nav-item {
     height: 20px;
     line-height: 20px;
     overflow: hidden;
@@ -1246,7 +1246,7 @@ sidebar, #sidebar {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
     padding: 15px; }
-    .nav a:hover, .nav a:focus {
+    .nav .nav-item:hover, .nav .nav-item:focus {
       background-color: #0a75c6;
       color: white; }
   .nav .fa-bars {

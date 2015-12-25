@@ -1,4 +1,4 @@
-/* smaless: V 0.4.0 */
+/* smaless: V 0.4.2 */
 header, #header {
   height: 50px;
   background-color: #0c85e2; }
@@ -18,7 +18,7 @@ header, #header {
       margin-left: 5px; }
   header .user-info, #header .user-info {
     cursor: default; }
-    header .user-info a:hover, header .user-info a:focus, #header .user-info a:hover, #header .user-info a:focus {
+    header .user-info .nav-item:hover, header .user-info .nav-item:focus, #header .user-info .nav-item:hover, #header .user-info .nav-item:focus {
       background-color: #0c85e2;
       color: rgba(255, 255, 255, 0.8); }
   header .icon-vul, #header .icon-vul {

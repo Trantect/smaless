@@ -1,5 +1,8 @@
 /// You can set basic styles like:
 /// body{font-size: 14px}
+* {
+  box-sizing: content-box;
+}
 table {
   background-color: $table-bg;
   border-spacing: $table-spacing;

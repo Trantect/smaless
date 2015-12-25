@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* smaless: 0.4.0 */
+/* smaless: 0.4.1 */
 content, #content {
   position: relative;
   display: block;
@@ -1444,6 +1444,9 @@ sidebar, #sidebar {
 
 .is-content-compressed {
   margin-left: 220px !important; }
+
+* {
+  box-sizing: content-box; }
 
 table {
   background-color: transparent;

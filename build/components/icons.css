@@ -14,6 +14,12 @@
   font-weight: normal;
   font-style: normal; }
 
+.fa-chevron-up:before {
+  content: "\f077"; }
+
+.fa-chevron-down:before {
+  content: "\f078"; }
+
 .fa-sign-out:before {
   content: "\f08b"; }
 
@@ -22,6 +28,12 @@
 
 .fa-sitemap:before {
   content: "\f0e8"; }
+
+.fa-circle:before {
+  content: "\f111"; }
+
+.fa-toggle-on:before {
+  content: "\f205"; }
 
 .icon-virus:before {
   content: "\e900"; }

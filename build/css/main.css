@@ -363,6 +363,7 @@ sidebar, #sidebar {
 
 .dropdown-triangle {
   background-color: #fff;
+  display: none;
   width: 318px;
   position: absolute;
   left: -230px;

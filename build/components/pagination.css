@@ -15,8 +15,8 @@
       line-height: 1.42857;
       text-decoration: none;
       color: #428bca;
-      background-color: white;
-      border: 1px solid #dddddd;
+      background-color: #fff;
+      border: 1px solid #ddd;
       margin-left: -1px; }
     .pagination > li:first-child > a,
     .pagination > li:first-child > span {
@@ -33,13 +33,13 @@
     z-index: 3;
     color: #085a99;
     background-color: #eeeeee;
-    border-color: #dddddd; }
+    border-color: #ddd; }
   .pagination > .is-active > a, .pagination > .is-active > a:hover, .pagination > .is-active > a:focus,
   .pagination > .is-active > span,
   .pagination > .is-active > span:hover,
   .pagination > .is-active > span:focus {
     z-index: 2;
-    color: white;
+    color: #fff;
     background-color: #0c85e2;
     border-color: #0c85e2;
     cursor: not-allowed; }
@@ -49,7 +49,9 @@
   .pagination > .is-disabled > a,
   .pagination > .is-disabled > a:hover,
   .pagination > .is-disabled > a:focus {
-    color: #777777;
-    background-color: white;
-    border-color: #dddddd;
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
     cursor: not-allowed; }
+
+/*# sourceMappingURL=pagination.css.map */

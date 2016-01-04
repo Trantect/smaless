@@ -1423,6 +1423,7 @@ sidebar, #sidebar {
     .table-responsive table, .table-responsive .statistics {
       min-width: 456px; } }
 p {
+  font-size: 20px;
   color: #0c85e2; }
 
 .is-nopadding {

@@ -1,0 +1,87 @@
+/* smaless: V 0.4.2 */
+.btn {
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px; }
+
+.btn-default {
+  color: #333333;
+  border: 1px solid #ccc;
+  background-color: #fff; }
+  .btn-default:hover {
+    background-color: #e6e6e6; }
+  .btn-default:active {
+    background-color: #d9d9d9; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #0c85e2; }
+  .btn-primary:hover {
+    background-color: #3d9de8; }
+  .btn-primary:active {
+    background-color: #0b7ad0; }
+
+.btn-success {
+  color: #fff;
+  background-color: #00c644; }
+  .btn-success:hover {
+    background-color: #33d169; }
+  .btn-success:active {
+    background-color: #00b63f; }
+
+.btn-info {
+  color: #fff;
+  background-color: #33c5df; }
+  .btn-info:hover {
+    background-color: #5cd1e5; }
+  .btn-info:active {
+    background-color: #2fb5cd; }
+
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e; }
+  .btn-warning:hover {
+    background-color: #f3bd71; }
+  .btn-warning:active {
+    background-color: #dd9f48; }
+
+.btn-danger {
+  color: #fff;
+  background-color: #ff6c60; }
+  .btn-danger:hover {
+    background-color: #ff8980; }
+  .btn-danger:active {
+    background-color: #eb6358; }
+
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 6px; }
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px; }
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px; }
+
+.btn-block {
+  display: block;
+  width: 100%; }
+
+.btn-block + .btn-block {
+  margin-top: 5px; }
+
+/*# sourceMappingURL=button.css.map */

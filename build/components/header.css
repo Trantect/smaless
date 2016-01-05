@@ -21,11 +21,11 @@ header, #header {
     header .user-info .nav-item:hover, header .user-info .nav-item:focus, #header .user-info .nav-item:hover, #header .user-info .nav-item:focus {
       background-color: #0c85e2;
       color: rgba(255, 255, 255, 0.8); }
-  header .icon-vul, #header .icon-vul {
+  header > .icon-vul, #header > .icon-vul {
     font-size: 16px;
     position: relative;
     top: 1px; }
-  header .icon-virus, header .icon-hips, #header .icon-virus, #header .icon-hips {
+  header > .icon-virus, header .icon-hips, #header > .icon-virus, #header .icon-hips {
     font-size: 15px;
     position: relative;
     top: 1px; }
@@ -43,7 +43,6 @@ header, #header {
     display: block;
     position: relative;
     top: 0;
-    overflow: hidden;
     background-color: #0c85e2; }
   header .header-nav, #header .header-nav {
     margin-right: 0; }

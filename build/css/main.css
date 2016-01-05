@@ -491,7 +491,7 @@ sidebar, #sidebar {
   text-align: center;
   font-size: 14px;
   line-height: 20px;
-  color: #76838F 100%; }
+  color: #76838f; }
 .dropdown .sub-header {
   padding: 7px 3px 0 3px; }
 .dropdown .sub-header-sm, .dropdown .sub-title-sm {
@@ -503,9 +503,11 @@ sidebar, #sidebar {
   padding: 15px 19px;
   border-top: 1px solid #E4EAEC;
   background-color: #F3F7F9;
-  color: #A3AFB7; }
+  color: #a3afb7; }
   .dropdown li.dropdown-menu-footer > .fa-indent:not(:last-child) {
     margin-bottom: 7px; }
+  .dropdown li.dropdown-menu-footer > .fa-indent > span {
+    color: #a3afb7; }
 
 .dropdown-menu li {
   padding: 15px 4px;
@@ -514,9 +516,12 @@ sidebar, #sidebar {
   line-height: 20px; }
 
 .fa-indent > span {
-  margin-left: 39px; }
+  margin-left: 39px;
+  color: #37474f; }
 .fa-indent > a {
-  color: #a3afb7; }
+  color: #76838f; }
+  .fa-indent > a:hover {
+    color: #37474f; }
 .fa-indent .fa-left-icon {
   position: absolute;
   line-height: 20px; }

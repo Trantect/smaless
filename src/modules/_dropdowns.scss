@@ -200,7 +200,7 @@
   }
   .fa-icon-circle {
     font-size: 10px;
-    color: #00c644;
+    color:$brand-success;
   }
   .fa-icon-mapmark {
     font-size: 20px;
@@ -250,7 +250,7 @@
     text-align: center;
     font-size: 14px;
     line-height: 20px;
-    color: #76838F 100%;
+    color: $dropdown-menu-header;
   }
   .sub-header {
     padding: 7px 3px 0 3px;
@@ -265,25 +265,32 @@
     padding: 15px 19px;
     border-top: 1px solid #E4EAEC;
     background-color: #F3F7F9;
-    color: #A3AFB7;
+    color: $dropdown-menu-subContent;
     > .fa-indent:not(:last-child) {
       margin-bottom: 7px;
+    }
+    > .fa-indent > span{
+      color: $dropdown-menu-subContent;
     }
   }
 }
 .dropdown-menu li {
   padding: 15px 4px;
   font-size: 14px;
-  color: #76838f;
+  color: $dropdown-menu-header;
   line-height: 20px;
 }
 
 .fa-indent {
   > span {
     margin-left: 39px;
+    color: $dropdown-menu-content;
   }
   > a {
-    color: #a3afb7;
+    color: $dropdown-menu-header;
+    &:hover {
+      color: $dropdown-menu-content;
+    }
   }
   .fa-left-icon {
     position: absolute;
@@ -302,10 +309,10 @@
   >li {
     padding: 15px 0;
     span {
-      color: #a3afb7;
+      color: $dropdown-menu-subContent;
     }
     .title {
-      color: #76838f;
+      color: $dropdown-menu-header;
     }
   }
 }

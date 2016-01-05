@@ -17,7 +17,7 @@
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
     padding: 15px; }
-    .nav .nav-item:hover, .nav .nav-item:focus {
+    .nav .nav-item:hover, .nav .nav-item:focus, .nav .nav-item:active {
       background-color: #0a75c6;
       color: white; }
   .nav .fa-bars {

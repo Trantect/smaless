@@ -14,6 +14,18 @@
   font-weight: normal;
   font-style: normal; }
 
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.fa-tag:before {
+  content: "\f02b"; }
+
+.fa-map-marker:before {
+  content: "\f041"; }
+
 .fa-chevron-up:before {
   content: "\f077"; }
 
@@ -26,14 +38,17 @@
 .fa-bars:before {
   content: "\f0c9"; }
 
+.fa-bolt:before {
+  content: "\f0e7"; }
+
 .fa-sitemap:before {
   content: "\f0e8"; }
 
 .fa-circle:before {
   content: "\f111"; }
 
-.fa-toggle-on:before {
-  content: "\f205"; }
+.fa-sliders:before {
+  content: "\f1de"; }
 
 .icon-virus:before {
   content: "\e900"; }
@@ -43,6 +58,15 @@
 
 .icon-vul:before {
   content: "\e902"; }
+
+.icon-ture:before {
+  content: "\e903"; }
+
+.icon-wrong:before {
+  content: "\e904"; }
+
+.icon-group:before {
+  content: "\e905"; }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

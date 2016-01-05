@@ -15,7 +15,7 @@
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
     padding: ($layout-header-height - 20px)/2;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       background-color: $header-hover-bgcolor;
       color: $color-white;
     }

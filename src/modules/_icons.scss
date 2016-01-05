@@ -22,6 +22,25 @@
   font-weight: normal;
   font-style: normal;
 }
+//
+// @font-face {
+//     font-family: 'icomoon';
+//     src:    url('fonts/icomoon.eot?gd4if1');
+//     src:    url('fonts/icomoon.eot?gd4if1#iefix') format('embedded-opentype'),
+//         url('fonts/icomoon.ttf?gd4if1') format('truetype'),
+//         url('fonts/icomoon.woff?gd4if1') format('woff'),
+//         url('fonts/icomoon.svg?gd4if1#icomoon') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// .#{$fa-css-prefix}-rotate-90  { @include fa-icon-rotate(90deg, 1);  }
+// .#{$fa-css-prefix}-rotate-180 { @include fa-icon-rotate(180deg, 2); }
+// .#{$fa-css-prefix}-rotate-270 { @include fa-icon-rotate(270deg, 3); }
+
+.#{$fa-css-prefix}-flip-horizontal { @include fa-icon-flip(-1, 1, 0); }
+// .#{$fa-css-prefix}-flip-vertical   { @include fa-icon-flip(1, -1, 2); }
+
 // .#{$fa-css-prefix}-glass:before { content: $fa-var-glass; }
 // .#{$fa-css-prefix}-music:before { content: $fa-var-music; }
 // .#{$fa-css-prefix}-search:before { content: $fa-var-search; }
@@ -60,7 +79,7 @@
 // .#{$fa-css-prefix}-volume-up:before { content: $fa-var-volume-up; }
 // .#{$fa-css-prefix}-qrcode:before { content: $fa-var-qrcode; }
 // .#{$fa-css-prefix}-barcode:before { content: $fa-var-barcode; }
-// .#{$fa-css-prefix}-tag:before { content: $fa-var-tag; }
+.#{$fa-css-prefix}-tag:before { content: $fa-var-tag; }
 // .#{$fa-css-prefix}-tags:before { content: $fa-var-tags; }
 // .#{$fa-css-prefix}-book:before { content: $fa-var-book; }
 // .#{$fa-css-prefix}-bookmark:before { content: $fa-var-bookmark; }
@@ -83,7 +102,7 @@
 // .#{$fa-css-prefix}-image:before,
 // .#{$fa-css-prefix}-picture-o:before { content: $fa-var-picture-o; }
 // .#{$fa-css-prefix}-pencil:before { content: $fa-var-pencil; }
-// .#{$fa-css-prefix}-map-marker:before { content: $fa-var-map-marker; }
+.#{$fa-css-prefix}-map-marker:before { content: $fa-var-map-marker; }
 // .#{$fa-css-prefix}-adjust:before { content: $fa-var-adjust; }
 // .#{$fa-css-prefix}-tint:before { content: $fa-var-tint; }
 // .#{$fa-css-prefix}-edit:before,
@@ -239,7 +258,7 @@
 // .#{$fa-css-prefix}-comment-o:before { content: $fa-var-comment-o; }
 // .#{$fa-css-prefix}-comments-o:before { content: $fa-var-comments-o; }
 // .#{$fa-css-prefix}-flash:before,
-// .#{$fa-css-prefix}-bolt:before { content: $fa-var-bolt; }
+.#{$fa-css-prefix}-bolt:before { content: $fa-var-bolt; }
 .#{$fa-css-prefix}-sitemap:before { content: $fa-var-sitemap; }
 // .#{$fa-css-prefix}-umbrella:before { content: $fa-var-umbrella; }
 // .#{$fa-css-prefix}-paste:before,
@@ -506,7 +525,7 @@
 // .#{$fa-css-prefix}-history:before { content: $fa-var-history; }
 // .#{$fa-css-prefix}-header:before { content: $fa-var-header; }
 // .#{$fa-css-prefix}-paragraph:before { content: $fa-var-paragraph; }
-// .#{$fa-css-prefix}-sliders:before { content: $fa-var-sliders; }
+.#{$fa-css-prefix}-sliders:before { content: $fa-var-sliders; }
 // .#{$fa-css-prefix}-share-alt:before { content: $fa-var-share-alt; }
 // .#{$fa-css-prefix}-share-alt-square:before { content: $fa-var-share-alt-square; }
 // .#{$fa-css-prefix}-bomb:before { content: $fa-var-bomb; }
@@ -543,7 +562,7 @@
 // .#{$fa-css-prefix}-lastfm:before { content: $fa-var-lastfm; }
 // .#{$fa-css-prefix}-lastfm-square:before { content: $fa-var-lastfm-square; }
 // .#{$fa-css-prefix}-toggle-off:before { content: $fa-var-toggle-off; }
- .#{$fa-css-prefix}-toggle-on:before { content: $fa-var-toggle-on; }
+// .#{$fa-css-prefix}-toggle-on:before { content: $fa-var-toggle-on; }
 // .#{$fa-css-prefix}-bicycle:before { content: $fa-var-bicycle; }
 // .#{$fa-css-prefix}-bus:before { content: $fa-var-bus; }
 // .#{$fa-css-prefix}-ioxhost:before { content: $fa-var-ioxhost; }
@@ -682,7 +701,15 @@
 .icon-vul:before {
 	content: "\e902";
 }
-
+.icon-ture:before {
+  content: "\e903";
+}
+.icon-wrong:before {
+  content: "\e904";
+}
+.icon-group:before {
+  content: "\e905";
+}
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;

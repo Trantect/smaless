@@ -20,15 +20,15 @@ function writeName(_list){
   .concat(fs.readdirSync("src/mixins").map(function (file) {
     return "../mixins/" + file
   }))
-  .concat(fs.readdirSync("src/layout").map(function (file) {
-    return "../layout/" + file
+  .concat(['../_base.scss'])
+  .concat(fs.readdirSync("src/states").map(function (file) {
+    return "../states/" + file
   }))
   .concat(fs.readdirSync("src/modules").map(function (file) {
     return "../modules/" + file
   }))
-  .concat(fs.readdirSync("src/states").map(function (file) {
-    return "../states/" + file
+  .concat(fs.readdirSync("src/layout").map(function (file) {
+    return "../layout/" + file
   }))
-  totalList.push("../_base.scss");
   writeName(totalList);
 }).call(this);

@@ -178,6 +178,7 @@ header .dropdown-menu {
   header .dropdown-menu .sub-title-sm {
     color: #76838f; }
   header .dropdown-menu .dropdown-menu-header {
+    margin: 0 16px;
     padding: 12px 0;
     text-align: center;
     font-size: 14px;
@@ -584,9 +585,9 @@ sidebar, #sidebar {
   .navbar-right .dropdown-menu-left {
     left: 0;
     right: auto; } }
-.open > .dropdown-menu, .is-show > .dropdown-menu {
+.open > .dropdown-menu {
   display: block; }
-.open > a, .is-show > a {
+.open > a {
   outline: 0; }
 
 .dropdown.is-show > .nav-item {

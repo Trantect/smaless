@@ -116,6 +116,7 @@ header .dropdown-menu {
   header .dropdown-menu .sub-title-sm {
     color: #76838f; }
   header .dropdown-menu .dropdown-menu-header {
+    margin: 0 16px;
     padding: 12px 0;
     text-align: center;
     font-size: 14px;

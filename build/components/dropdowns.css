@@ -83,9 +83,9 @@
   .navbar-right .dropdown-menu-left {
     left: 0;
     right: auto; } }
-.open > .dropdown-menu, .is-show > .dropdown-menu {
+.open > .dropdown-menu {
   display: block; }
-.open > a, .is-show > a {
+.open > a {
   outline: 0; }
 
 .dropdown.is-show > .nav-item {

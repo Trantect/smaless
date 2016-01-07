@@ -585,9 +585,7 @@ sidebar, #sidebar {
   .navbar-right .dropdown-menu-left {
     left: 0;
     right: auto; } }
-.open > .dropdown-menu {
-  display: block; }
-.open > a {
+.open > a, .is-show > a {
   outline: 0; }
 
 .dropdown.is-show > .nav-item {

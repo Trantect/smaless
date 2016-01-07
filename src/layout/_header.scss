@@ -86,7 +86,9 @@ header, #header {
     display: none;
   }
 }
-
+/// This is a dropdown-menu within header
+/// @group dropdown
+/// @since 0.5.0
 header {
   .height-control {
     max-height: 430px;

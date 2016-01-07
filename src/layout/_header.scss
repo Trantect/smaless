@@ -36,7 +36,7 @@ header, #header {
   }
 
   > .icon-vul {
-    font-size: 16px;
+    font-size: $font-size-16;
     position: relative;
     top: 1px;
   }
@@ -106,51 +106,51 @@ header {
       position: relative;
       padding: 15px 4px;
       line-height: 20px;
-      font-size: 14px;
+      font-size: $font-size-base;
       color: $dropdown-menu-header;
     }
     .fa-icon-circle {
-      font-size: 10px;
+      font-size: $font-size-10;
       color:$brand-success;
     }
     .fa-icon-mapmark {
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #7d8488;
     }
     .fa-icon-laptop {
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #f3bd71;
     }
     .fa-icon-laptop2 {
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #1d84d2;
     }
     .fa-icon-virus {
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #ff8879;
     }
     .fa-icon-vul {
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #79bcef;
     }
     .fa-icon-check-circle {
-      font-size: 24px;
+      font-size: $font-size-24;
       color: #01b73f;
     }
     .fa-icon-exclamation-triangle {
-      font-size: 24px;
+      font-size: $font-size-24;
       color:#ff8879;
     }
     .fa-icon-bolt {
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #ff8879;
     }
     .fa-sliders{
-      font-size: 20px;
+      font-size: $font-size-20;
       color: #66dd8f;
     }
     .fa-icon-angle{
-      font-size: 16px;
+      font-size: $font-size-16;
       cursor: pointer;
     }
     .li-border-bottom {
@@ -171,7 +171,7 @@ header {
       margin: 0 16px;
       padding:12px 0;
       text-align: center;
-      font-size: 14px;
+      font-size: $font-size-base;
       line-height: 20px;
       color: $dropdown-menu-header;
     }

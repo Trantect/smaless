@@ -103,3 +103,6 @@
     opacity: 0.9; }
     .ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
       background-color: #c1c1c1; }
+
+*[id|=scroll-container] {
+  position: relative; }

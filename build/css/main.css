@@ -1707,6 +1707,9 @@ sidebar, #sidebar {
     .ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
       background-color: #c1c1c1; }
 
+*[id|=scroll-container] {
+  position: relative; }
+
 .table {
   width: 100%;
   max-width: 100%;

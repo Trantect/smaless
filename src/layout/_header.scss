@@ -75,10 +75,10 @@ header, #header {
     }
   }
   content, #content {
-    margin-top: 50px;
+    margin-top: $layout-header-height;
   }
   sidebar, #sidebar {
-    margin-top: 50px;
+    margin-top: $layout-header-height;
   }
 }
 @media screen and (max-width: 550px) {
@@ -111,50 +111,50 @@ header {
     }
     .fa-icon-circle {
       font-size: $font-size-10;
-      color:$brand-success;
+      color:$icon-circle-color;
     }
     .fa-icon-mapmark {
       font-size: $font-size-20;
-      color: #7d8488;
+      color: $icon-mapmark-color;
     }
     .fa-icon-laptop {
       font-size: $font-size-20;
-      color: #f3bd71;
+      color: $icon-laptop-sitemap-color;
     }
     .fa-icon-laptop2 {
       font-size: $font-size-20;
-      color: #1d84d2;
+      color: $icon-laptop-loophole-color;
     }
     .fa-icon-virus {
       font-size: $font-size-20;
-      color: #ff8879;
+      color: $icon-virus-color;
     }
     .fa-icon-vul {
       font-size: $font-size-20;
-      color: #79bcef;
+      color: $icon-vul-color:;
     }
     .fa-icon-check-circle {
       font-size: $font-size-24;
-      color: #01b73f;
+      color: $icon-check-circle-color:;
     }
     .fa-icon-exclamation-triangle {
       font-size: $font-size-24;
-      color:#ff8879;
+      color: $icon-exclamation-triangle-color;
     }
     .fa-icon-bolt {
       font-size: $font-size-20;
-      color: #ff8879;
+      color: $icon-bolt-color;
     }
     .fa-sliders{
       font-size: $font-size-20;
-      color: #66dd8f;
+      color: $icon-sliders-color;
     }
     .fa-icon-angle{
       font-size: $font-size-16;
       cursor: pointer;
     }
     .li-border-bottom {
-      border-bottom: 1px solid #e4eaec;
+      border-bottom: 1px solid $dropdown-menu-border;
     }
     .sub-header {
       padding: 7px 3px 0 3px;
@@ -178,8 +178,8 @@ header {
     li.dropdown-menu-footer {
       margin: 0;
       padding: 15px 19px;
-      border-top: 1px solid #E4EAEC;
-      background-color: #F3F7F9;
+      border-top: 1px solid $dropdown-menu-border;
+      background-color: $dropdown-menu-footer-bgcolor;
       color: $dropdown-menu-subContent;
       > .fa-indent:not(:last-child) {
         margin-bottom: 7px;
@@ -197,7 +197,7 @@ header {
     top: -13px;
     border: solid transparent;
     border-width: 7px;
-    border-bottom-color: #fff;
+    border-bottom-color: $color-white;
     content: ' ';
   }
   .dropdown-menu-sub {
@@ -245,7 +245,7 @@ header {
       width: 24px;
       height: 16px;
       border-radius: 10px;
-      background-color: #ccc;
+      background-color: $switchButton-off;
       display: table-cell;
       vertical-align: middle;
       position: relative;
@@ -253,7 +253,7 @@ header {
         width: 14px;
         height: 14px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $color-white;
         position: relative;
         left:1px;
       }

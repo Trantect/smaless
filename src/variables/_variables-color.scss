@@ -666,7 +666,22 @@ $header-hover-bgcolor:             mix($brand-primary, $color-black, 88%);
 /// @group header
 $header-bgcolor:                   $brand-primary;
 
-///dropdown
+/// dropdown
+$dropdown-menu-border:             #E4EAEC;
 $dropdown-menu-subContent:         #a3afb7;
 $dropdown-menu-header:             #76838f;
 $dropdown-menu-content:            #37474f;
+$dropdown-menu-footer-bgcolor:     #F3F7F9;
+$icon-circle-color:                $brand-primary;
+$icon-mapmark-color:               $gray-dark;
+$icon-laptop-sitemap-color:        $color-warning-light;
+$icon-laptop-loophole-color:       $color-primary-dark;
+$icon-virus-color:                 $color-danger-light;
+$icon-vul-color:                   $color-primary-lighter;
+$icon-check-circle-color:          $color-success;
+$icon-exclamation-triangle-color:  $color-danger-light;
+$icon-bolt-color:                  $color-danger-light;
+$icon-sliders-color:               $color-success-lighter;
+
+/// switchButton
+$switchButton-off:                 #ccc;

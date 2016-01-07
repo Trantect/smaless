@@ -61,6 +61,7 @@ $ps-bar-hover: #c1c1c1;
   }
 }
 
+
 .ps-container {
   -ms-touch-action: none;
   overflow: hidden !important;
@@ -120,4 +121,7 @@ $ps-bar-hover: #c1c1c1;
       }
     }
   }
+}
+*[id|=scroll-container]{
+  position: relative;
 }

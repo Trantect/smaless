@@ -74,34 +74,34 @@ header .dropdown-menu {
     color: #76838f; }
   header .dropdown-menu .fa-icon-circle {
     font-size: 10px;
-    color: #00c644; }
+    color: #0c85e2; }
   header .dropdown-menu .fa-icon-mapmark {
     font-size: 20px;
-    color: #7d8488; }
+    color: #333333; }
   header .dropdown-menu .fa-icon-laptop {
     font-size: 20px;
     color: #f3bd71; }
   header .dropdown-menu .fa-icon-laptop2 {
     font-size: 20px;
-    color: #1d84d2; }
+    color: #0b7acf; }
   header .dropdown-menu .fa-icon-virus {
     font-size: 20px;
-    color: #ff8879; }
+    color: #ff897f; }
   header .dropdown-menu .fa-icon-vul {
     font-size: 20px;
-    color: #79bcef; }
+    color: #6db5ed; }
   header .dropdown-menu .fa-icon-check-circle {
     font-size: 24px;
-    color: #01b73f; }
+    color: #00b63e; }
   header .dropdown-menu .fa-icon-exclamation-triangle {
     font-size: 24px;
-    color: #ff8879; }
+    color: #ff897f; }
   header .dropdown-menu .fa-icon-bolt {
     font-size: 20px;
-    color: #ff8879; }
+    color: #ff897f; }
   header .dropdown-menu .fa-sliders {
     font-size: 20px;
-    color: #66dd8f; }
+    color: #66dc8e; }
   header .dropdown-menu .fa-icon-angle {
     font-size: 16px;
     cursor: pointer; }
@@ -125,8 +125,8 @@ header .dropdown-menu {
   header .dropdown-menu li.dropdown-menu-footer {
     margin: 0;
     padding: 15px 19px;
-    border-top: 1px solid #E4EAEC;
-    background-color: #F3F7F9;
+    border-top: 1px solid #e4eaec;
+    background-color: #f3f7f9;
     color: #a3afb7; }
     header .dropdown-menu li.dropdown-menu-footer > .fa-indent:not(:last-child) {
       margin-bottom: 7px; }
@@ -140,7 +140,7 @@ header .dropdown-menu:before {
   top: -13px;
   border: solid transparent;
   border-width: 7px;
-  border-bottom-color: #fff;
+  border-bottom-color: white;
   content: ' '; }
 header .dropdown-menu-sub {
   display: none;
@@ -175,7 +175,7 @@ header .switchBut {
     width: 24px;
     height: 16px;
     border-radius: 10px;
-    background-color: #ccc;
+    background-color: #cccccc;
     display: table-cell;
     vertical-align: middle;
     position: relative; }
@@ -183,7 +183,7 @@ header .switchBut {
       width: 14px;
       height: 14px;
       border-radius: 50%;
-      background-color: #fff;
+      background-color: white;
       position: relative;
       left: 1px; }
 @media screen and (max-width: 608px) {

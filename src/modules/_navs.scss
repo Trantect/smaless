@@ -5,7 +5,6 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
-  overflow: hidden;
   height: $layout-header-height;
   @include clearfix;
   .nav-item {
@@ -16,7 +15,7 @@
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
     padding: ($layout-header-height - 20px)/2;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       background-color: $header-hover-bgcolor;
       color: $color-white;
     }
@@ -30,7 +29,7 @@
 /// @group header
 /// @since 0.4.0
 .nav-toolbar{
-  li{
+  > li{
     float: left;
   }
 }

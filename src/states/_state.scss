@@ -12,15 +12,21 @@
 .is-align-left {
   float: left;
 }
-.is-sidebar-hidden{
+.is-sidebar-hidden {
   left: -220px !important;
 }
-.is-sidebar-show{
+.is-sidebar-show {
   left: 0 !important;
 }
-.is-content-decompressed{
+.is-content-decompressed {
   margin-left: 0 !important;
 }
-.is-content-compressed{
+.is-content-compressed {
   margin-left: 220px !important;
+}
+.is-show {
+  display: block !important;
+}
+.is-hidden {
+  display: none !important;
 }

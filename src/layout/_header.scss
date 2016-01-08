@@ -35,13 +35,13 @@ header, #header {
     }
   }
 
-  .icon-vul {
-    font-size: 16px;
+  > .icon-vul {
+    font-size: $font-size-16;
     position: relative;
     top: 1px;
   }
-  .icon-virus, .icon-hips {
-    font-size: 15px;
+  > .icon-virus, .icon-hips {
+    font-size: $font-size-15;
     position: relative;
     top: 1px;
   }
@@ -67,7 +67,7 @@ header, #header {
       display: block;
       position: relative;
       top: 0;
-      overflow: hidden;
+      // overflow: hidden;
       background-color: $header-bgcolor;
     }
     .header-nav {
@@ -75,14 +75,204 @@ header, #header {
     }
   }
   content, #content {
-    margin-top: 50px;
+    margin-top: $layout-header-height;
   }
   sidebar, #sidebar {
-    margin-top: 50px;
+    margin-top: $layout-header-height;
   }
 }
 @media screen and (max-width: 550px) {
   .user-exit {
     display: none;
+  }
+}
+/// This is a dropdown-menu within header
+/// @group dropdown
+/// @since 0.5.0
+header {
+  .height-control {
+    max-height: 430px;
+    overflow: auto;
+    > li {
+      margin: 0 15px
+    }
+  }
+  .ul-margin {
+    margin:0 14px;
+  }
+  .dropdown-menu {
+    top: auto;
+    left: -230px;
+    width: 318px;
+    li {
+      position: relative;
+      padding: 15px 4px;
+      line-height: 20px;
+      font-size: $font-size-base;
+      color: $dropdown-menu-header;
+    }
+    .fa-icon-circle {
+      font-size: $font-size-10;
+      color:$icon-check-circle-color;
+    }
+    .fa-icon-mapmark {
+      font-size: $font-size-20;
+      color: $icon-mapmark-color;
+    }
+    .fa-icon-laptop {
+      font-size: $font-size-20;
+      color: $icon-laptop-sitemap-color;
+    }
+    .fa-icon-laptop2 {
+      font-size: $font-size-20;
+      color: $icon-laptop-loophole-color;
+    }
+    .fa-icon-virus {
+      font-size: $font-size-20;
+      color: $icon-virus-color;
+    }
+    .fa-icon-vul {
+      font-size: $font-size-20;
+      color: $icon-vul-color;
+    }
+    .fa-icon-check-circle {
+      font-size: $font-size-24;
+      color: $icon-check-circle-color;
+    }
+    .fa-icon-exclamation-triangle {
+      font-size: $font-size-24;
+      color: $icon-exclamation-triangle-color;
+    }
+    .fa-icon-bolt {
+      font-size: $font-size-20;
+      color: $icon-bolt-color;
+    }
+    .fa-sliders{
+      font-size: $font-size-20;
+      color: $icon-sliders-color;
+    }
+    .fa-icon-angle{
+      font-size: $font-size-16;
+      cursor: pointer;
+    }
+    .li-border-bottom {
+      border-bottom: 1px solid $dropdown-menu-border;
+    }
+    .sub-header {
+      padding: 7px 3px 0 3px;
+    }
+    .sub-header-sm, .sub-title-sm {
+      margin-left: 15px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .sub-title-sm{
+      color: $dropdown-menu-header;
+    }
+    .dropdown-menu-header {
+      margin: 0 16px;
+      padding:12px 0;
+      text-align: center;
+      font-size: $font-size-base;
+      line-height: 20px;
+      color: $dropdown-menu-header;
+    }
+    li.dropdown-menu-footer {
+      margin: 0;
+      padding: 15px 19px;
+      border-top: 1px solid $dropdown-menu-border;
+      background-color: $dropdown-menu-footer-bgcolor;
+      color: $dropdown-menu-subContent;
+      > .fa-indent:not(:last-child) {
+        margin-bottom: 7px;
+      }
+      > .fa-indent > span{
+        color: $dropdown-menu-subContent;
+      }
+    }
+  }
+  .dropdown-menu:before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 77%;
+    top: -13px;
+    border: solid transparent;
+    border-width: 7px;
+    border-bottom-color: $color-white;
+    content: ' ';
+  }
+  .dropdown-menu-sub {
+    display: none;
+    margin-top: 15px;
+    >li {
+      padding: 15px 0;
+      span {
+        color: $dropdown-menu-subContent;
+      }
+      .title {
+        color: $dropdown-menu-header;
+      }
+    }
+  }
+  .fa-indent {
+    > span {
+      margin-left: 39px;
+      color: $dropdown-menu-content;
+    }
+    > a {
+      color: $dropdown-menu-header;
+      &:hover {
+        color: $dropdown-menu-content;
+      }
+    }
+    .fa-left-icon {
+      position: absolute;
+      line-height: 20px;
+    }
+    .fa, .icon {
+      display: inline-block;
+      width: 25px;
+      text-align: center;
+    }
+  }
+
+  .switchBut{
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+    width: 24px;
+    cursor: pointer;
+    .toggle{
+      width: 24px;
+      height: 16px;
+      border-radius: 10px;
+      background-color: $switchButton-off;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      .switch{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $color-white;
+        position: relative;
+        left:1px;
+      }
+    }
+  }
+  @media screen and (max-width: 608px) {
+    #dropdown-ctrl-1 ~ .dropdown-menu{
+      left:-131px;
+      &:before{
+        left:46%;
+      }
+    }
+    #dropdown-ctrl-2 ~ .dropdown-menu{
+      left:-177px;
+      &:before{
+        left:60%;
+      }
+    }
   }
 }

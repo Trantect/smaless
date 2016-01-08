@@ -2,6 +2,17 @@
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
 
+
+# Version: V 0.5.0
+## New Features
+```
+ dropdown with responsive
+```
+# Fixed Issues
+```
+ move dropdown to header
+```
+
 # Version: V 0.4.2
 ## New Features
 ```

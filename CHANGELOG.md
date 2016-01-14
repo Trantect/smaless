@@ -2,6 +2,21 @@
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
 
+# Version: V 0.5.1
+## New Features
+```
+ none
+```
+# Fixed Issues
+```
+ 1.fix font-awesome sort 
+
+ 2.fix table responsive
+
+ 3.change fa-indent to fa-text-indent
+
+ 4.change dropdown1,dropdown2
+```
 
 # Version: V 0.5.0
 ## New Features

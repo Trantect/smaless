@@ -183,10 +183,10 @@ header {
       border-top: 1px solid $dropdown-menu-border;
       background-color: $dropdown-menu-footer-bgcolor;
       color: $dropdown-menu-subContent;
-      > .fa-indent:not(:last-child) {
+      > .fa-text-indent:not(:last-child) {
         margin-bottom: 7px;
       }
-      > .fa-indent > span{
+      > .fa-text-indent > span{
         color: $dropdown-menu-subContent;
       }
     }
@@ -215,7 +215,7 @@ header {
       }
     }
   }
-  .fa-indent {
+  .fa-text-indent {
     > span {
       margin-left: 39px;
       color: $dropdown-menu-content;
@@ -262,13 +262,13 @@ header {
     }
   }
   @media screen and (max-width: 608px) {
-    #dropdown-ctrl-1 ~ .dropdown-menu{
+    #dropdown-ctrl-multiserver ~ .dropdown-menu{
       left:-131px;
       &:before{
         left:46%;
       }
     }
-    #dropdown-ctrl-2 ~ .dropdown-menu{
+    #dropdown-ctrl-serverstatus ~ .dropdown-menu{
       left:-177px;
       &:before{
         left:60%;

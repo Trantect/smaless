@@ -1,0 +1,40 @@
+/* smaless: V 0.5.1 */
+.menu {
+  margin: 0px;
+  padding: 10px 0px 0px 0px; }
+  .menu li {
+    margin-right: 1px; }
+    .menu li > a {
+      display: block;
+      padding: 12px 5px 12px 15px;
+      color: #555555;
+      border-left: 4px solid #e9eff8; }
+      .menu li > a:hover, .menu li > a:focus {
+        background-color: #dde3eb;
+        padding: 12px 5px 12px 15px;
+        color: #222;
+        border-left: 4px solid #616e75; }
+  .menu > .is-active > a {
+    padding: 12px 5px 12px 15px;
+    color: #0c85e2;
+    border-left: 4px solid #0c85e2;
+    font-weight: bold; }
+    .menu > .is-active > a:hover, .menu > .is-active > a:focus {
+      padding: 12px 5px 12px 15px;
+      border-left: 4px solid #0c85e2;
+      color: #0c85e2; }
+  .menu .menu {
+    display: block;
+    padding-top: 0px; }
+    .menu .menu > li > a {
+      padding: 12px 5px 12px 35px; }
+      .menu .menu > li > a:hover, .menu .menu > li > a:focus {
+        padding: 12px 5px 12px 35px; }
+    .menu .menu > .is-active > a {
+      padding: 12px 5px 12px 35px; }
+      .menu .menu > .is-active > a:hover, .menu .menu > .is-active > a:focus {
+        padding: 12px 5px 12px 35px; }
+  .menu .fa {
+    width: 20px; }
+
+/*# sourceMappingURL=menu.css.map */

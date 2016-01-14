@@ -16,10 +16,10 @@
     padding: 8px;
     line-height: 1.42857;
     vertical-align: middle;
-    border-top: 1px solid #eeeeee; }
+    border-top: 1px solid #eee; }
   .table > thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #eeeeee; }
+    border-bottom: 2px solid #eee; }
   .table > caption + thead > tr:first-child > th,
   .table > caption + thead > tr:first-child > td,
   .table > colgroup + thead > tr:first-child > th,
@@ -28,7 +28,7 @@
   .table > thead:first-child > tr:first-child > td {
     border-top: 0; }
   .table > tbody + tbody {
-    border-top: 2px solid #eeeeee; }
+    border-top: 2px solid #eee; }
 
 .table-sort > thead {
   cursor: pointer; }
@@ -86,4 +86,6 @@
     white-space: nowrap;
     overflow: auto; }
     .table-responsive table, .table-responsive .statistics {
-      min-width: 456px; } }
+      min-width: 650px; } }
+
+/*# sourceMappingURL=table.css.map */

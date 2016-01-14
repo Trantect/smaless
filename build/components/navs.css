@@ -18,11 +18,13 @@
     color: rgba(255, 255, 255, 0.8);
     padding: 15px; }
     .nav .nav-item:hover, .nav .nav-item:focus, .nav .nav-item:active {
-      background-color: #0a75c6;
-      color: white; }
+      background-color: #0b75c7;
+      color: #fff; }
   .nav .fa-bars {
     line-height: 20px;
     font-size: 20px; }
 
 .nav-toolbar > li {
   float: left; }
+
+/*# sourceMappingURL=navs.css.map */

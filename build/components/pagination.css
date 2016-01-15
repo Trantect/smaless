@@ -1,10 +1,9 @@
-/* smaless: V 0.5.1 */
+/* smaless: V 0.5.2 */
 .pagination {
   display: inline-block;
   padding: 0;
   margin: 0;
-  border-radius: 4px;
-  float: right; }
+  border-radius: 4px; }
   .pagination > li {
     display: inline; }
     .pagination > li > a,

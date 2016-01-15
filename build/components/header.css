@@ -1,4 +1,4 @@
-/* smaless: V 0.5.1 */
+/* smaless: V 0.5.2 */
 header, #header {
   height: 50px;
   background-color: #0c85e2; }
@@ -11,7 +11,7 @@ header, #header {
     height: 50px; }
     header .logo img, #header .logo img {
       height: 28px;
-      padding: 11px 0; }
+      margin: 11px auto; }
   header .user, #header .user {
     font-size: 16px; }
     header .user span, #header .user span {
@@ -65,7 +65,7 @@ header .ul-margin {
 header .dropdown-menu {
   top: auto;
   left: -230px;
-  width: 318px; }
+  width: 320px; }
   header .dropdown-menu li {
     position: relative;
     padding: 15px 4px;

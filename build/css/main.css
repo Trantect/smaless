@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* smaless: 0.5.1 */
+/* smaless: 0.5.2 */
 * {
-  box-sizing: content-box; }
+  box-sizing: border-box; }
 
 table {
   background-color: transparent;
@@ -283,7 +283,7 @@ a {
   padding: 15px 15px 10px 20px; }
 
 .content-body {
-  padding: 20px 15px; }
+  margin: 20px 15px; }
 
 .dropup,
 .dropdown {
@@ -1287,9 +1287,7 @@ a {
   .nav:after {
     clear: both; }
   .nav .nav-item {
-    height: 20px;
     line-height: 20px;
-    overflow: hidden;
     display: block;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
@@ -1308,8 +1306,7 @@ a {
   display: inline-block;
   padding: 0;
   margin: 0;
-  border-radius: 4px;
-  float: right; }
+  border-radius: 4px; }
   .pagination > li {
     display: inline; }
     .pagination > li > a,
@@ -1367,11 +1364,8 @@ a {
 
 .panel-header {
   border-bottom: 1px solid #eee;
-  width: -webkit-calc(100% - 16px);
-  width: -moz-calc(100% - 16px);
-  width: calc(100% - 16px);
   font-size: 18px;
-  display: table;
+  display: block;
   border-radius: 3px 3px 0 0; }
   .panel-header * > {
     display: table-cell;
@@ -1583,9 +1577,9 @@ a {
 content, #content {
   position: relative;
   display: block;
-  min-height: calc(100% - 109px);
-  min-height: -moz-calc(100% - 109px);
-  padding: 0px 0px 59px 0px;
+  min-height: calc(100% - 50px);
+  min-height: -moz-calc(100% - 50px);
+  padding-bottom: 59px;
   margin-left: 220px;
   background-color: #eef3fa; }
 
@@ -1653,7 +1647,7 @@ header, #header {
     height: 50px; }
     header .logo img, #header .logo img {
       height: 28px;
-      padding: 11px 0; }
+      margin: 11px auto; }
   header .user, #header .user {
     font-size: 16px; }
     header .user span, #header .user span {
@@ -1707,7 +1701,7 @@ header .ul-margin {
 header .dropdown-menu {
   top: auto;
   left: -230px;
-  width: 318px; }
+  width: 320px; }
   header .dropdown-menu li {
     position: relative;
     padding: 15px 4px;

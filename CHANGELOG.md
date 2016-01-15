@@ -2,6 +2,19 @@
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
 
+# Version: V 0.5.2
+## New Features
+```
+ none
+```
+# Fixed Issues
+```
+ 1.Modify box-sizing from content-box to border-box
+
+ 2.Fix header dropdown css
+
+```
+
 # Version: V 0.5.1
 ## New Features
 ```

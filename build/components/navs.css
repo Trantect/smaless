@@ -1,4 +1,4 @@
-/* smaless: V 0.5.1 */
+/* smaless: V 0.5.2 */
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -10,9 +10,7 @@
   .nav:after {
     clear: both; }
   .nav .nav-item {
-    height: 20px;
     line-height: 20px;
-    overflow: hidden;
     display: block;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);

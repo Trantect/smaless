@@ -1,4 +1,4 @@
-/* smaless: V 0.5.1 */
+/* smaless: V 0.5.2 */
 .panel {
   padding: 8px;
   border-radius: 3px;
@@ -7,11 +7,8 @@
 
 .panel-header {
   border-bottom: 1px solid #eee;
-  width: -webkit-calc(100% - 16px);
-  width: -moz-calc(100% - 16px);
-  width: calc(100% - 16px);
   font-size: 18px;
-  display: table;
+  display: block;
   border-radius: 3px 3px 0 0; }
   .panel-header * > {
     display: table-cell;

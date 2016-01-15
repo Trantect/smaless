@@ -1,7 +1,7 @@
 /// You can set basic styles like:
 /// body{font-size: 14px}
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 table {
   background-color: $table-bg;

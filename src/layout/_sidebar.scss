@@ -19,8 +19,8 @@ sidebar, #sidebar {
       padding: 0px;
     }
   }
-  > ul.menu {
-    border-top: 2px solid #e0e6ed;
+  .menu.ng-scope {
+    border-top: 2px solid rgb(224, 230, 237); 
   }
 }
 

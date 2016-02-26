@@ -40,10 +40,15 @@ header, #header {
     position: relative;
     top: 1px;
   }
-  > .icon-virus, .icon-hips {
+  > .icon-virus {
     font-size: $font-size-15;
     position: relative;
     top: 1px;
+  }
+  > .icon-hips {
+    font-size: $font-size-15;
+    position: relative;
+    top: 0;
   }
   .header-nav {
     margin-right: 10px;

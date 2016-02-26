@@ -25,10 +25,14 @@ header, #header {
     font-size: 16px;
     position: relative;
     top: 1px; }
-  header > .icon-virus, header .icon-hips, #header > .icon-virus, #header .icon-hips {
+  header > .icon-virus, #header > .icon-virus {
     font-size: 15px;
     position: relative;
     top: 1px; }
+  header > .icon-hips, #header > .icon-hips {
+    font-size: 15px;
+    position: relative;
+    top: 0; }
   header .header-nav, #header .header-nav {
     margin-right: 10px; }
 

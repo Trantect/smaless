@@ -1661,10 +1661,14 @@ header, #header {
     font-size: 16px;
     position: relative;
     top: 1px; }
-  header > .icon-virus, header .icon-hips, #header > .icon-virus, #header .icon-hips {
+  header > .icon-virus, #header > .icon-virus {
     font-size: 15px;
     position: relative;
     top: 1px; }
+  header > .icon-hips, #header > .icon-hips {
+    font-size: 15px;
+    position: relative;
+    top: 0; }
   header .header-nav, #header .header-nav {
     margin-right: 10px; }
 
@@ -1946,7 +1950,7 @@ sidebar, #sidebar {
       font-weight: 600;
       color: #555555;
       padding: 0px; }
-  sidebar > ul.menu, #sidebar > ul.menu {
+  sidebar .menu.ng-scope, #sidebar .menu.ng-scope {
     border-top: 2px solid #e0e6ed; }
 
 @media screen and (max-width: 991px) {

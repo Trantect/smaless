@@ -14,7 +14,7 @@ sidebar, #sidebar {
       font-weight: 600;
       color: #555555;
       padding: 0px; }
-  sidebar > ul.menu, #sidebar > ul.menu {
+  sidebar .menu.ng-scope, #sidebar .menu.ng-scope {
     border-top: 2px solid #e0e6ed; }
 
 @media screen and (max-width: 991px) {

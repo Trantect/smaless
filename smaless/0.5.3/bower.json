@@ -1,0 +1,29 @@
+{
+  "name": "smaless",
+  "version": "0.5.3",
+  "homepage": "http://belindaliu.github.io/smalessAPIDocs/",
+  "authors": [
+    "emily.liu@trantect.com"
+  ],
+  "description": "",
+  "main": "build",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "ignore": [
+    ".gitignore",
+    "bower_components",
+    "compileScss.sh",
+    "concatAllScss.js",
+    "concatSass.js",
+    "generateComponents.js",
+    "Gruntfile.coffee",
+    "Makefile",
+    "node_modules",
+    "package.json",
+    "src",
+    "sassdoc",
+    "test"
+  ]
+}

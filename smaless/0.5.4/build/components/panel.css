@@ -1,0 +1,24 @@
+/* smaless: V 0.5.3 */
+.panel {
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+
+.panel-header {
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+  display: block;
+  border-radius: 3px 3px 0 0; }
+  .panel-header * > {
+    display: table-cell;
+    vertical-align: middle; }
+
+.panel-body {
+  border-radius: 0;
+  padding: 8px; }
+
+.panel-footer {
+  padding: 8px; }
+
+/*# sourceMappingURL=panel.css.map */

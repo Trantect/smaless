@@ -1,6 +1,16 @@
 [API Document](http://emily123.github.io/smaless/)
 
 [GitHub](https://github.com/emily123/smaless/tree/master)
+# Version: V 0.5.4
+## New Features
+```
+ none
+```
+# Fixed Issues
+```
+ 1.Fix issue #19
+```
+
 # Version: V 0.5.3
 ## New Features
 ```

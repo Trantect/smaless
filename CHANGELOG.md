@@ -9,7 +9,7 @@
 # Fixed Issues
 ```
  1.Fix issue #19
- 2.Release fa-arrow-left icon
+ 2.Release fa-arrow-left and fa-arrow-right icon
 ```
 
 # Version: V 0.5.3

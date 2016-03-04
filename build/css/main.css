@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* smaless: 0.5.3 */
+/* smaless: 0.5.4 */
 * {
   box-sizing: border-box; }
 
@@ -1096,42 +1096,6 @@ a {
   src: url("../font/icomoon.eot?z6c2o8#iefix") format("embedded-opentype"), url("../font/icomoon.ttf?z6c2o8") format("truetype"), url("../font/icomoon.woff?z6c2o8") format("woff"), url("../font/icomoon.svg?z6c2o8#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-  -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1); }
-
-.fa-tag:before {
-  content: ""; }
-
-.fa-map-marker:before {
-  content: ""; }
-
-.fa-chevron-up:before {
-  content: ""; }
-
-.fa-chevron-down:before {
-  content: ""; }
-
-.fa-sign-out:before {
-  content: ""; }
-
-.fa-bars:before {
-  content: ""; }
-
-.fa-bolt:before {
-  content: ""; }
-
-.fa-sitemap:before {
-  content: ""; }
-
-.fa-circle:before {
-  content: ""; }
-
-.fa-sliders:before {
-  content: ""; }
-
 .icon-virus:before {
   content: "\e900"; }
 
@@ -1237,6 +1201,45 @@ a {
 
 .fa-angle-up:before {
   content: ""; }
+
+.fa-arrow-left:before {
+  content: ""; }
+
+.fa-sliders:before {
+  content: ""; }
+
+.fa-circle:before {
+  content: ""; }
+
+.fa-bolt:before {
+  content: ""; }
+
+.fa-sitemap:before {
+  content: ""; }
+
+.fa-bars:before {
+  content: ""; }
+
+.fa-chevron-up:before {
+  content: ""; }
+
+.fa-chevron-down:before {
+  content: ""; }
+
+.fa-sign-out:before {
+  content: ""; }
+
+.fa-map-marker:before {
+  content: ""; }
+
+.fa-tag:before {
+  content: ""; }
+
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
 
 .menu {
   margin: 0px;

@@ -7,7 +7,7 @@
 .footer {
 /// This is include footer and add some features of  module footer
     @include footer();
-    background-color: rgb(238, 243, 250);
+    background-color: $content-bg-color;
     position: absolute;
     bottom: 0px;
 }

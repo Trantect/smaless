@@ -1,7 +1,7 @@
 /* smaless: V 0.5.4 */
 header, #header {
   height: 50px;
-  background-color: #0c85e2; }
+  background-color: #2d3238; }
   header .logo, #header .logo {
     float: left;
     display: block;
@@ -19,8 +19,9 @@ header, #header {
   header .user-info, #header .user-info {
     cursor: default; }
     header .user-info .nav-item:hover, header .user-info .nav-item:focus, #header .user-info .nav-item:hover, #header .user-info .nav-item:focus {
-      background-color: #0c85e2;
-      color: rgba(255, 255, 255, 0.8); }
+      background-color: #2d3238;
+      color: #fff;
+      opacity: 1; }
   header > .icon-vul, #header > .icon-vul {
     font-size: 16px;
     position: relative;
@@ -47,7 +48,7 @@ header, #header {
     display: block;
     position: relative;
     top: 0;
-    background-color: #0c85e2; }
+    background-color: #2d3238; }
   header .header-nav, #header .header-nav {
     margin-right: 0; }
 
@@ -87,13 +88,13 @@ header .dropdown-menu {
     color: #f3bd71; }
   header .dropdown-menu .fa-icon-laptop2 {
     font-size: 20px;
-    color: #0b7ad0; }
+    color: #292e34; }
   header .dropdown-menu .fa-icon-virus {
     font-size: 20px;
     color: #ff8980; }
   header .dropdown-menu .fa-icon-vul {
     font-size: 20px;
-    color: #6db6ee; }
+    color: #818488; }
   header .dropdown-menu .fa-icon-check-circle {
     font-size: 24px;
     color: #00c644; }

@@ -30,7 +30,8 @@ header, #header {
     .nav-item {
       &:hover, &:focus {
         background-color: $header-bgcolor;
-        color: rgba(255, 255, 255, 0.8);
+        color: $color-white;
+        opacity: 1;
       }
     }
   }

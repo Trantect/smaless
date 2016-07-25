@@ -13,7 +13,7 @@ content, #content {
   min-height: -moz-calc(100% - 50px);
   padding-bottom: 59px;
   margin-left: 220px;
-  background-color: #eef3fa; }
+  background-color: #F6F8F9; }
 
 @media screen and (max-width: 991px) {
   content, #content {

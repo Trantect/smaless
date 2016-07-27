@@ -14,6 +14,7 @@
 
 $gray-base:              #000;
 $brand-primary:          #2d3238;
+$old-brand-primary:      #0c85e2;
 $brand-success:          #00c644;
 $brand-danger:           #ff6c60;
 $brand-warning:          #f0ad4e;
@@ -55,6 +56,8 @@ $color-default-dark:       mix($color-white, $color-black,90%);
 $color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker);
 $color-primary-dark:       mix($brand-primary, $color-black, $mix-percentage-dark);
 $color-primary-light:      mix($brand-primary, $color-white, $mix-percentage-light);
+$old-color-primary-dark:   mix($old-brand-primary, $color-black, $mix-percentage-dark);
+$old-color-primary-light:  mix($old-brand-primary, $color-white, $mix-percentage-light);
 $color-primary-lighter:    mix($brand-primary, $color-white, $mix-percentage-lighter);
 $color-primary-lightest:   mix($brand-primary, $color-white, $mix-percentage-lightest);
 
@@ -134,7 +137,7 @@ $body-bg:               $gray-lighter !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-darker !default;
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $old-brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
@@ -650,7 +653,7 @@ $panel-radius:                    3px;
 
 // sidebar
 $sidebar-width:                    220px;
-$sidebar-font-color:               #cfd3d7;
+$sidebar-font-color:               #fff;
 $sidebar-bg-color:                 #415062;
 $sidebar-hover-color:              #fff;
 $sidebar-hover-bordercolor:        #fff;

@@ -8,11 +8,13 @@
       padding: 12px 5px 12px 15px;
       color: $sidebar-font-color;
       border-left: 4px solid $sidebar-bg-color;
+      opacity: 0.9;
       &:hover, &:focus {
         background-color: $sidebar-hover-bgcolor;
         padding: 12px 5px 12px 15px;
         color: $sidebar-hover-color;
         border-left: 4px solid $sidebar-hover-bordercolor;
+        opacity: 1;
       }
     }
   }

@@ -30,7 +30,7 @@
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 3;
-    color: #0b0c0e;
+    color: #085a99;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .is-active > a, .pagination > .is-active > a:hover, .pagination > .is-active > a:focus,

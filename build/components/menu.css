@@ -7,13 +7,15 @@
     .menu li > a {
       display: block;
       padding: 12px 5px 12px 15px;
-      color: #cfd3d7;
-      border-left: 4px solid #415062; }
+      color: #fff;
+      border-left: 4px solid #415062;
+      opacity: 0.9; }
       .menu li > a:hover, .menu li > a:focus {
         background-color: #546172;
         padding: 12px 5px 12px 15px;
         color: #fff;
-        border-left: 4px solid #fff; }
+        border-left: 4px solid #fff;
+        opacity: 1; }
   .menu > .is-active > a {
     padding: 12px 5px 12px 15px;
     color: #fff;

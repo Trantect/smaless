@@ -7,13 +7,13 @@ header, #header {
   .logo {
     float: left;
     display: block;
-    text-align: center;
+    //text-align: center;
     width: $layout-sidepanel-pin-width;
     overflow: hidden;
     height: $layout-header-height;
     img {
       height: 28px;
-      margin: 11px auto;
+      margin: 11px auto 11px 17px;
     }
   }
   .user {

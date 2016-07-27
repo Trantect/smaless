@@ -217,9 +217,9 @@ a {
   color: #fff;
   background-color: #0c85e2; }
   .btn-primary:hover {
-    background-color: #575b60; }
+    background-color: #3d9de8; }
   .btn-primary:active {
-    background-color: #292e34; }
+    background-color: #0b7ad0; }
 
 .btn-success {
   color: #fff;
@@ -401,7 +401,7 @@ a {
   text-align: right;
   padding-right: 15px; }
   .help a {
-    color: #2d3238; }
+    color: #0c85e2; }
   .help a:hover, .help a:focus {
     color: #2a6496; }
 
@@ -1252,13 +1252,15 @@ a {
     .menu li > a {
       display: block;
       padding: 12px 5px 12px 15px;
-      color: #cfd3d7;
-      border-left: 4px solid #415062; }
+      color: #fff;
+      border-left: 4px solid #415062;
+      opacity: 0.9; }
       .menu li > a:hover, .menu li > a:focus {
         background-color: #546172;
         padding: 12px 5px 12px 15px;
         color: #fff;
-        border-left: 4px solid #fff; }
+        border-left: 4px solid #fff;
+        opacity: 1; }
   .menu > .is-active > a {
     padding: 12px 5px 12px 15px;
     color: #fff;
@@ -1339,7 +1341,7 @@ a {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 3;
-    color: #0b0c0e;
+    color: #085a99;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .is-active > a, .pagination > .is-active > a:hover, .pagination > .is-active > a:focus,
@@ -1645,13 +1647,12 @@ header, #header {
   header .logo, #header .logo {
     float: left;
     display: block;
-    text-align: center;
     width: 220px;
     overflow: hidden;
     height: 50px; }
     header .logo img, #header .logo img {
       height: 28px;
-      margin: 11px auto; }
+      margin: 11px auto 11px 17px; }
   header .user, #header .user {
     font-size: 16px; }
     header .user span, #header .user span {
@@ -1953,7 +1954,7 @@ sidebar, #sidebar {
     margin-bottom: 15px; }
     sidebar .user-panel > .user-info, #sidebar .user-panel > .user-info {
       font-weight: 600;
-      color: #cfd3d7;
+      color: #fff;
       padding: 0px; }
   sidebar .menu.ng-scope, #sidebar .menu.ng-scope {
     border-top: 2px solid #e0e6ed; }

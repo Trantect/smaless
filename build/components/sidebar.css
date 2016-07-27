@@ -12,7 +12,7 @@ sidebar, #sidebar {
     margin-bottom: 15px; }
     sidebar .user-panel > .user-info, #sidebar .user-panel > .user-info {
       font-weight: 600;
-      color: #cfd3d7;
+      color: #fff;
       padding: 0px; }
   sidebar .menu.ng-scope, #sidebar .menu.ng-scope {
     border-top: 2px solid #e0e6ed; }

@@ -1645,13 +1645,12 @@ header, #header {
   header .logo, #header .logo {
     float: left;
     display: block;
-    text-align: center;
     width: 220px;
     overflow: hidden;
     height: 50px; }
     header .logo img, #header .logo img {
       height: 28px;
-      margin: 11px auto; }
+      margin: 11px auto 11px 17px; }
   header .user, #header .user {
     font-size: 16px; }
     header .user span, #header .user span {
